@@ -1,0 +1,37 @@
+<form class="form-horizontal well" id="contact" action="https://formspree.io/{{ site.email }}" method="POST">
+  <div class="form-group">
+    <label for="name" class="control-label">Name</label>
+    <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+      <input type="text" class="form-control" id="name" name="Name:" placeholder="Name" required />
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="email" class="control-label">Email</label>
+    <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+      <input type="email" class="form-control" id="email" name="_replyto:" placeholder="Email" required multiple />
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="phone" class="control-label">Phone</label>
+    <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+      <input type="tel" class="form-control" id="phone" name="Phone:" placeholder="Phone" />
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="message" class="control-label">Message</label>
+    <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+      <textarea rows="4" class="form-control" id="message" name="Message:" placeholder="Enter message here..." required></textarea>
+    </div>
+  </div>
+  <div class="form-group">
+    <input class="btn btn-info" type="submit" value="Send">
+  </div>
+
+  <input type="hidden" name="_subject" value="New submission!" />
+  <input type="hidden" name="_next" value="/contact/formSubmission" />
+  <input type="text" name="_gotcha" style="display:none" />
+</form>
