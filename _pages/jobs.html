@@ -1,0 +1,27 @@
+---
+layout: page
+title: Latah County Jobs
+permalink: /jobs/
+---
+
+{% for posting in site.data.jobpostings.sheriff %}
+  <h1 class="text-center"><small>Sheriff</small></h1>
+  {% if posting.jobStatus contains 'Open' %}
+    <ul class="list-unstyled col-md-8 col-md-offset-2">
+      <li>
+        <h2 id="jobTitle"><small>{{ posting.jobTitle }}</small></h2>
+        <div id="jobInfo">
+          <strong>Status: </strong>{{ posting.jobStatus }}<br />
+          <strong>Department: </strong>{{ posting.jobDepartment }}<br />
+          <strong>Minimum Salary: </strong>{{ posting.jobMinSalary }}<br />
+          <strong>Hours: </strong>{{ posting.jobHours }}<br />
+          <strong>Description: </strong>{{ posting.jobDescription }}<br />
+          <strong>Salary Range: </strong>{{ posting.jobSalaryRange }}<br />
+          <strong>Job Requirements: </strong>{{ posting.jobRequired }}<br />
+          <strong>Links: </strong>{{ posting.jobLinks }}<br />
+          <strong>Applications: </strong>{{ posting.jobApplication }}
+        </div>
+      </li>
+    </ul>
+  {% endif %}
+{% endfor %}
