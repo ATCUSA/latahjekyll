@@ -1,0 +1,123 @@
+Home:
+  - title: Home
+    url: /
+
+Officials:
+  - title: Elected Officials
+    url: /officials/
+
+Departments:
+  - title: Assessor
+    url: /assessor/
+  - title: Auditor
+    url: /auditor/
+  - title: Commissioners
+    url: /commissioners/
+  - title: Coroner
+    url: /coroner/
+  - title: Court Assistance
+    url: /court_assistance/
+  - title: Disaster Services
+    url: /disaster_services/
+  - title: District Court
+    url: /district_court/
+  - title: DMV
+    url: /dmv/
+  - title: Driver Licensing
+    url: /driver_licensing/
+  - title: Elections
+    url: /auditor/elections/
+  - title: Fair Grounds
+    url: https://latahfair.com/
+  - title: ITS
+    url: /its/
+  - title: Historical Society
+    url: /historical_society/
+  - title: Parks & Recreation
+    url: /parks_rec/
+  - title: Planning & Building
+    url: /planning_building/
+  - title: Probation
+    url: /probation/
+  - title: Prosecutor
+    url: /prosecutor/
+  - title: Sheriff
+    url: /sheriff/
+  - title: Social Services
+    url: /social_services/
+  - title: Solid Waste
+    url: /solid_waste/
+  - title: Surveyor
+    url: /surveyor/
+  - title: Treasurer
+    url: /treasurer/
+  - title: Veteran's Services
+    url: /veterans_services/
+  - title: Weed Control
+    url: /weed_control/
+  - title: Youth Advocacy
+    url: /youth_advocacy/
+  - title: Youth Services
+    url: /probation/
+
+Resources:
+  - title: Resources
+    url: /resources/
+
+Employment:
+  - title: Employment
+    url: /Employment/
+
+Elections:
+  - title: Elections
+    url: /elections/
+
+Quick_links:
+  - title: Commissioner's Agenda
+    url: /commissioners/agenda/
+  - title: Cite Pay USA
+    url: #
+  - title: Government & Related Links
+    url: /resources/links/
+  - title: History & Demographics
+    url: /resources/history/
+  - title: Latah Trail
+    url: #
+  - title: Libraries
+    url: /resources/librarie/
+  - title: Marriage License
+    url: /auditor/marriage/
+  - title: Passports
+    url: /auditor/passports/
+  - title: Property Assessment
+    url: /assessor/assessment/
+  - title: Public Records Request
+    url: /resoures/records_request/
+  - title: Taxes (Payment)
+    url: /treasurer/
+  - title: Ticket Payment Information
+    url: /district_court/ticket_info/
+  - title: Tourism Information
+    url: http://www.moscowchamber.com/
+  - title: Vine
+    url: https://www.vinelink.com/#/home/site/13000
+  - title: Employee Email
+    url: http://portal.latah.id.us
+
+Mapping:
+  - title: GIS
+    url: /gis/
+  - title: Online Maps
+    url: /gis/maps/
+  - title: Map & GIS Pricing
+    url: /gis/maps/pricing/
+  - title: GIS Ordinance
+    url: /gis/ordinance/
+  - title: Fee Waiver Request
+    url: /gis/waiver/
+  - title: Data License Agreement
+    url: /gis/agreement/
+
+Contact:
+  - title: Contact Us
+    url: /contact/
