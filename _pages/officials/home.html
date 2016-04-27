@@ -1,0 +1,89 @@
+---
+layout: page
+title: Elected Officials
+permalink: /officials/
+---
+
+<!-- <div class="col-md-4 portfolio-item">
+    <a href="#">
+        <img class="img-responsive center-block" src="http://placehold.it/250x300" alt="">
+    </a>
+    <h3>
+        <a href="#">Project Name</a>
+    </h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+</div> -->
+
+<div class="row panel center-block">
+  <h1 class="text-center"><small>Commissioners</small></h1>
+  {% for official in site.data.officials.commissioners %}
+  <div class="col-md-4">
+    <img class=" img img-responsive center-block hidden-xs" src="{{ official.image }}">
+    <h3 class="text-center">{{ official.name }}</h3>
+    <h4 class="text-center"><small>{{ official.district }}</small></h4>
+    <p class="text-justify">{{ official.description }}</p>
+  </div>
+  {% endfor %}
+</div>
+<div class="row panel center-block">
+  {% for official in site.data.officials.assessor %}
+  <div class="col-md-4">
+    <h1 class="text-center"><small>Assessor</small></h1>
+    <img class=" img img-responsive center-block hidden-xs" src="{{ official.image }}">
+    <h3 class="text-center">{{ official.name }}</h3>
+    <p class="text-justify">{{ official.description }}</p>
+  </div>
+  {% endfor %}
+  {% for official in site.data.officials.auditor %}
+  <div class="col-md-4">
+    <h1 class="text-center"><small>Auditor</small></h1>
+    <img class=" img img-responsive center-block hidden-xs" src="{{ official.image }}">
+    <h3 class="text-center">{{ official.name }}</h3>
+    <p class="text-justify">{{ official.description }}</p>
+  </div>
+  {% endfor %}
+  {% for official in site.data.officials.coroner %}
+  <div class="col-md-4">
+    <h1 class="text-center"><small>Coroner</small></h1>
+    <img class=" img img-responsive center-block hidden-xs" src="{{ official.image }}">
+    <h3 class="text-center">{{ official.name }}</h3>
+    <p class="text-justify">{{ official.description }}</p>
+  </div>
+  {% endfor %}
+</div>
+<div class="row panel center-block">
+  {% for official in site.data.officials.prosecutor %}
+  <div class="col-md-4">
+    <h1 class="text-center"><small>Prosecutor</small></h1>
+    <img class=" img img-responsive center-block hidden-xs" src="{{ official.image }}">
+    <h3 class="text-center">{{ official.name }}</h3>
+    <p class="text-justify">{{ official.description }}</p>
+  </div>
+  {% endfor %}
+  {% for official in site.data.officials.sheriff %}
+  <div class="col-md-4">
+    <h1 class="text-center"><small>Sheriff</small></h1>
+    <img class=" img img-responsive center-block hidden-xs" src="{{ official.image }}">
+    <h3 class="text-center">{{ official.name }}</h3>
+    <p class="text-justify">{{ official.description }}</p>
+  </div>
+  {% endfor %}
+  {% for official in site.data.officials.treasurer %}
+  <div class="col-md-4">
+    <h1 class="text-center"><small>Treasurer</small></h1>
+    <img class=" img img-responsive center-block hidden-xs" src="{{ official.image }}">
+    <h3 class="text-center">{{ official.name }}</h3>
+    <p class="text-justify">{{ official.description }}</p>
+  </div>
+  {% endfor %}
+</div>
+<div class="row panel center-block">
+  <h1 class="text-center"><small>Judges</small></h1>
+  {% for official in site.data.officials.judges %}
+  <div class="col-md-6">
+    <img class=" img img-responsive center-block hidden-xs" src="{{ official.image }}">
+    <h3 class="text-center">{{ official.name }}</h3>
+    <p class="text-justify">{{ official.description }}</p>
+  </div>
+  {% endfor %}
+</div>
