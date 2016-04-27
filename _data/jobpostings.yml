@@ -1,3 +1,15 @@
+Blank:
+  - jobTitle:
+    jobStatus:
+    jobDepartment:
+    jobMinSalary:
+    jobHours:
+    jobDescription:
+    jobSalaryRange:
+    jobRequired:
+    jobLinks:
+    jobApplication:
+
 sheriff:
   - jobTitle: Patrol Deputy
     jobStatus: Open - Accepting Applications
