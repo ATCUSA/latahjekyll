@@ -10,15 +10,17 @@
           <!-- <a class="navbar-brand" href="#">Latah County</a> -->
         </div>
         <div class="collapse navbar-collapse">
+          {% assign current = page.url | downcase | split: '/' %}
+
           <ul class="nav navbar-nav">
-            <li class="">
+            <li {% if current[1] == 'home' %}class='active'{% endif %}>
               {% for link in site.data.menu.Home %}
                 <li>
                   <a class="page-link" href="{{ link.url | prepend: site.baseurl }}">{{ link.title }}</a>
                 </li>
               {% endfor %}
             </li>
-            <li class="">
+            <li>
               {% for link in site.data.menu.Officials %}
                 <li>
                   <a class="page-link" href="{{ link.url | prepend: site.baseurl }}">{{ link.title }}</a>
@@ -35,21 +37,21 @@
               {% endfor %}
             </ul>
             </li>
-            <li class="">
+            <li>
               {% for link in site.data.menu.Resources %}
                 <li>
-                  <a class="page-link" href="{{ link.url | prepend: site.baseurl }}">{{ link.title }}</a>
+                  <a class="page-link" href="{{ link.url | prepend: site.baseurl }} {{ link.target }}">{{ link.title }}</a>
                 </li>
               {% endfor %}
             </li>
-            <li class="">
+            <li>
               {% for link in site.data.menu.Employment %}
                 <li>
                   <a class="page-link" href="{{ link.url | prepend: site.baseurl }}">{{ link.title }}</a>
                 </li>
               {% endfor %}
             </li>
-            <li class="">
+            <li>
               {% for link in site.data.menu.Elections %}
                 <li>
                   <a class="page-link" href="{{ link.url | prepend: site.baseurl }}">{{ link.title }}</a>
@@ -61,7 +63,7 @@
             <ul class="dropdown-menu">
               {% for link in site.data.menu.Quick_links %}
                 <li>
-                  <a class="page-link" href="{{ link.url | prepend: site.baseurl }}">{{ link.title }}</a>
+                  <a class="page-link" href="{{ link.url | prepend: site.baseurl }}" {{ link.target }}>{{ link.title }}</a>
                 </li>
               {% endfor %}
             </ul>
@@ -76,7 +78,7 @@
               {% endfor %}
             </ul>
             </li>
-            <li class="">
+            <li>
               {% for link in site.data.menu.Contact %}
               <li>
                 <a class="page-link" href="{{ link.url | prepend: site.baseurl }}">{{ link.title }}</a>

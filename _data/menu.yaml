@@ -29,10 +29,10 @@ Departments:
     url: /auditor/elections/
   - title: Fair Grounds
     url: https://latahfair.com/
-  - title: ITS
-    url: /its/
   - title: Historical Society
     url: /historical_society/
+  - title: ITS
+    url: /its/
   - title: Parks & Recreation
     url: /parks_rec/
   - title: Planning & Building
@@ -70,19 +70,21 @@ Employment:
 
 Elections:
   - title: Elections
-    url: /elections/
+    url: /auditor/elections/
 
 Quick_links:
   - title: Commissioner's Agenda
     url: /commissioners/agenda/
   - title: Cite Pay USA
     url: #
+    target:
   - title: Government & Related Links
     url: /resources/links/
   - title: History & Demographics
     url: /resources/history/
   - title: Latah Trail
     url: #
+    target:
   - title: Libraries
     url: /resources/librarie/
   - title: Marriage License
@@ -99,10 +101,13 @@ Quick_links:
     url: /district_court/ticket_info/
   - title: Tourism Information
     url: http://www.moscowchamber.com/
+    target: target="_blank"
   - title: Vine
     url: https://www.vinelink.com/#/home/site/13000
+    target: target="_blank"
   - title: Employee Email
     url: http://portal.latah.id.us
+    target: target="_blank"
 
 Mapping:
   - title: GIS
