@@ -19,6 +19,7 @@ url: "https://latah.id.us" # the base hostname & protocol for your site
 include:
   - _pages
   - _dept
+  - _admin
 
 assets:
   prefix: "/assets"
