@@ -7,7 +7,10 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <!-- <a class="navbar-brand" href="#">Latah County</a> -->
+          <a class="navbar-brand" href="#">
+            <img class="img img-responsive visible-xs" width="25px" src="{% asset_path logo_sm.png %}" />
+            </a>
+            <a class="navbar-brand" href="#">Latah County</a>
         </div>
         <div class="collapse navbar-collapse">
           {% assign current = page.url | downcase | split: '/' %}
@@ -58,7 +61,7 @@
                 </li>
               {% endfor %}
             </li>
-            <li class="dropdown">
+            <!--<li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Quick Links <b class="caret"></b></a>
             <ul class="dropdown-menu">
               {% for link in site.data.menu.Quick_links %}
@@ -67,7 +70,7 @@
                 </li>
               {% endfor %}
             </ul>
-            </li>
+          </li>-->
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Mapping<b class="caret"></b></a>
             <ul class="dropdown-menu">

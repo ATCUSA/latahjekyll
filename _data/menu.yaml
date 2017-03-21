@@ -61,8 +61,8 @@ Departments:
     url: /probation/
 
 Resources:
-  - title: Resources
-    url: /resources/
+  - title: Commissions
+    url: /commissions/
 
 Employment:
   - title: Employment
@@ -72,42 +72,42 @@ Elections:
   - title: Elections
     url: /auditor/elections/
 
-Quick_links:
-  - title: Commissioner's Agenda
-    url: /commissioners/agenda/
-  - title: Cite Pay USA
-    url: #
-    target:
-  - title: Government & Related Links
-    url: /resources/links/
-  - title: History & Demographics
-    url: /resources/history/
-  - title: Latah Trail
-    url: #
-    target:
-  - title: Libraries
-    url: /resources/librarie/
-  - title: Marriage License
-    url: /auditor/marriage/
-  - title: Passports
-    url: /auditor/passports/
-  - title: Property Assessment
-    url: /assessor/assessment/
-  - title: Public Records Request
-    url: /resoures/records_request/
-  - title: Taxes (Payment)
-    url: /treasurer/
-  - title: Ticket Payment Information
-    url: /district_court/ticket_info/
-  - title: Tourism Information
-    url: http://www.moscowchamber.com/
-    target: target="_blank"
-  - title: Vine
-    url: https://www.vinelink.com/#/home/site/13000
-    target: target="_blank"
-  - title: Employee Email
-    url: http://portal.latah.id.us
-    target: target="_blank"
+# Quick_links:
+#  - title: Commissioner's Agenda
+#    url: /commissioners/agenda/
+#  - title: Cite Pay USA
+#    url: #
+#    target:
+#  - title: Government & Related Links
+#    url: /resources/links/
+#  - title: History & Demographics
+#    url: /resources/history/
+#  - title: Latah Trail
+#    url: #
+#    target:
+#  - title: Libraries
+#    url: /resources/librarie/
+#  - title: Marriage License
+#    url: /auditor/marriage/
+#  - title: Passports
+#    url: /auditor/passports/
+#  - title: Property Assessment
+#    url: /assessor/assessment/
+#  - title: Public Records Request
+#    url: /resoures/records_request/
+#  - title: Taxes (Payment)
+#    url: /treasurer/
+#  - title: Ticket Payment Information
+#    url: /district_court/ticket_info/
+#  - title: Tourism Information
+#    url: http://www.moscowchamber.com/
+#    target: target="_blank"
+#  - title: Vine
+#    url: https://www.vinelink.com/#/home/site/13000
+#    target: target="_blank"
+#  - title: Employee Email
+#    url: http://portal.latah.id.us
+#    target: target="_blank"
 
 Mapping:
   - title: GIS
