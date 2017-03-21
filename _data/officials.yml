@@ -1,19 +1,22 @@
 commissioners:
   - name: Dick Walser
     description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
-    district: District I
+    district: District 1
     page: /commissioners/district_1/
-    image: http://placehold.it/250x300
+    bio: /commissioners/bio/dick_walser/
+    image: /assets/RichardWalser.png
   - name: Tom Lamar
-    district: District II
+    district: District 2
     description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
     page: /commissioners/district_2
-    image: http://placehold.it/250x300
+    bio: /commissioners/bio/tom_lamar/
+    image: /assets/TomLamar.png
   - name: Dave McGraw
-    district: District III
+    district: District 3
     description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
     page: /commissioners/district_3/
-    image: http://placehold.it/250x300
+    bio: /commissioners/bio/dave_mcgraw/
+    image: /assets/DaveMcGraw.png
 
 assessor:
   - name: Pat Vaughn
