@@ -5,3 +5,17 @@ _site/
 .asset-cache
 Gemfile.lock
 # ===== End Jekyll.gitignore =====
+
+# ===== Start FireBase .gitignore =====
+.firebaserc
+database.rules.json
+firebase.json
+# ===== End FireBase .gitignore =====
+
+# ===== Start Netlify .gitignore =====
+.netlify
+# ===== End Netlify .gitignore =====
+
+# ===== Start VS Code .gitignore =====
+.vscode*
+# ===== End VS Code .gitignore =====
