@@ -1,5 +1,41 @@
 <form class="form-horizontal well" id="contact" action="https://formspree.io/{{ site.email }}" method="POST">
   <div class="form-group">
+    <label for="department" class="control-label">Department</label>
+    <div class="input-group">
+        <span class="input-group-addon"><i class="fa fa-users" aria-hidden="true"></i></span>
+        <select class="form-control" required>
+          <option selected disabled>Select a Department</option>
+          <option value="assessor">Assessor</option>
+					<option value="auditor">Auditor</option>
+					<option value="commissioners">Commissioners</option>
+					<option value="coroner">Coroner</option>
+					<option value="court_assistance">Court Assistance</option>
+					<option value="disaster_services">Disaster Services</option>
+					<option value="district_court">District Court</option>
+					<option value="dmv">DMV</option>
+					<option value="driver_licensing">Driver Licensing</option>
+					<option value="elections">Elections</option>
+					<option value="fair_grounds">Fair Grounds</option>
+					<option value="historical_society">Historical Society</option>
+					<option value="its">ITS</option>
+					<option value="parks_recreation">Parks & Recreation</option>
+					<option value="planning_building">Planning & Building</option>
+					<option value="probation">Probation</option>
+					<option value="prosecutor">Prosecutor</option>
+					<option value="sheriff">Sheriff</option>
+					<option value="social_services">Social Services</option>
+					<option value="solid_waste">Solid Waste</option>
+					<option value="surveyor">Surveyor</option>
+					<option value="treasurer">Treasurer</option>
+					<option value="veterans_services">Veteran's Services</option>
+					<option value="weed_control">Weed Control</option>
+					<option value="youth_advocacy">Youth Advocacy</option>
+					<option value="youth_services">Youth Services</option>
+        </select>
+
+      </div>
+    </div>
+  <div class="form-group">
     <label for="name" class="control-label">Name</label>
     <div class="input-group">
       <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
