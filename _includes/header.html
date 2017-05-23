@@ -6,6 +6,10 @@
       </div>
       <div class="page-header text-center col-md-8 col-sm-8 col-xs-10">
         <h1>Latah County Idaho</h1>
+        {% if page.title %}
+          <hr />
+        {% endif %}
+        <h2 id="deptHeader">{{ page.title }}</h2>
       </div>
       <div class="col-md-2 col-sm-2 hidden-xs">
         <img class="img img-responsive" id="stateseal" src="{% asset_path StateSeal.png %}" />
