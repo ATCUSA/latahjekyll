@@ -37,7 +37,7 @@ $(document).ready(function(){
 
 		  $.each(jsonResult, function() {
 				$(control).append(
-				  $("<a href='https://www.latah.id.us" + path + "/" + this.fileWithExt + "' target='_blank' class='list-group-item'></a>").text(this.filename).val(this.path)
+				  $("<a href='https://www.latah.id.us" + path + "/" + this.filename + this.ext + "' target='_blank' class='list-group-item'></a>").text(this.filename).val(this.path)
 				);
 		  });
 		  $(control).change(function() {
