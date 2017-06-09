@@ -11,6 +11,8 @@ Departments:
     url: /assessor/
   - title: Auditor
     url: /auditor/
+  - title: Building & Grounds
+    url: /building_grounds/
   - title: Commissioners
     url: /commissioners/
   - title: Coroner
@@ -27,6 +29,8 @@ Departments:
     url: /driver_licensing/
   - title: Elections
     url: /auditor/elections/
+  - title: Extensions
+    url: /extensions/
   - title: Fair Grounds
     url: https://latahfair.com/
   - title: Historical Society
