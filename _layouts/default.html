@@ -10,7 +10,7 @@
           <div id="banner" class="hidden-xs">
             {% include header.html %}
           </div>
-          
+
     <div class="page-content">
       {{ content }}
     </div>
@@ -18,5 +18,9 @@
     {% include footer.html %}
 
   </body>
+  
+  {% if page.util %}
+  	{% js util.js %}
+  {% endif %}
 
 </html>
