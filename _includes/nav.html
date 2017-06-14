@@ -2,13 +2,13 @@
     <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <button type="button" class="navbar-toggle" role="button" aria-label="Mobile Nav Bar Toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand visible-xs" href="/">
-            <img class="img img-responsive" width="25px" src="{% asset_path logo_sm.png %}" />
+            <img class="img img-responsive" alt="Latah County Seal" width="25px" src="{% asset_path logo_sm.png %}" />
           </a>
             <a class="navbar-brand visible-xs" href="/">Latah County</a>
         </div>
@@ -16,7 +16,7 @@
           {% assign current = page.url | downcase | split: '/' %}
           <form class="navbar-form navbar-right" role="search">
               <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Search">
+                <input type="text" class="form-control algolia__input js-algolia__input" id="navSearchBar" title="Search Bar" autocomplete="off" name="query" placeholder="Search..." />
               </div>
           </form>
           <ul class="nav navbar-nav">

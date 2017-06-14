@@ -2,17 +2,17 @@
   <div class="container-fluid hidden-xs">
     <div class="row" id="header">
       <div class="col-md-2 col-sm-2 col-xs-2">
-        <img class="img img-responsive" id="logo_sm" src="{% asset_path logo_sm.png %}" />
+        <img class="img img-responsive" alt="Latah County Seal" id="logo_sm" src="{% asset_path logo_sm.png %}" />
       </div>
       <div class="page-header text-center col-md-8 col-sm-8 col-xs-10">
         <h1>Latah County Idaho</h1>
+        <hr />
         {% if page.title %}
-          <hr />
+          <h2 id="deptHeader">{{ page.title }}</h2>
         {% endif %}
-        <h2 id="deptHeader">{{ page.title }}</h2>
       </div>
       <div class="col-md-2 col-sm-2 hidden-xs">
-        <img class="img img-responsive" id="stateseal" src="{% asset_path StateSeal.png %}" />
+        <img class="img img-responsive" alt="Idaho State Seal" id="stateseal" src="{% asset_path StateSeal.png %}" />
       </div>
     </div>
   </div>

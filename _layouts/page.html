@@ -2,8 +2,9 @@
 layout: default
 ---
 
-  <h1 class="visible-xs text-center">{{ page.title }}</h1>
-
+  {% if page.title %}
+    <h1 class="visible-xs text-center">{{ page.title }}</h1>
+  {% endif %}
   <hr>
 
   {{ content }}
