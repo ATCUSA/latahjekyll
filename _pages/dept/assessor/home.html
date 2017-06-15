@@ -1,0 +1,30 @@
+---
+layout: page
+title: Assessor
+permalink: /assessor/
+---
+<div class="row" id="infoRow">
+  <div class="container col-md-4" id="notices">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="text-center">Notices</h3>
+      </div>
+      <div class="list-group">
+        {% for notice in site.data.notices %}
+          {% if notice.department == page.title %}
+            <a href="{{ notice.url }}" target="{{ notice.target}}" class="list-group-item text-center">
+              {{ notice.title }}
+            </a>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  <div class="container col-md-8" id="about">
+    <div class="well">
+      <p>
+        The appraisal of all property, real and personal, in Latah County is the responsibility of the elected county Assessor. The two main purposes of the Assessor are to identify current owners of property and to place a value on property for assessment purposes. Another main function is to track all exemptions including homeowner's and circuit breakers. The Assessor also administers the licensing and titling of motor vehicles.
+      </p>
+    </div>
+  </div>
+</div>
