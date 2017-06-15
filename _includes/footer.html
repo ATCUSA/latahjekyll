@@ -5,7 +5,7 @@
               <div class="nav navbar-inverse navbar-fixed-bottom">
                   <div class="text-center">
                       <h4 class="text-muted text-center">
-                        Copyright &copy; {% include copyright.html %} Latah County<br />
+                        Copyright &copy; <span id="currentYear"></span> Latah County<br />
                         <a href="{{ site.baseurl }}/terms/">Terms of use</a><br />
                       </h4>
                   </div>
@@ -22,3 +22,6 @@
 <script src="https://cdn.jsdelivr.net/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
 <!-- MomentJS w/Locales -->
 <script src="https://cdn.jsdelivr.net/momentjs/2.18.1/moment-with-locales.min.js" integrity="sha256-/ioiJhI6NkoUDkSyBru7JZUGXGQhdml6amBC3ApTf5A=" crossorigin="anonymous"></script>
+
+<!-- Custom Scripts -->
+{% js year.js %}
