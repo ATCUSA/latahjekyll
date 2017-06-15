@@ -1,0 +1,43 @@
+---
+layout: page
+title: Judge Jonh Judge
+permalink: /judges/bio/john_judge/
+department: Judge
+---
+{% for official in site.data.officials.judges %}
+  {% if official.name == 'John Judge' %}
+    <div class="row">
+      <div class="col-md-4">
+        <img src="https://placehold.it/500x600" class="img-responsive" alt="{{ page.title }} - {{ page.department }}" />
+        <h4 class="text-center">
+          {{ official.position }} {{ official.name }}<br />
+          <small>Latah County {{ official.position }}</small><br />
+          <small>{{ official.court }}</small>
+        </h4>
+      </div>
+
+      <div class="col-md-8">
+        <div class="text-justify">
+          {{ official.description }}
+        </div><br />
+        <div id="social">
+          {% if official.website != nil %}
+          <div class="col-md-4 text-center">
+            <a href="{{ official.website }}" target="_blank" rel="noopener"><i class="fa fa-2x fa-globe"></i></a>&nbsp;
+          </div>
+          {% endif %}
+          {% if official.facebook != nil %}
+          <div class="col-md-4 text-center">
+            <a href="{{ official.facebook }}" target="_blank" rel="noopener"><i class="fa fa-2x fa-facebook text-center"></i></a>&nbsp;
+          </div>
+          {% endif %}
+          {% if official.twitter != nil %}
+          <div class="col-md-4 text-center">
+            <a href="{{ official.twitter }}" target="_blank" rel="noopener"><i class="fa fa-2x fa-twitter"></i></a>
+          </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  {% endif %}
+{% endfor %}
