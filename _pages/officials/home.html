@@ -18,14 +18,18 @@ permalink: /officials/
   <h1 class="text-center"><small>Commissioners</small></h1>
   {% for official in site.data.officials.commissioners %}
   <div class="col-md-4">
-    <a href="{{ site.baseurl }}{{ official.bio }}">
+    <a href="{{ official.bio }}">
       <img class=" img img-responsive center-block hidden-xs" width="250" src="{{ official.image }}">
       <h3 class="text-center">{{ official.name }}</h3>
     </a>
-    <a href="{{ site.baseurl }}{{ official.page }}" class="text-muted"><h4 class="text-center"><small>{{ official.district }}</small></h4></a>
+    <a href="{{ official.page }}">
+      <h3 class="text-center">
+        <small>{{ official.district }}</small>
+      </h3>
+    </a>
     <p class="text-justify">
-      {{ official.description }}<br />
-      <a href="{{ site.baseurl }}{{ official.bio }}">more...</a>
+      {{ official.description | truncate: 120 }}<br />
+      <a href="{{ official.bio }}">more...</a>
     </p>
   </div>
   {% endfor %}
@@ -33,52 +37,94 @@ permalink: /officials/
 <div class="row panel center-block">
   {% for official in site.data.officials.assessor %}
   <div class="col-md-4">
-    <h1 class="text-center"><small>Assessor</small></h1>
-    <img class=" img img-responsive center-block hidden-xs" src="{{ official.image }}">
-    <h3 class="text-center">{{ official.name }}</h3>
-    <p class="text-justify">{{ official.description }}</p>
+    <a href="{{ official.page }}">
+      <h1 class="text-center"><small>Assessor</small></h1>
+    </a>
+    <a href="{{ official.bio }}">
+      <img class=" img img-responsive center-block hidden-xs" src="{{ official.image }}">
+      <h3 class="text-center">{{ official.name }}</h3>
+    </a>
+    <p class="text-justify">
+      {{ official.description | truncate: 120 }}<br />
+      <a href="{{ official.bio }}">more...</a>
+    </p>
   </div>
   {% endfor %}
   {% for official in site.data.officials.auditor %}
   <div class="col-md-4">
-    <h1 class="text-center"><small>Auditor</small></h1>
-    <img class=" img img-responsive center-block hidden-xs" src="{{ official.image }}">
-    <h3 class="text-center">{{ official.name }}</h3>
-    <p class="text-justify">{{ official.description }}</p>
+    <a href="{{ official.page }}">
+      <h1 class="text-center"><small>Auditor</small></h1>
+    </a>
+    <a href="{{ official.bio }}">
+      <img class=" img img-responsive center-block hidden-xs" width="250" src="{{ official.image }}">
+      <h3 class="text-center">{{ official.name }}</h3>
+    </a>
+    <p class="text-justify">
+      {{ official.description | truncate: 120 }}<br />
+      <a href="{{ official.bio }}">more...</a>
+    </p>
   </div>
   {% endfor %}
   {% for official in site.data.officials.coroner %}
   <div class="col-md-4">
-    <h1 class="text-center"><small>Coroner</small></h1>
-    <img class=" img img-responsive center-block hidden-xs" src="{{ official.image }}">
-    <h3 class="text-center">{{ official.name }}</h3>
-    <p class="text-justify">{{ official.description }}</p>
+    <a href="{{ official.page }}">
+      <h1 class="text-center"><small>Coroner</small></h1>
+    </a>
+    <a href="{{ official.bio }}">
+      <img class=" img img-responsive center-block hidden-xs" src="{{ official.image }}">
+      <h3 class="text-center">{{ official.name }}</h3>
+    </a>
+    <p class="text-justify">
+      {{ official.description | truncate: 120 }}<br />
+      <a href="{{ official.bio }}">more...</a>
+    </p>
   </div>
   {% endfor %}
 </div>
 <div class="row panel center-block">
   {% for official in site.data.officials.prosecutor %}
   <div class="col-md-4">
-    <h1 class="text-center"><small>Prosecutor</small></h1>
-    <img class=" img img-responsive center-block hidden-xs" src="{{ official.image }}">
-    <h3 class="text-center">{{ official.name }}</h3>
-    <p class="text-justify">{{ official.description }}</p>
+    <a href="{{ official.page }}">
+      <h1 class="text-center"><small>Prosecutor</small></h1>
+    </a>
+    <a href="{{ official.bio }}">
+      <img class=" img img-responsive center-block hidden-xs" src="{{ official.image }}">
+      <h3 class="text-center">{{ official.name }}</h3>
+    </a>
+      <p class="text-justify">
+      {{ official.description | truncate: 120 }}<br />
+      <a href="{{ official.bio }}">more...</a>
+    </p>
   </div>
   {% endfor %}
   {% for official in site.data.officials.sheriff %}
   <div class="col-md-4">
-    <h1 class="text-center"><small>Sheriff</small></h1>
-    <img class=" img img-responsive center-block hidden-xs" src="{{ official.image }}">
-    <h3 class="text-center">{{ official.name }}</h3>
-    <p class="text-justify">{{ official.description }}</p>
+    <a href="{{ official.page }}">
+      <h1 class="text-center"><small>Sheriff</small></h1>
+    </a>
+    <a href="{{ official.bio }}">
+      <img class=" img img-responsive center-block hidden-xs" src="{{ official.image }}">
+      <h3 class="text-center">{{ official.name }}</h3>
+    </a>
+    <p class="text-justify">
+      {{ official.description | truncate: 120 }}<br />
+      <a href="{{ official.bio }}">more...</a>
+    </p>
   </div>
   {% endfor %}
   {% for official in site.data.officials.treasurer %}
   <div class="col-md-4">
-    <h1 class="text-center"><small>Treasurer</small></h1>
-    <img class=" img img-responsive center-block hidden-xs" src="{{ official.image }}">
-    <h3 class="text-center">{{ official.name }}</h3>
-    <p class="text-justify">{{ official.description }}</p>
+    <a href="{{ official.page }}">
+      <h1 class="text-center"><small>Treasurer</small></h1>
+    </a>
+    <a href="{{ official.bio }}">
+      <img class=" img img-responsive center-block hidden-xs" src="{{ official.image }}">
+      <h3 class="text-center">{{ official.name }}</h3>
+    </a>
+    <p class="text-justify">
+      {{ official.description | truncate: 120 }}<br />
+      <a href="{{ official.bio }}">more...</a>
+    </p>
   </div>
   {% endfor %}
 </div>
@@ -86,9 +132,17 @@ permalink: /officials/
   <h1 class="text-center"><small>Judges</small></h1>
   {% for official in site.data.officials.judges %}
   <div class="col-md-6">
-    <img class=" img img-responsive center-block hidden-xs" src="{{ official.image }}">
-    <h3 class="text-center">{{ official.name }}</h3>
-    <p class="text-justify">{{ official.description }}</p>
+    <a href="{{ official.bio }}">
+      <img class=" img img-responsive center-block hidden-xs" src="{{ official.image }}">
+      <h3 class="text-center">
+        {{ official.name }}<br />
+      </h3>
+    </a>
+    <a href="{{ official.page }}"><h3 class="text-center"><small>{{ official.court }}</small></h3></a>
+    <p class="text-justify">
+      {{ official.description | truncate: 120 }}<br />
+      <a href="{{ official.bio }}">more...</a>
+    </p>
   </div>
   {% endfor %}
 </div>
