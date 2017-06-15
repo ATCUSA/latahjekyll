@@ -1,46 +1,74 @@
 commissioners:
   - name: Dick Walser
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
+    description: >
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
+      </p>
     district: District 1
     page: /commissioners/district_1/
     bio: /commissioners/bio/dick_walser/
     image: /assets/RichardWalser.png
   - name: Tom Lamar
     district: District 2
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
+    description: >
+      <p>
+        Tom Lamar was elected to the Latah County Commission, District 2 in November 2014, and began his term in January 2015. Lamar previously served on the Moscow City Council from June 2007 to January 2015.
+      </p>
+      <p>
+        Since 1990, Lamar has been the executive director of Palouse-Clearwater Environmental Institute, a broad-based conservation organization and Nature Center based in Moscow. In that role he has worked with many Latah County landowners on stream restoration projects on their properties. He was a founding board member of the Latah Trail Foundation, and taught Conservation Leadership for six years at the University of Idaho.
+      </p>
+      <p>
+        Lamar holds a master’s degree from Washington State University and a bachelor’s from the University of Delaware. He has lived in Latah County since 1985. He helped raise three talented daughters, all of whom graduated from Moscow High School and are alumnae of the University of Idaho.
+      </p>
     page: /commissioners/district_2
     bio: /commissioners/bio/tom_lamar/
     image: /assets/TomLamar.png
+    facebook: https://www.facebook.com/tomlamar.org
+    twitter: https://twitter.com/lamartom
+    website: http://tomlamar.org/
   - name: Dave McGraw
     district: District 3
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
+    description: >
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
+      </p>
     page: /commissioners/district_3/
     bio: /commissioners/bio/dave_mcgraw/
     image: /assets/DaveMcGraw.png
 
 assessor:
   - name: Pat Vaughn
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
+    description: >
+      <p>
+        Patrick J. Vaughan was born and raised in Boise, Idaho. He graduated in 1977 from the United States Military Academy, West Point, and served over 20 years in the U.S. Army.
+      </p>
     page: /assessor/
+    bio: /assessor/bio/
     image: http://placehold.it/250x300
 
 auditor:
   - name: Henrianne Westberg
     position: Auditor/Clerk/Recorder
     description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
-    page:
-    image: http://placehold.it/250x300
+    page: /auditor/
+    bio: /auditor/bio/
+    image: /assets/HenrianneWestberg.png
 
 coroner:
   - name: Cathy Mabbutt
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
-    page:
+    description: >
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
+      </p>
+    page: /coroner/
+    bio: /coroner/bio/
     image: http://placehold.it/250x300
 
 prosecutor:
   - name: Bill Thompson
     description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
-    page:
+    page: /prosecutor/
+    bio: /prosecutor/bio/
     image: http://placehold.it/250x300
 sheriff:
   - name: Wayne Rausch
@@ -56,13 +84,33 @@ treasurer:
 
 judges:
   - name: John Judge
-    position: District Court
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
-    page:
+    position: Judge
+    court: Magistrate Court
+    description: >
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mattis est at lacus fermentum, quis interdum justo rhoncus. Aliquam condimentum dapibus sapien, nec tempor tellus iaculis vitae. Praesent sagittis magna vel imperdiet tincidunt. Proin ac nisl sed orci luctus mattis. Integer at rutrum nunc. Quisque magna turpis, semper lacinia suscipit ut, accumsan ut nulla. Aliquam sed luctus lacus, a malesuada nulla. Nullam euismod nulla nec quam auctor, vel ullamcorper mi tristique. Curabitur mattis ut arcu non convallis. Aenean vitae sapien vehicula, porta leo vitae, consequat lacus.
+      </p>
+      <p>
+        Donec ac diam nunc. Cras eleifend purus tincidunt nisl varius, eget venenatis justo finibus. Vestibulum hendrerit eros ut lectus gravida, a elementum velit molestie. Integer a iaculis massa, et lacinia nulla. Aenean at augue fringilla, tincidunt lorem sollicitudin, malesuada justo. Praesent faucibus nulla vitae mauris egestas ultrices. Praesent id interdum nunc, vel egestas ex. Proin lobortis at neque id viverra. Vivamus et vehicula massa. Mauris lobortis felis eu tellus egestas, at posuere nulla vestibulum. Praesent tincidunt quis ex vitae scelerisque. Sed suscipit metus ultricies posuere fermentum. In magna ex, blandit nec justo quis, rutrum gravida dui.
+      </p>
+      <p>
+        Maecenas nisi felis, vehicula sit amet accumsan ac, varius sed eros. Fusce suscipit nisl ex, vel volutpat lorem rutrum non. Curabitur in nunc non lorem tincidunt aliquet. Quisque quam ligula, porta eu facilisis in, auctor id erat. Mauris non condimentum erat. Donec a augue orci. Duis eu sapien eu dolor lacinia molestie interdum vel quam. Donec in pharetra enim, eu tincidunt est.
+      </p>
     image: http://placehold.it/250x300
+    bio: /judges/bio/john_judge/
 
   - name: John Stegner
-    position: Magistrate Court
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
-    page:
+    position: Judge
+    court: District Court
+    description: >
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mattis est at lacus fermentum, quis interdum justo rhoncus. Aliquam condimentum dapibus sapien, nec tempor tellus iaculis vitae. Praesent sagittis magna vel imperdiet tincidunt. Proin ac nisl sed orci luctus mattis. Integer at rutrum nunc. Quisque magna turpis, semper lacinia suscipit ut, accumsan ut nulla. Aliquam sed luctus lacus, a malesuada nulla. Nullam euismod nulla nec quam auctor, vel ullamcorper mi tristique. Curabitur mattis ut arcu non convallis. Aenean vitae sapien vehicula, porta leo vitae, consequat lacus.
+      </p>
+      <p>
+        Donec ac diam nunc. Cras eleifend purus tincidunt nisl varius, eget venenatis justo finibus. Vestibulum hendrerit eros ut lectus gravida, a elementum velit molestie. Integer a iaculis massa, et lacinia nulla. Aenean at augue fringilla, tincidunt lorem sollicitudin, malesuada justo. Praesent faucibus nulla vitae mauris egestas ultrices. Praesent id interdum nunc, vel egestas ex. Proin lobortis at neque id viverra. Vivamus et vehicula massa. Mauris lobortis felis eu tellus egestas, at posuere nulla vestibulum. Praesent tincidunt quis ex vitae scelerisque. Sed suscipit metus ultricies posuere fermentum. In magna ex, blandit nec justo quis, rutrum gravida dui.
+      </p>
+      <p>
+        Maecenas nisi felis, vehicula sit amet accumsan ac, varius sed eros. Fusce suscipit nisl ex, vel volutpat lorem rutrum non. Curabitur in nunc non lorem tincidunt aliquet. Quisque quam ligula, porta eu facilisis in, auctor id erat. Mauris non condimentum erat. Donec a augue orci. Duis eu sapien eu dolor lacinia molestie interdum vel quam. Donec in pharetra enim, eu tincidunt est.
+      </p>
     image: http://placehold.it/250x300
+    bio: /judges/bio/john_stegner/
