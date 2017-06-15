@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Tom Lamar
-permalink: /commissioners/bio/tom_lamar/
+permalink: /commissioners/bio/tom_lamar2/
 ---
 
 ![Commissioner Tom Lamar]({% asset_path TomLamar.png %}){: #portrait .col-md-4}
