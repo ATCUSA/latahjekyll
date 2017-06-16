@@ -40,16 +40,11 @@ cloudinary:
     default:
       attributes:
         class: "img img-responsive"
-    officials:
-      max_width: 300
+    brandLogo:
+      max_width: 25px
       attributes:
-        class: "img img-responsive img-thumbnail center-block hidden-xs"
-        width: "300"
-    officials_thumb:
-      max_width: 300
-      attributes:
-        class: "img img-responsive img-thumbnail center-block hidden-xs"
-        width: "250"
+        class: "img img-responsive"
+        width: 25
     logo_sm:
       max_width: 320
       attributes:
@@ -60,6 +55,16 @@ cloudinary:
       attributes:
         class: "img img-responsive"
         id: "stateseal"
+    officials:
+      max_width: 300
+      attributes:
+        class: "img img-responsive img-thumbnail center-block hidden-xs"
+        width: "300"
+    officials_thumb:
+      max_width: 300
+      attributes:
+        class: "img img-responsive img-thumbnail center-block hidden-xs"
+        width: "250"
 
 # Build settings
 markdown: kramdown
