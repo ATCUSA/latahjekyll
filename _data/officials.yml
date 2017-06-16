@@ -7,7 +7,7 @@ commissioners:
     district: District 1
     page: /commissioners/district_1/
     bio: /commissioners/bio/dick_walser/
-    image: /assets/RichardWalser.png
+    image: /img/RichardWalser.png
   - name: Tom Lamar
     district: District 2
     description: >
@@ -22,7 +22,7 @@ commissioners:
       </p>
     page: /commissioners/district_2
     bio: /commissioners/bio/tom_lamar/
-    image: /assets/TomLamar.png
+    image: /img/TomLamar.png
     facebook: https://www.facebook.com/tomlamar.org
     twitter: https://twitter.com/lamartom
     website: http://tomlamar.org/
@@ -34,7 +34,7 @@ commissioners:
       </p>
     page: /commissioners/district_3/
     bio: /commissioners/bio/dave_mcgraw/
-    image: /assets/DaveMcGraw.png
+    image: /img/DaveMcGraw.png
 
 assessor:
   - name: Pat Vaughn
@@ -52,7 +52,7 @@ auditor:
     description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
     page: /auditor/
     bio: /auditor/bio/
-    image: /assets/HenrianneWestberg.png
+    image: /img/HenrianneWestberg.png
 
 coroner:
   - name: Cathy Mabbutt

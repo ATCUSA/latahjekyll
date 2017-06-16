@@ -9,7 +9,7 @@ department: Commissioner
   {% if official.name == page.title %}
     <div class="row">
       <div class="col-md-4">
-        <img src="{{ official.image }}" class="img-responsive" alt="{{ page.title }} - {{ page.department }}" />
+        {% cloudinary officials {{ official.image }} alt="{{ page.title }} - {{ page.department }}" %}
         <h4 class="text-center">
           {{ page.title }}<br />
           <small>Latah County {{ page.department }}</small><br />
