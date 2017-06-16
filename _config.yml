@@ -37,6 +37,7 @@ assets:
 
 # Jekyll Cloudinary settings
 cloudinary:
+  cloud_name: acole
   presets:
     officials:
       max_width: 600
