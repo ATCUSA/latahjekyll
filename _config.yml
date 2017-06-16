@@ -35,7 +35,7 @@ assets:
 
 # Jekyll Cloudinary settings
 cloudinary:
-  cloud_name: acole
+  cloud_name: latah-county-its
   presets:
     officials:
       max_width: 500
