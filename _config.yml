@@ -38,7 +38,7 @@ cloudinary:
   cloud_name: acole
   presets:
     officials:
-      max_width: 600
+      max_width: 500
       attributes:
         class: "img-responsive img-thumbnail"
 
