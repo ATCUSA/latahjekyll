@@ -12,7 +12,7 @@ permalink: /assessor/
       <div class="list-group">
         {% for notice in site.data.notices %}
           {% if notice.department == page.title %}
-            <a href="{{ notice.url }}" target="{{ notice.target}}" class="list-group-item text-center">
+            <a href="{{ notice.url }}" target="{{ notice.target}}" rel="noopener" class="list-group-item text-center">
               {{ notice.title }}
             </a>
           {% endif %}
