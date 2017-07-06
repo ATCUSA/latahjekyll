@@ -70,6 +70,6 @@ cloudinary:
 markdown: kramdown
 
 # Gems
-gems:
+plugins:
   - jekyll-assets
   - jekyll-cloudinary
