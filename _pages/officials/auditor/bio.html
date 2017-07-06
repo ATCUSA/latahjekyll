@@ -6,17 +6,5 @@ department: Auditor
 ---
 
 {% for official in site.data.officials.auditor %}
-<div class="row">
-  <div class="col-md-4">
-    {% cloudinary officials {{ official.image }} alt="{{ page.title }} - {{ page.department }}" %}
-    <h4 class="text-center">
-      {{ page.title }}<br />
-      <small>Latah County {{ page.department }}</small>
-    </h4>
-  </div>
-
-  <div class="col-md-8">
-    {{ official.description }}
-  </div>
-</div>
+  {% include bio.html %}
 {% endfor %}

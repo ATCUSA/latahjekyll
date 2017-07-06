@@ -19,7 +19,7 @@ permalink: /officials/
   {% for official in site.data.officials.commissioners %}
   <div class="col-md-4">
     <a href="{{ official.bio }}">
-      <img class=" img img-responsive center-block hidden-xs" width="250" src="{{ official.image }}">
+      {% cloudinary officials_thumb {{ official.image }} alt="{{ official.name }} - {{ official.department }}" %}
       <h3 class="text-center">{{ official.name }}</h3>
     </a>
     <a href="{{ official.page }}">
@@ -56,7 +56,7 @@ permalink: /officials/
       <h1 class="text-center"><small>Auditor</small></h1>
     </a>
     <a href="{{ official.bio }}">
-      <img class=" img img-responsive center-block hidden-xs" width="250" src="{{ official.image }}">
+      {% cloudinary officials_thumb {{ official.image }} alt="{{ official.name }} - {{ official.department }}" %}
       <h3 class="text-center">{{ official.name }}</h3>
     </a>
     <p class="text-justify">
@@ -88,7 +88,7 @@ permalink: /officials/
       <h1 class="text-center"><small>Prosecutor</small></h1>
     </a>
     <a href="{{ official.bio }}">
-      <img class=" img img-responsive center-block hidden-xs" src="{{ official.image }}">
+      {% cloudinary officials_thumb {{ official.image }} alt="{{ official.name }} - {{ official.department }}" %}
       <h3 class="text-center">{{ official.name }}</h3>
     </a>
       <p class="text-justify">

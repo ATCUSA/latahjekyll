@@ -72,10 +72,22 @@ coroner:
 
 prosecutor:
   - name: Bill Thompson
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
+    description: >
+      <p>
+        Bill Thompson graduated from the University of Idaho College of Law in 1980 and, after 12 years in private practice, was elected Latah County Prosecutor in 1992 – a position he continues to hold.  He served on the Idaho Prosecuting Attorneys Association Board of Directors from 1998 through 2003, and as President in 1999 and 2002.  Bill has also served on the Idaho Juvenile Justice Commission since 2002 and, more recently, the Idaho Criminal Justice Commission’s Public Defense Subcommittee.
+      </p>
+      <p>
+        In 2011, Bill was awarded the Idaho Association of Counties’ H. Sydney Duncombe Award for Excellence in County Government.  In 2014, Bill was elected to the Idaho Association of Counties Executive Committee and has served as Secretary/Treasurer, Vice President and President of that Association.
+      </p>
+      <p>
+        Bill has also been honored with a 2017 Idaho State Bar Professionalism Award.
+      </p>
+      <p>
+        In addition to overseeing both the criminal prosecution and civil legal functions of the Latah County Prosecutor’s office, Bill has assisted other jurisdictions as a Special Prosecutor and regularly provides training and advice to elected officials, law enforcement and other prosecutors on a variety of topics including ethics, new statutes and case law, trial and investigation skills, interagency cooperation and risk management.
+      </p>
     page: /prosecutor/
     bio: /prosecutor/bio/
-    image: http://placehold.it/250x300
+    image: /img/BillThompson.png
 sheriff:
   - name: Wayne Rausch
     description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.

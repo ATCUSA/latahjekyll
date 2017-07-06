@@ -5,18 +5,6 @@ permalink: /assessor/bio/
 department: Assessor
 ---
 
-{% for official in site.data.officials.assessor %}
-<div class="row">
-  <div class="col-md-4">
-    <img src="https://placehold.it/500x600" class="img-responsive" alt="{{ page.title }} - {{ page.department }}" />
-    <h4 class="text-center">
-      {{ page.title }}<br />
-      <small>Latah County {{ page.department }}</small>
-    </h4>
-  </div>
-
-  <div class="col-md-8">
-    {{ official.description }}
-  </div>
-</div>
+{% for official in site.data.officials.auditor %}
+  {% include bio.html %}
 {% endfor %}
