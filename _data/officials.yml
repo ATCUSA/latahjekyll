@@ -50,7 +50,7 @@ assessor:
       </p>
     page: /assessor/
     bio: /assessor/bio/
-    image: http://placehold.it/250x300
+    image: https://placehold.it/250x300
 
 auditor:
   - name: Henrianne Westberg
@@ -68,7 +68,7 @@ coroner:
       </p>
     page: /coroner/
     bio: /coroner/bio/
-    image: http://placehold.it/250x300
+    image: https://placehold.it/250x300
 
 prosecutor:
   - name: Bill Thompson
@@ -92,13 +92,13 @@ sheriff:
   - name: Wayne Rausch
     description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
     page:
-    image: http://placehold.it/250x300
+    image: https://placehold.it/250x300
 
 treasurer:
   - name: Lois Reed
     description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
     page:
-    image: http://placehold.it/250x300
+    image: https://placehold.it/250x300
 
 judges:
   - name: John Judge
@@ -114,7 +114,7 @@ judges:
       <p>
         Maecenas nisi felis, vehicula sit amet accumsan ac, varius sed eros. Fusce suscipit nisl ex, vel volutpat lorem rutrum non. Curabitur in nunc non lorem tincidunt aliquet. Quisque quam ligula, porta eu facilisis in, auctor id erat. Mauris non condimentum erat. Donec a augue orci. Duis eu sapien eu dolor lacinia molestie interdum vel quam. Donec in pharetra enim, eu tincidunt est.
       </p>
-    image: http://placehold.it/250x300
+    image: https://placehold.it/250x300
     bio: /judges/bio/john_judge/
 
   - name: John Stegner
@@ -130,5 +130,5 @@ judges:
       <p>
         Maecenas nisi felis, vehicula sit amet accumsan ac, varius sed eros. Fusce suscipit nisl ex, vel volutpat lorem rutrum non. Curabitur in nunc non lorem tincidunt aliquet. Quisque quam ligula, porta eu facilisis in, auctor id erat. Mauris non condimentum erat. Donec a augue orci. Duis eu sapien eu dolor lacinia molestie interdum vel quam. Donec in pharetra enim, eu tincidunt est.
       </p>
-    image: http://placehold.it/250x300
+    image: https://placehold.it/250x300
     bio: /judges/bio/john_stegner/
