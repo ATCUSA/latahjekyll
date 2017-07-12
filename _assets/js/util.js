@@ -29,6 +29,25 @@ $(document).ready(function(){
 	});
 // End Planning and Building Docs
 
+// Commissioners
+	$('#agendasCtrl').on('click', function() {
+		control = '#agendas';
+		path = 'Departments\\Commissioners\\Agendas\\2017';
+		getJsonResult(path, control);
+	});
+
+	$('#proceedingsCtrl').on('click', function() {
+		control = '#proceedings';
+		path = 'Departments\\Commissioners\\Proceedings\\2017';
+		getJsonResult(path, control);
+	});
+	$('#proclamationsCtrl').on('click', function() {
+		control = '#proclamations';
+		path = 'Departments\\Commissioners\\Proclamations';
+		getJsonResult(path, control);
+	});
+// End Commissioners
+
 // Function to call the REST Service
 	function getJsonResult(path, control){
 		$.getJSON("http://pinky/utilrestsvc/utilsvc.svc/GetFilesInDirectory?path=\\\\hvh01-store\\Common\\ITS\\WebContent\\" + path, null, function (jsonResult) {
