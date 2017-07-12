@@ -31,7 +31,7 @@ $(document).ready(function(){
 
 // Function to call the REST Service
 	function getJsonResult(path, control){
-		$.getJSON("http://pinky/utilrestsvc/utilsvc.svc/getfiles?path=" + path, null, function (jsonResult) {
+		$.getJSON("http://pinky/utilrestsvc/utilsvc.svc/GetFilesInDirectory?path=\\\\hvh01-store\\Common\\ITS\\WebContent\\" + path, null, function (jsonResult) {
 
 			$(control).attr('enabled', 'true');
 
@@ -46,3 +46,5 @@ $(document).ready(function(){
 		});
 	};
 });
+// Full Endpoint
+//http://pinky/utilrestsvc/utilsvc.svc/GetFilesInDirectory?path=\\hvh01-store\Common\ITS\WebContent\Departments\Commissioners\Agendas\2017
