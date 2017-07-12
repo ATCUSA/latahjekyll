@@ -18,3 +18,11 @@ task :clean do
   puts "Cleaning Jekyll Cache"
   system "bundle exec jekyll clean"
 end
+
+# Sync project folder to siab.
+desc "Sync the project folder to siab."
+task :sync2siab do
+  puts "Starting Sync to SIAB."
+  system "rsync -azvP ./ siab.tx-server.com:projects/latah/latahjekyll"
+  puts "Files have been synced."
+end
