@@ -2,6 +2,7 @@
 layout: page
 title: Commissioners
 permalink: /commissioners/
+util: true
 ---
 <div class="row">
   <div class="col-md-4 hidden-xs">
@@ -12,57 +13,118 @@ permalink: /commissioners/
       </figcaption>
     </figure>
   </div>
-  <div class="col-md-8 well">
-    <p>
-      This elected three-member board is the governing body of Latah County. The Board has the ability, by ordinance, to meet Monday through Friday, 9:00 to 5:00 p.m. Usually however, the Board meets Mondays and Wednesdays, between 9:00 a.m. and 5:00 p.m. Click here to view the current agenda. The Board Members also attends off-site and evening meetings throughout the week as scheduled.
-    </p>
-    <p>
-      All meetings of the Board are open to the public with the exception of Executive Sessions. Books, records and accounts of the meetings are open for public inspection in the Clerk's office.
-    </p>
-    <p>
-      The Board of Commissioners is a unique body in government. It is the only office that has legislative, executive and judicial responsibilities and duties. The Commissioners have the power to pass ordinances, adopt budgets, fix tax levy rate and oversee the county budget. They are charged with the duty of supervising the official conduct of all county officers as their conduct relates to public monies and revenues, as well as supervising appointed boards and committees. They also act as the Board of Equalization.
-    </p>
-    <p>
-      The Board sits as a quasi-judicial body to hear various matters including planning and zoning requests, property valuation protests and requests for cancellation of taxes, and indigent issues among many others.
-    </p>
+  <div class="col-md-8">
+		<div class="well">
+	    <p>
+	      This elected three-member board is the governing body of Latah County. The Board has the ability, by ordinance, to meet Monday through Friday, 9:00 to 5:00 p.m. Usually however, the Board meets Mondays and Wednesdays, between 9:00 a.m. and 5:00 p.m. The Board Members also attends off-site and evening meetings throughout the week as scheduled.
+	    </p>
+	    <p>
+	      All meetings of the Board are open to the public with the exception of Executive Sessions. Books, records and accounts of the meetings are open for public inspection in the Clerk's office.
+	    </p>
+	    <p>
+	      The Board of Commissioners is a unique body in government. It is the only office that has legislative, executive and judicial responsibilities and duties. The Commissioners have the power to pass ordinances, adopt budgets, fix tax levy rate and oversee the county budget. They are charged with the duty of supervising the official conduct of all county officers as their conduct relates to public monies and revenues, as well as supervising appointed boards and committees. They also act as the Board of Equalization.
+	    </p>
+	    <p>
+	      The Board sits as a quasi-judicial body to hear various matters including planning and zoning requests, property valuation protests and requests for cancellation of taxes, and indigent issues among many others.
+	    </p>
+		</div>
   </div>
 </div>
 
 <div class="row">
+	<!-- Agendas -->
   <div class="col-md-4">
-  	<div class="panel panel-default">
-  		<div class="panel-heading">
-				<h4 class="text-center">Agendas</h4>
+		<div class="panel panel-default" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel-heading">
+        <h4 class="text-center">Agendas</h4>
+      </div>
+			{% include noscript.html %}
+			<!-- 2017 -->
+			<div class="panel-heading" role="tab" id="headingA2017">
+				<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseA2017" aria-expanded="false" aria-controls="collapseA2017" class="collapsed" id="agendasCtrl">
+					<h4 class="panel-title text-center">
+						2017
+					</h4>
+				</a>
 			</div>
-  		<div class="list-group">
-      	<li class="list-group-item">Mapping</li>
-      	<li class="list-group-item">Building Permits</li>
-      	<li class="list-group-item">Home Inspections</li>
-    	</div>
-  	</div>
-  </div>
+			<div id="collapseA2017" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingA2017" aria-expanded="false" style="height: 0px;">
+				<div class="list-group pre-scrollable" id="agendas">
+				</div>
+			</div>
+			<!-- 2017 -->
+		</div>
+	</div>
+	<!-- End Agendas -->
+	<!-- Proceedings -->
   <div class="col-md-4">
-  	<div class="panel panel-default">
-  		<div class="panel-heading">
-				<h4 class="text-center">Minutes</h4>
+		<div class="panel panel-default" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel-heading">
+        <h4 class="text-center">Proceedings</h4>
+      </div>
+			{% include noscript.html %}
+			<!-- 2017 -->
+			<div class="panel-heading" role="tab" id="headingP2017">
+				<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseP2017" aria-expanded="false" aria-controls="collapseP2017" class="collapsed" id="proceedingsCtrl">
+					<h4 class="panel-title text-center">
+						2017
+					</h4>
+				</a>
 			</div>
-  		<div class="list-group">
-      	<li class="list-group-item">Mapping</li>
-      	<li class="list-group-item">Building Permits</li>
-      	<li class="list-group-item">Home Inspections</li>
-    	</div>
-  	</div>
-  </div>
+			<div id="collapseP2017" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingP2017" aria-expanded="false" style="height: 0px;">
+				<div class="list-group pre-scrollable" id="proceedings">
+					<noscript>To view forms please enable JavaScript or update your browser</noscript>
+				</div>
+			</div>
+			<!-- 2017 -->
+		</div>
+	</div>
+	<!-- End Procedings -->
   <div class="col-md-4">
   	<div class="panel panel-default">
   		<div class="panel-heading">
 				<h4 class="text-center">Links</h4>
 			</div>
   		<div class="list-group">
-      	<li class="list-group-item">Mapping</li>
-      	<li class="list-group-item">Building Permits</li>
-      	<li class="list-group-item">Home Inspections</li>
-    	</div>
+      	<a href="http://www.latah.id.us/commissioners/CommissionerDistricts.pdf" target="_blank" rel="noopener" class="list-group-item">Commissioner District Maps</a>
+      	<a href="#myModal" data-toggle="modal" class="list-group-item">Agenda Notifications<noscript> - <small>You must enable Javascript or update your browser to view this content.</small></noscript></a>
+      	<a href="http://www.latah.id.us/assessor/tax_exempt_property.php" class="list-group-item">Tax Exempt Property Info and Application</a>
+      	<a href="/commissions/#laws" class="list-group-item">Idaho Open Meeting Laws</a>
+				<a class="list-group-item" id="proclamationsCtrl">Proclamations
+				</a>
+				<div class="list-group-item pre-scrollable" id="proclamations"></div>
+			</div>
   	</div>
   </div>
+  <!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Signup for Meeting Notices</h4>
+	      </div>
+	      <div class="modal-body">
+					<form name="subscribe" method="post" action="http://www.latah.id.us/mailman/subscribe/agendanotify">
+						<p>
+							If you subscribe to this service you will receive an e-mail every time a BOCC agenda or proceeding is added or amended to this web site.
+						</p>
+						<p>
+							Please enter your e-mail address in the box below, select subscribe or unsubscribe and then select the Send Request button.
+						</p>
+						<p>
+							subscribe:<input type="radio" name="action" value="join" checked="">
+							unsubscribe: <input name="action" type="radio" value="leave">
+						</p>
+						E-mail Address: <input name="sAddr" type="email" size="35">
+						<input type="submit" value="Send Request">
+					</form>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- End Meeting Notice Signup -->
 </div>
+<!-- End Row -->
