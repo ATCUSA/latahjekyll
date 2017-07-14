@@ -23,5 +23,17 @@
 <!-- MomentJS -->
 <script src="https://cdn.jsdelivr.net/momentjs/2.18.1/moment.min.js" integrity="sha256-1hjUhpc44NwiNg8OwMu2QzJXhD8kcj+sJA3aCQZoUjg=" crossorigin="anonymous"></script>
 
+
 <!-- Custom Scripts -->
+<!-- Current year for Copyright on footer -->
 {% js year.js %}
+<!-- Contacts -->
+{% if page.title == "Contact" %}
+  {% js contacts.js %}
+{% endif %}
+<!-- Adds upcomingEvents script to pages. -->
+{% if page.calendar %}
+  <script src="https://cdn.jsdelivr.net/fullcalendar/2.0.1/fullcalendar.min.js" integrity="sha256-/YB6ZciXKo52oDIMA4bESsHrriwPkEtmG9OYfwdgeTY=" crossorigin="anonymous"></script>
+  <link rel='stylesheet' href='https://fullcalendar.io/js/fullcalendar-3.4.0/fullcalendar.css' />
+  <script src='https://fullcalendar.io/js/fullcalendar-3.4.0/fullcalendar.min.js'></script>
+{% endif %}

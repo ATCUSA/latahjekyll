@@ -17,5 +17,11 @@
   <!-- Main CSS  -->
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
 
+<script src="https://cdn.jsdelivr.net/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<!-- ##### Custom Scripts ##### -->
+<!-- Calendar -->
+{% if page.calendar %}
+  {% js calendar.js %}
+{% endif %}
   <!-- WorkAround: Force asset to be included -->
 </head>
