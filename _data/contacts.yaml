@@ -1,0 +1,287 @@
+- department: Assessor
+  email: assessor@latah.id.us
+  phone: (208) 883-5710
+  fax: (208) 883-2298
+  address: >
+    Latah County Courthouse<br />
+    522 S Adams<br />
+    Moscow, Idaho 83843<br />
+    Room 103 & 109
+
+- department: Auditor
+  email: hwestberg@latah.id.us
+  phone: (208) 883-2249
+  fax: (208) 883-7203
+  address: >
+    Latah County Courthouse<br />
+    522 S Adams<br />
+    Moscow, Idaho 83843<br />
+    Room 101
+  hours: >
+    Monday – Friday<br />
+    8:00 a.m.–5:00 p.m.
+
+- department: Commissioners
+  email: kegan@latah.id.us
+  phone: (208) 883-7208
+  fax: (208) 883-2208
+  address: >
+    Latah County Courthouse<br />
+    522 S Adams<br />
+    Moscow, Idaho 83843<br />
+    Room 3B
+
+- department: Coroner
+  email: cmabbutt@latah.id.us
+  phone: (208) 883-2248
+  fax: (208) 883-4480
+  address: >
+    502 S. Jefferson St.<br />
+    PO Box 9303<br />
+    Moscow, ID 83843
+
+- department: Court Assistance
+  email: courtassistance@latah.id.us
+  phone: (208) 883-7221
+  fax: (208) 883-2259
+  address: >
+    Latah County Courthouse<br />
+    522 S Adams<br />
+    Moscow, Idaho 83843<br />
+    Room 111
+
+- department: Disaster Services
+  email: disaster@latah.id.us
+  phone: (208) 883-2265
+  fax: (208) 883-2288
+  address: >
+    Latah County Annex<br />
+    200 S Almon Street<br />
+    Moscow, ID 83843<br />
+    Suite 104
+
+- department: District Court
+  email: none
+  phone: (208) 883-2255
+  fax: (208) 883-2259
+  address: >
+    522 S Adams<br />
+    Moscow, Idaho 83843<br />
+    Room 119
+  hours: >
+    Monday & Wednesday<br />
+    8:30 a.m.–5:00 p.m.<br />
+    Tuesday, Thursday, and Friday<br />
+    8:00 a.m.–5:00 p.m.
+
+- department: DMV
+  email: dmv@latah.id.us
+  phone: (208) 883-7221
+  address: >
+    Latah County Annex<br />
+    200 S Almon Street<br />
+    Moscow, ID 83843<br />
+    Suite 101
+  hours: >
+    Monday–Friday<br />
+    8:30 a.m.–5:00 p.m.<br />
+
+- department: Driver Licensing
+  email: none
+  phone: (208) 883-7216
+  fax: (208) 883-7213
+  address: >
+    Latah County Annex<br />
+    200 S Almon Street<br />
+    Moscow, ID 83843<br />
+    Suite 102
+  hours: >
+    Monday-Friday<br />
+    8:00 a.m.-4:30 p.m<br />
+
+- department: Extension
+  email: latah@uidaho.edu
+  phone: (208) 883-2267
+  fax: (208) 883-8505
+  address: >
+    Latah County Annex<br />
+    200 S Almon Street<br />
+    Moscow, ID 83843<br />
+    Suite 201
+
+- department: Fair Grounds
+  email: fair@latah.id.us
+  phone: (208) 883-5722
+  fax: (208) 883-5724
+  address: >
+    Latah County Fair Grounds<br />
+    1021 Harold<br />
+    Moscow, ID 83843
+  hours: >
+    Monday - Friday<br />
+    9am - 1pm<br />
+    Afternoons by Appointment
+
+- department: Building & Grounds
+  email: none
+  phone: (208) 883-2295
+  fax: (208) 883-2280
+  address: >
+    Latah County Courthouse<br />
+    522 S Adams<br />
+    Moscow, Idaho 83843
+
+- department: Historical Society
+  email: dkersting@latah.id.us
+  phone: (208) 882-1004
+  address: >
+    327 East Second Street<br />
+    Moscow, ID 83843
+
+- department: Parks & Rec
+  email: parks@latah.id.us
+  phone: (208) 883-5709
+  fax: (208) 883-2280
+  address: >
+    Robinson Park<br />
+    5168 Robinson Park Rd.<br />
+    Moscow, ID 83843
+
+- department: Planning & Building
+  email: pb@latah.id.us
+  phone: (208) 883-7220
+  fax: (208) 883-7555
+  address: >
+    Latah County Courthouse<br />
+    522 S Adams<br />
+    Moscow, Idaho 83843<br />
+    Room 205
+
+- department: Probation
+  email: ys@latah.id.us
+  phone: (208) 883-2277
+  fax: (208) 883-3357
+  address: >
+    Latah County Courthouse<br />
+    522 S Adams<br />
+    Moscow, Idaho 83843<br />
+    Room 203
+
+- department: Youth Services
+  email: ys@latah.id.us
+  phone: (208) 883-2277
+  fax: (208) 883-3357
+  address: >
+    Latah County Courthouse<br />
+    522 S Adams<br />
+    Moscow, Idaho 83843<br />
+    Room 202
+
+- department: Prosecutor
+  email: pa@latah.id.us
+  phone: (208) 883-2246
+  fax: (208) 883-2290
+  address: >
+    Latah County Courthouse<br />
+    522 S Adams<br />
+    Moscow, Idaho 83843<br />
+    Room 211
+  hours: >
+    Monday - Thursday<br />
+    8:00 am to 5:00 pm<br />
+    Fridays<br />
+    7:00 am to 4:00 pm<br />
+    Closed weekends and holidays
+
+- department: Sheriff
+  email: sheriff@latah.id.us
+  phone: (208) 883-2216
+  fax: (208) 883-2281
+  address: >
+    Latah County Courthouse<br />
+    522 S Adams<br />
+    Moscow, Idaho 83843
+
+- department: Social Services
+  email: none
+  phone: (208) 883-7209
+  fax: (208) 883-7204
+  address: >
+    Latah County Annex<br />
+    200 S Almon Street<br />
+    Moscow, ID 83843<br />
+    Suite 103
+  hours: >
+    Monday - Friday<br />
+    8:30 a.m. - 12:00 p.m.<br />
+    1:00 p.m. - 4:30 p.m.
+
+- department: Solid Waste
+  email: solidwaste@latah.id.us
+  phone: (208) 883-5706
+  fax: (208) 883-7218
+  address: >
+    Latah County Courthouse<br />
+    522 S Adams<br />
+    Moscow, Idaho 83843<br />
+    Room 104
+  hours: >
+    Monday–Friday<br />
+    9:00 a.m. to 5:00 p.m.
+
+- department: Surveyor
+  email: surveyor@latah.id.us
+  phone: (208) 883-8586
+  fax: (208) 883-2280
+  address: >
+    Latah County Courthouse<br />
+    522 S Adams<br />
+    Moscow, Idaho 83843<br />
+    Room 2B
+  hours: >
+    Tuesday and Thursday<br />
+    1:00 p.m.–3:00 pm
+
+- department: Treasurer
+  email: treasurer@latah.id.us
+  phone: (208) 883-2296
+  fax: (208) 883-2293
+  address: >
+    Latah County Courthouse<br />
+    522 S Adams<br />
+    Moscow, Idaho 83843<br />
+    Room 105
+
+- department: Veteran Services
+  email: veterans@latah.id.us
+  phone: (208) 883-7209
+  fax: (208) 883-7204
+  address: >
+    Latah County Annex<br />
+    200 S Almon Street<br />
+    Moscow, ID 83843<br />
+    Suite 103
+  hours: >
+    Monday - Friday<br />
+    8:30 a.m. - 12:00 p.m.<br />
+    1:00 p.m. - 4:30 p.m.
+
+- department: Weeds
+  email: weed@latah.id.us
+  phone: (208) 883-7210
+  fax: (208) 883-8505
+  address: >
+    Latah County Annex<br />
+    200 S Almon Street<br />
+    Moscow, ID 83843<br />
+    Suite 105
+
+- department: Youth Advocacy
+  email: lcyac@latah.id.us
+  phone: (208) 883-2268
+  fax: (208) 883-8505
+  address: >
+    Latah County Annex<br />
+    200 S Almon Street<br />
+    Moscow, ID 83843<br />
+    Suite 201
