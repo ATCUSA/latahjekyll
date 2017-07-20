@@ -1,31 +1,31 @@
 function calendarList(eventPath, futrAmt, futrIncr) {
-
 	$(document).ready(function() {
-	  $('#calendar').fullCalendar({
-	    header: {
-					left: 'false',
-					center: 'false',
-					right: 'false'
-				},
-				defaultView: 'list',
-				visibleRange: function(currentDate) {
-	        return {
-	          start: currentDate.clone(),
-	          end: currentDate.clone().add(futrAmt, futrIncr)
-        	};
-    		},
-	      eventClick: function(event) {
-					alert(event.title + " - " + event.information)
-	        return false;
-	      events: eventPath,
-	      loading: function(bool) {
-	  			$('#loading').toggle(bool);
-					$('.fc-toolbar').remove();
-	  		},
-				eventRender: function(event, element) {
-					element.find('.fc-list-item-title').append(" - " + event.information);
-				},
-	  });
+		$('#calendar').fullCalendar({
+			header: {
+				left: 'false',
+				center: 'false',
+				right: 'false'
+			},
+			defaultView: 'list',
+			visibleRange: function(currentDate) {
+				return {
+					start: currentDate.clone(),
+					end: currentDate.clone().add(futrAmt, futrIncr)
+				};
+			},
+			eventClick: function(event) {
+				alert(event.title + " - " + event.information)
+				return false;
+			},
+			events: eventPath,
+			loading: function(bool) {
+				$('#loading').toggle(bool);
+				$('.fc-toolbar').remove();
+			},
+			eventRender: function(event, element) {
+				element.find('.fc-list-item-title').append(" - " + event.information);
+			},
+		});
 	});
 }
 
