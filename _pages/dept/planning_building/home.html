@@ -3,6 +3,7 @@ layout: page
 title: Planning and Building
 permalink: /planning_building/
 util: true
+calendar: true
 ---
 
 <div class="row">
@@ -103,7 +104,9 @@ util: true
 				<h4 class="text-center">Upcoming Events</h4>
 			</div>
 			<div class="list-group">
-				<span class="list-group-item text-center">No Upcoming Events</span>
+				<div id='loading'>loading...</div>
+				<div id='calendar'></div>
+				<!-- <span class="list-group-item text-center">No Upcoming Events</span> -->
 			</div>
 		</div>
 	</div>
@@ -153,3 +156,7 @@ util: true
 	</div>
 	<!-- End Meeting Notice Signup -->
 </div>
+
+<script type="text/javascript">
+	listThreeMonths();
+</script>
