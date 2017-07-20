@@ -1,0 +1,34 @@
+---
+layout: page
+title: Contact
+permalink: /contacts/
+---
+
+<div class="row display-flex">
+  {% for contact in site.data.contacts %}
+    <div class="well col-md-4">
+      <div class="">
+        <h3 class="text-center">{{ contact.department }}</h3>
+        <div class="list-group-item">
+          <strong>Phone:</strong> {{ contact.phone }}<br />
+        </div>
+        {% if contact.fax != nil %}
+          <div class="list-group-item">
+            <strong>Fax:</strong><br />
+            {{ contact.fax}}
+          </div>
+        {% endif %}
+        <div class="list-group-item">
+          <strong>Address:</strong><br />
+          {{ contact.address | newline_to_br }}<br />
+        </div>
+        {% if contact.hours != nil %}
+          <div class="list-group-item">
+            <strong>Hours:</strong><br />
+            {{ contact.hours}}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  {% endfor %}
+</div>
