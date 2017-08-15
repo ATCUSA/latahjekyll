@@ -55,7 +55,7 @@ assessor:
 auditor:
   - name: Henrianne Westberg
     position: Auditor/Clerk/Recorder
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
+    description: Grant me the serenity to accept the things I cannot change, Courage to change the things I can, And wisdom to know the difference.  ~ Reinhold Niebuhr
     page: /auditor/
     bio: /auditor/bio/
     image: /img/HenrianneWestberg.png
@@ -64,7 +64,7 @@ coroner:
   - name: Cathy Mabbutt
     description: >
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
+        Grant me the serenity to accept the things I cannot change, Courage to change the things I can, And wisdom to know the difference.  ~ Reinhold Niebuhr
       </p>
     page: /coroner/
     bio: /coroner/bio/
@@ -89,14 +89,14 @@ prosecutor:
     bio: /prosecutor/bio/
     image: /img/BillThompson.png
 sheriff:
-  - name: Wayne Rausch
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
+  - name: Richard Skiles
+    description: Grant me the serenity to accept the things I cannot change, Courage to change the things I can, And wisdom to know the difference.  ~ Reinhold Niebuhr
     page:
     image: https://placehold.it/250x300
 
 treasurer:
   - name: Lois Reed
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
+    description: Grant me the serenity to accept the things I cannot change, Courage to change the things I can, And wisdom to know the difference.  ~ Reinhold Niebuhr
     page:
     image: https://placehold.it/250x300
 
@@ -106,13 +106,7 @@ judges:
     court: Magistrate Court
     description: >
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mattis est at lacus fermentum, quis interdum justo rhoncus. Aliquam condimentum dapibus sapien, nec tempor tellus iaculis vitae. Praesent sagittis magna vel imperdiet tincidunt. Proin ac nisl sed orci luctus mattis. Integer at rutrum nunc. Quisque magna turpis, semper lacinia suscipit ut, accumsan ut nulla. Aliquam sed luctus lacus, a malesuada nulla. Nullam euismod nulla nec quam auctor, vel ullamcorper mi tristique. Curabitur mattis ut arcu non convallis. Aenean vitae sapien vehicula, porta leo vitae, consequat lacus.
-      </p>
-      <p>
-        Donec ac diam nunc. Cras eleifend purus tincidunt nisl varius, eget venenatis justo finibus. Vestibulum hendrerit eros ut lectus gravida, a elementum velit molestie. Integer a iaculis massa, et lacinia nulla. Aenean at augue fringilla, tincidunt lorem sollicitudin, malesuada justo. Praesent faucibus nulla vitae mauris egestas ultrices. Praesent id interdum nunc, vel egestas ex. Proin lobortis at neque id viverra. Vivamus et vehicula massa. Mauris lobortis felis eu tellus egestas, at posuere nulla vestibulum. Praesent tincidunt quis ex vitae scelerisque. Sed suscipit metus ultricies posuere fermentum. In magna ex, blandit nec justo quis, rutrum gravida dui.
-      </p>
-      <p>
-        Maecenas nisi felis, vehicula sit amet accumsan ac, varius sed eros. Fusce suscipit nisl ex, vel volutpat lorem rutrum non. Curabitur in nunc non lorem tincidunt aliquet. Quisque quam ligula, porta eu facilisis in, auctor id erat. Mauris non condimentum erat. Donec a augue orci. Duis eu sapien eu dolor lacinia molestie interdum vel quam. Donec in pharetra enim, eu tincidunt est.
+        Grant me the serenity to accept the things I cannot change, Courage to change the things I can, And wisdom to know the difference.  ~ Reinhold Niebuhr
       </p>
     image: https://placehold.it/250x300
     bio: /judges/bio/john_judge/
@@ -122,13 +116,8 @@ judges:
     court: District Court
     description: >
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mattis est at lacus fermentum, quis interdum justo rhoncus. Aliquam condimentum dapibus sapien, nec tempor tellus iaculis vitae. Praesent sagittis magna vel imperdiet tincidunt. Proin ac nisl sed orci luctus mattis. Integer at rutrum nunc. Quisque magna turpis, semper lacinia suscipit ut, accumsan ut nulla. Aliquam sed luctus lacus, a malesuada nulla. Nullam euismod nulla nec quam auctor, vel ullamcorper mi tristique. Curabitur mattis ut arcu non convallis. Aenean vitae sapien vehicula, porta leo vitae, consequat lacus.
+        Grant me the serenity to accept the things I cannot change, Courage to change the things I can, And wisdom to know the difference.  ~ Reinhold Niebuhr
       </p>
-      <p>
-        Donec ac diam nunc. Cras eleifend purus tincidunt nisl varius, eget venenatis justo finibus. Vestibulum hendrerit eros ut lectus gravida, a elementum velit molestie. Integer a iaculis massa, et lacinia nulla. Aenean at augue fringilla, tincidunt lorem sollicitudin, malesuada justo. Praesent faucibus nulla vitae mauris egestas ultrices. Praesent id interdum nunc, vel egestas ex. Proin lobortis at neque id viverra. Vivamus et vehicula massa. Mauris lobortis felis eu tellus egestas, at posuere nulla vestibulum. Praesent tincidunt quis ex vitae scelerisque. Sed suscipit metus ultricies posuere fermentum. In magna ex, blandit nec justo quis, rutrum gravida dui.
-      </p>
-      <p>
-        Maecenas nisi felis, vehicula sit amet accumsan ac, varius sed eros. Fusce suscipit nisl ex, vel volutpat lorem rutrum non. Curabitur in nunc non lorem tincidunt aliquet. Quisque quam ligula, porta eu facilisis in, auctor id erat. Mauris non condimentum erat. Donec a augue orci. Duis eu sapien eu dolor lacinia molestie interdum vel quam. Donec in pharetra enim, eu tincidunt est.
-      </p>
+
     image: https://placehold.it/250x300
     bio: /judges/bio/john_stegner/
