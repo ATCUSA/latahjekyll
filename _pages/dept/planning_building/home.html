@@ -2,8 +2,9 @@
 layout: page
 title: Planning and Building
 permalink: /planning_building/
-util: true
 calendar: true
+tree: true
+util: true
 ---
 
 <div class="row">
@@ -34,66 +35,20 @@ calendar: true
 <!-- Handouts and Notices -->
 <div class="row">
 	<div class="col-md-4">
-		<div class="panel panel-default" id="accordion" role="tablist" aria-multiselectable="true">
-			<div class="panel-heading text-center">
-				<h4>Applications &amp; Handouts</h4>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class=" text-center"> Applications &amp; Handouts</h4>
 			</div>
-			<!-- Ordinances -->
-			<div class="panel-heading" role="tab" id="headingOne">
-				<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne" class="collapsed" id="ordinancesCtrl">
-					<h4 class="panel-title">
-						Ordinances
-					</h4>
-				</a>
+			<div class="list-group">
+				<div id="pbDir" class="list-group-item"></div>
 			</div>
 			<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
 				<div class="list-group pre-scrollable" id="ordinances">
+					<div id="ordinances"></div>
 					<noscript>To view forms please enable JavaScript or update your browser</noscript>
 				</div>
 			</div>
 			<!-- Ordinances -->
-			<!-- Building Applications -->
-			<div class="panel-heading" role="tab" id="headingTwo">
-				<a class="collapsed" id="buildingApplicationsCtrl" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-					<h4 class="panel-title">
-						Building Applications
-					</h4>
-				</a>
-			</div>
-			<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false">
-				<div class="list-group pre-scrollable" id="buildingApplications">
-					<noscript>To view forms please enable JavaScript or update your browser</noscript>
-				</div>
-			</div>
-			<!-- Building Applications -->
-			<!-- Building Handouts -->
-			<div class="panel-heading" role="tab" id="headingThree">
-				<a class="collapsed" id="buildingHandoutsCtrl" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-					<h4 class="panel-title">
-						Building Handouts
-					</h4>
-				</a>
-			</div>
-			<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false" style="height: 0px;">
-				<div class="list-group pre-scrollable" id="buildingHandouts">
-					<noscript>To view forms please enable JavaScript or update your browser</noscript>
-				</div>
-			</div>
-			<!-- Building Handouts -->
-			<!-- Planning Applications -->
-			<div class="panel-heading" role="tab" id="heading4">
-				<a class="collapsed" id="planningApplicationsCtrl" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="false" aria-controls="collapse4">
-					<h4 class="panel-title">
-						Planning Applications
-					</h4>
-				</a>
-			</div>
-			<div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4" aria-expanded="false" style="height: 0px;">
-				<div class="list-group pre-scrollable" id="planningApplications">
-					<noscript>To view forms please enable JavaScript or update your browser</noscript>
-				</div>
-			</div>
-			<!-- End Planning Applications -->
 		</div>
 	</div>
 	<!-- End Handouts and Notices -->
@@ -158,5 +113,8 @@ calendar: true
 </div>
 
 <script type="text/javascript">
-	listThreeMonths();
+	calendarList("ElectionsDemo",30);
+</script>
+<script type="text/javascript">
+	deptTree("pbDir", "PlanningBuilding")
 </script>
