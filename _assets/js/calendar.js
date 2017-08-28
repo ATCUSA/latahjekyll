@@ -1,4 +1,4 @@
-function calendarList(eventPath, futrAmt, futrIncr) {
+function calendarList(calName, calDays) {
 	$(document).ready(function() {
 		$('#calendar').fullCalendar({
 			header: {
@@ -6,30 +6,24 @@ function calendarList(eventPath, futrAmt, futrIncr) {
 				center: 'false',
 				right: 'false'
 			},
-			defaultView: 'list',
-			visibleRange: function(currentDate) {
-				return {
-					start: currentDate.clone(),
-					end: currentDate.clone().add(futrAmt, futrIncr)
-				};
-			},
+			defaultView: 'listMonth',
 			eventClick: function(event) {
-				alert(event.title + " - " + event.information)
+				alert(event.title + " - " + event.body)
 				return false;
 			},
-			events: eventPath,
+			events: 'http://pinky.latah.id.us/UtilRestSvc/UtilSvc.svc/GetCalendarEvents?calendarName=' + calName + '&days=' + calDays,
 			loading: function(bool) {
 				$('#loading').toggle(bool);
 				$('.fc-toolbar').remove();
 			},
 			eventRender: function(event, element) {
-				element.find('.fc-list-item-title').append(" - " + event.information);
+				element.find('.fc-list-item-title').append(" - " + event.body);
 			},
 		});
 	});
 }
 
-function calendarMonth(eventPath) {
+function calendarMonth(calName,calDays) {
 $(document).ready(function() {
   $('#calendar').fullCalendar({
     header: {
@@ -42,7 +36,7 @@ $(document).ready(function() {
 				alert(event.title + " - " + event.information)
         return false;
   		},
-      events: eventPath,
+      events: 'http://pinky.latah.id.us/UtilRestSvc/UtilSvc.svc/GetCalendarEvents?calendarName=' + calName + '&days=' + calDays,
       loading: function(bool) {
   			$('#loading').toggle(bool);
   		},
@@ -74,20 +68,20 @@ function listThreeMonths() {
 					eventOrder: 'title,start,end',
 				},
 	      eventClick: function(event) {
-					alert(event.title + " - " + event.information)
+					alert(event.title + " - " + event.body)
 	        // window.open(event.url);
 	        return false;
 	  		// 	// opens events in a popup window
 	  		// 	window.open(event.url, 'gcalevent', 'width=700,height=600');
 	  		// 	return false;
 	  		},
-	      events: '/api/electionCalendar.json',
+	      events: 'http://pinky.latah.id.us/UtilRestSvc/UtilSvc.svc/GetCalendarEvents?calendarName=ElectionsDemo&days=30',
 	      loading: function(bool) {
 	  			$('#loading').toggle(bool);
 					$('.fc-toolbar').remove();
 	  		},
 				eventRender: function(event, element) {
-					element.find('.fc-list-item-title').append(" - " + event.information);
+					element.find('.fc-list-item-title').append(" - " + event.body);
 				},
 	  });
 	});
