@@ -30,6 +30,16 @@
     {% js calendar.js %}
   {% endif %}
 
+  <!-- Contacts -->
+  {% if page.title == "Contact" %}
+    {% js contacts.js %}
+  {% endif %}
+
+  <!-- Contacts -->
+  {% if page.contacts %}
+    {% js contacts.js %}
+  {% endif %}
+
   <!-- Bootstrap Treeview -->
   {% if page.tree %}
     <!-- Bootstrap-Treeview CSS -->
