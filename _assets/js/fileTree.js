@@ -1,7 +1,8 @@
 var globalpath = null;
-function setpath(p){
-	globalpath = p;
-	console.log(globalpath);
+function downloadfile(p){
+		if(p != null){
+					window.location.href = 'http://pinky/utilrestsvc/UtilSvc.svc/DownloadFile?filename=' + p;	
+				}
 }
 
 function deptTree(id, dept) {
@@ -13,7 +14,7 @@ function deptTree(id, dept) {
       success: function(treedata){
 		    $('#' + id).treeview( {data: treedata });
 		    $('#' + id).on('nodeSelected', function(event, data) {
-			    setpath(data.tags);
+			    downloadfile(data.tags);
 		    });
       }
     });
