@@ -19,3 +19,7 @@ firebase.json
 # ===== Start VS Code .gitignore =====
 .vscode*
 # ===== End VS Code .gitignore =====
+
+# ===== Start nodeJS .gitignore =====
+node_modules
+# ===== End VS Code .gitignore =====
