@@ -1,6 +1,6 @@
 - department: SolidWaste
-  title: Smoke Fire and Brimestone
-  url: http://www.airquality.weather.gov/sectors/pacnorthwest.php
+  title: Smoke, Fire and Brimestone
+  url: https://airnow.gov/index.cfm?action=airnow.local_state&stateid=49
   target: _blank
   home: false
   expire:
