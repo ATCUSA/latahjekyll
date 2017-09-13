@@ -38,4 +38,11 @@
   url: https://www.latah.id.us/assessor/Boat_Press_Release.pdf
   target: _blank
   home: true
-  expire: 
+  expire:
+
+  department: SolidWaste
+  title: Something Stinks in 2017!
+  url: https://www.thespruce.com/backing-soda-and-garbage-1900606
+  target: _blank
+  home: false
+  expire:
