@@ -1,6 +1,6 @@
-- department:
-  title:
-  url:
-  target:
-  home:
+- department: SolidWaste
+  title: Smoke Fire and Brimestone
+  url: http://www.airquality.weather.gov/sectors/pacnorthwest.php
+  target: _blank
+  home: false
   expire:
