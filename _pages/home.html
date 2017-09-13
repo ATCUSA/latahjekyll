@@ -42,7 +42,7 @@ permalink: /
       </div>
       <div class="list-group">
         {% for news in site.data.news %}
-          <a href="{{ new.url }}" target="{{ news.target }}" rel="noopener" class="list-group-item text-center">
+          <a href="{{ news.url }}" target="{{ news.target }}" rel="noopener" class="list-group-item text-center">
             {% if news.title == null  %}
               <h4>No news at this time.</h4>
             {% else %}
