@@ -66,4 +66,4 @@ $(document).ready(function(){
 	};
 });
 // Full Endpoint
-/https://www.latah.id.us/api/GetFilesInDirectory?path=\\hvh01-store\Common\ITS\WebContent\Departments\Commissioners\Agendas\2017
+// https://www.latah.id.us/api/GetFilesInDirectory?path=\\hvh01-store\Common\ITS\WebContent\Departments\Commissioners\Agendas\2017
