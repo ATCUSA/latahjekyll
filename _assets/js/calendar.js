@@ -11,7 +11,7 @@ function calendarList(calName, calDays) {
 				alert(event.title + " - " + event.body)
 				return false;
 			},
-			events: 'http://pinky.latah.id.us/UtilRestSvc/UtilSvc.svc/GetCalendarEvents?calendarName=' + calName + '&days=' + calDays,
+			events: 'https://www.latah.id.us/api/GetCalendarEvents?calendarName=' + calName + '&days=' + calDays,
 			loading: function(bool) {
 				$('#loading').toggle(bool);
 				$('.fc-toolbar').remove();
@@ -36,7 +36,7 @@ $(document).ready(function() {
 				alert(event.title + " - " + event.information)
         return false;
   		},
-      events: 'http://pinky.latah.id.us/UtilRestSvc/UtilSvc.svc/GetCalendarEvents?calendarName=' + calName + '&days=' + calDays,
+      events: 'https://www.latah.id.us/api/GetCalendarEvents?calendarName=' + calName + '&days=' + calDays,
       loading: function(bool) {
   			$('#loading').toggle(bool);
   		},
@@ -75,7 +75,7 @@ function listThreeMonths() {
 	  		// 	window.open(event.url, 'gcalevent', 'width=700,height=600');
 	  		// 	return false;
 	  		},
-	      events: 'http://pinky.latah.id.us/UtilRestSvc/UtilSvc.svc/GetCalendarEvents?calendarName=ElectionsDemo&days=30',
+	      events: 'https://www.latah.id.us/api/GetCalendarEvents?calendarName=ElectionsDemo&days=30',
 	      loading: function(bool) {
 	  			$('#loading').toggle(bool);
 					$('.fc-toolbar').remove();

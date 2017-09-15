@@ -2,39 +2,178 @@
 layout: page
 title: Solid Waste Department
 permalink: /solid_waste/
+tree: true
 ---
 <div class="row">
-	<!-- Department Description -->
-	<div class="col-md-8 hidden-xs">
-		<div class="alert alert-danger" role="alert">This site concerns RURAL county residences only. For assistance with a residence inside a city limit please call City Hall.
-		</div>
+	<div class="col-md-8">
+	<div class="container col-md-6" id="notices">
 		<div class="panel panel-default">
 			<div class="panel-heading">
-				<h3 class="panel-title">The Latah Sanitation, Inc. Transfer Station disposal site</h3>
+				<h3 class="text-center">Notices</h3>
 			</div>
+				<div class="list-group">
+					{% for notice in site.data.notices %}
+						{% if notice.department == 'SolidWaste' %}
+							<a href="{{ notice.url }}" target="{{ notice.target }}" rel="noopener" class="list-group-item text-center">
+								{{ notice.title }}
+							</a>
+						{% endif %}
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	<div class="container col-md-6" id="news">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="text-center">News</h3>
+			</div>
+			<div class="list-group">
+				{% for news in site.data.news %}
+					<a href="{{ news.url }}" target="{{ news.target }}" rel="noopener" class="list-group-item text-center">
+						{% if news.title == null  %}
+							<h5>No news at this time.</h5>
+						{% else %}
+							{{ news.title }}
+						{% endif %}
+					</a>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="col-md-12">
+	<div class="alert alert-danger" role="alert">This site concerns RURAL county residences only. For assistance with a residence inside a city limit please call City Hall.
+	</div>
+
+	<div class="panel panel-default" >
+	<div class="panel-heading">
+		<h3 class="panel-title">The Latah Sanitation, Inc. Transfer Station disposal site</h3>
+	</div>
+	<div class="panel-body">
+		Hours 8 am to 4 pm Monday through Saturday
+		<br>Located at 3299 Highway 8 (five miles east of Moscow) 208-882-5724
+	</div>
+	</div>
+
+
+	<!-- Department Description -->
+		<div class="panel panel-default">
+			<p class="panel-body">
+				Under the supervision of the County Commissioners the Solid Waste office sets fees and negotiates contracts with government and private entities. Billing procedures and collection of fees are managed by the Solid Waste Department. We strive to resolve problems incurred by ratepayers with payments or with any of the services included.<br><br>
+				Solid waste fees are <b>Mandatory</b>. The Latah County Solid Waste Ordinance states maintenance and operation of the rural solid waste collection system shall be funded by assessment and collection of a fee imposed upon all premises in Latah County, except those located within the corporate limits of any city.<br><br>
+				Fees provide weekly driveway service, access to Moscow Recycling Center, Bulky Waste Sites, Household Hazardous Waste Facility, Compost Program, Shred Day, Tire Amnesty Day and some services at the Solid Waste Processing Facility.<br><br>
+				The Latah County Solid Waste Ordinance #229, Section 18, "Unlawful Disposal of Solid Waste" states: "It shall be unlawful for any person in Latah County to bury, dump, collect, remove, throw, discard, deposit or in any other manner dispose of solid waste other than into the Latah County Solid Waste disposal system, without first obtaining a permit therefore under the specific provisions for special permits." (see Special Permits, Section 27, Ordinance #229). Solid Waste exemptions are available in certain situations. Please see billing procedures section for more information.<br><br>
+				The Latah County municipal landfill was closed in 1993, due to the Federal Subtitle D regulations adopted in 1991. This regulation stated that in order for Latah County to continuing to use the existing landfill site we would have to accept past, present and future liability. Therefore, the City of Moscow and the Solid Waste Advisory Committee recommended transporting municipal solid waste (MSW) out of Latah County. All MSW is transported to Arlington, Oregon.<br><br>
+				The local landfill, located at the Solid Waste Processing Facility on Highway 8 is for non-municipal (inert demolition) solid waste.<br><br>
+			</p>
+		</div>
+
+	<!-- End Description -->
+
+
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">Special Events</h3>
+			</div>
+
 			<div class="panel-body">
-				Hours 8 am to 4 pm Monday through Saturday
-				<br>Located at 3299 Highway 8 (five miles east of Moscow) 208-882-5724
+					<b>Clean-up Months</b><br><br>
+					<b>April and October</b> are deemed clean-up months at the Bulky Waste Sites.<br>
+					Household garbage including plastic and rubber items are accepted during these tow months only.<br><br>
+					No E-Waste or Hazardous Waste
 			</div>
+		</div>
 	</div>
 </div>
 
-	<div class="col-md-4">
-		<div class="panel panel-default">
-			<div class="panel-heading">
-				<h4 class="text-center"><b>Contact Information<b></h4>
-				<hr>
-				<h5 class="text-center">Monday - Friday: 9:00 a.m. to 5:00 p.m.</h5>
-				<h5 class="text-center">Coordinator: Amanda Bashaw</h5>
-				<h5 class="text-center">Phone: (208) 883-5706</h5>
-				<h5 class="text-center">Fax: (208) 883-7218</h5>
-				<h5 class="text-center">Email: solidwaste@latah.id.us</h5>
-				<hr>
-				<h5 class="text-center">Latah County Courthouse</h5>
-				<h5 class="text-center">522 S Adams St</h5>
-				<h5 class="text-center">Room 104</h5>
-				<h5 class="text-center">Moscow, Idaho 83843</h5>
-			</div>
-
+<!-- Services -->
+<div class="col-md-4">
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h3 class="text-center">Our Services</h3>
+		</div>
+		<div class="list-group">
+			<li class="list-group-item">Manage Solid Waste Fees</li>
+			<li class="list-group-item">Negotiates Contracts</li>
+			<li class="list-group-item">Manages Billing and Collection</li>
 		</div>
 	</div>
+
+
+<!-- additional information menu -->
+	<!-- <div class="col-md-4"> -->
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="text-center">Additional Information</h3>
+				<hr>
+					<button type="button" href="billing.html" data-remote="false" class="btn btn-primary btn-sm btn-block billing" data-toggle="modal" data-target="#myModal">Billing Procedures</button>
+					<button type="button" href="onlinepayments.html" data-remote="false" class="btn btn-primary btn-sm btn-block billing" data-toggle="modal" data-target="#myModal">Online Payments</button>
+					<button type="button" href="bulkywaste.html" data-remote="false" class="btn btn-primary btn-sm btn-block billing" data-toggle="modal" data-target="#myModal">Bulky Waste</button>
+					<button type="button" href="commercialaccounts.html" data-remote="false" class="btn btn-primary btn-sm btn-block billing" data-toggle="modal" data-target="#myModal">Commercial Billing</button>
+					<button type="button" href="drivewayservice.html" data-remote="false" class="btn btn-primary btn-sm btn-block billing" data-toggle="modal" data-target="#myModal">Driveway Service</button>
+					<button type="button" href="empiredisposal.html" data-remote="false" class="btn btn-primary btn-sm btn-block billing" data-toggle="modal" data-target="#myModal">Empire Disposal Accounts</button>
+					<button type="button" href="exemptioninfo.html" data-remote="false" class="btn btn-primary btn-sm btn-block billing" data-toggle="modal" data-target="#myModal">Exemption Information</button>
+					<button type="button" href="hazardouswaste.html" data-remote="false" class="btn btn-primary btn-sm btn-block billing" data-toggle="modal" data-target="#myModal">Household Hazardous Waste</button>
+					<button type="button" href="holidaycollection.html" data-remote="false" class="btn btn-primary btn-sm btn-block billing" data-toggle="modal" data-target="#myModal">Holiday Collection Schedule</button>
+					<button type="button" href="moscowrecycling.html" data-remote="false" class="btn btn-primary btn-sm btn-block billing" data-toggle="modal" data-target="#myModal">Moscow Recycling Center Services</button>
+					<button type="button" href="ruralrecycling.html" data-remote="false" class="btn btn-primary btn-sm btn-block billing" data-toggle="modal" data-target="#myModal">Rural Recycling Program</button>
+					<button type="button" href="advisorycommittee.html" data-remote="false" class="btn btn-primary btn-sm btn-block billing" data-toggle="modal" data-target="#myModal">Solid Waste Advisory Committee (SWAC)</button>
+					<button type="button" href="processingfacility.html" data-remote="false" class="btn btn-primary btn-sm btn-block billing" data-toggle="modal" data-target="#myModal">Solid Waste Processing Facility (SWPF)</button>
+			</div>
+		</div>
+
+		<!-- forms -->
+
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class=" text-center">Solid Waste Forms and Files</h4>
+				</div>
+				<div class="list-group">
+					<div id="swDir" class="list-group-item"></div>
+				</div>
+				<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
+					<div class="list-group pre-scrollable" id="forms">
+						<div id="forms"></div>
+						<noscript>To view forms please enable JavaScript or update your browser</noscript>
+					</div>
+				</div>
+			</div>
+
+	</div>
+</div>
+
+
+
+<!-- modal object -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title"></h4>
+      </div>
+      <div class="modal-body" id="myModalDiv">
+        <p>&hellip;</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<script>
+$(document).ready(function(){
+	$("#myModal").on("show.bs.modal", function(e){
+		var link = $(e.relatedTarget);
+		$(this).find(".modal-title").text(e.relatedTarget.innerText);
+		$(this).find(".modal-body").load(link.attr("href"));
+	});
+});
+</script>
+
+	<script type="text/javascript">
+		deptTree("swDir", "SolidWaste")
+	</script>

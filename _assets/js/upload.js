@@ -15,7 +15,7 @@ function deptList(dirSub) {
       document.getElementById('department').innerHTML = newContent;
     }
   };
-  var url = 'http://pinky/utilrestsvc/UtilSvc.svc/getdirectorystructure?path=';
+  var url = 'https://www.latah.id.us/api/getdirectorystructure?path=';
   var path = '\\\\hvh01-store\\common\\ITS\\WebContent\\Departments';
   var dirSub = '\\';
   var deptPath = url + path + dirSub;
@@ -42,7 +42,7 @@ function uploadFile(dept) {
   var destPath = '\\\\hvh01-store\\common\\ITS\\WebContent\\Departments\\' + dept + '\\';
 
   $.ajax({
-    url: 'http://pinky/utilrestsvc/UtilSvc.svc/UploadFile?fileName=' + fileData.name + '&destinationPath=' + destPath,
+    url: 'https://www.latah.id.us/api/UploadFile?fileName=' + fileData.name + '&destinationPath=' + destPath,
     type: 'POST',
     data: fileData,
     cache: false,
@@ -64,5 +64,5 @@ function uploadFile(dept) {
 
 function DownloadFile() {
   window.location.href =
-  'http://localhost:60225/utilsvc.svc/DownloadFile?fileName=\\\\hvh01-store\\Common\\ITS\\WebContent\\Departments\\Commissioners\\Agendas\\2017\\01-02-17 Agenda.pdf';
+  'https://www.latah.id.us/api/DownloadFile?fileName=\\\\hvh01-store\\Common\\ITS\\WebContent\\Departments\\Commissioners\\Agendas\\2017\\01-02-17 Agenda.pdf';
 }
