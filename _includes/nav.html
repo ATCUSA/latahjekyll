@@ -14,11 +14,21 @@
         </div>
         <div class="collapse navbar-collapse">
           {% assign current = page.url | downcase | split: '/' %}
-          <form class="navbar-form navbar-right" role="search">
+          <form class="navbar-form navbar-right visible-xs" role="search">
               <div class="form-group">
                 <input type="text" class="form-control algolia__input js-algolia__input" id="navSearchBar" title="Search Bar" autocomplete="off" name="query" placeholder="Search..." />
               </div>
           </form>
+          <div class="dropdown navbar-form navbar-right hidden-xs">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropSearch" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              <i class="glyphicon glyphicon-search"></i>
+            </button>
+                <form class="dropdown-menu" style="padding: 0;" aria-labelledby="dropSearch" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control algolia__input js-algolia__input" id="navSearchBar" title="Search Bar" autocomplete="off" name="query" placeholder="Search..." />
+                    </div>
+                </form>
+          </div>
           <ul class="nav navbar-nav">
             <li {% if current[1] == 'home' %}class='active'{% endif %}>
               {% for link in site.data.menu.Home %}
