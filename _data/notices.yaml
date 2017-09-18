@@ -2,28 +2,28 @@
   title: Get an Estimate of your 2017 Property Taxes
   url: https://tax.idaho.gov/i-1072.cfm
   target: _blank
-  home: true
+  home: false
   expire:
 
 - department: Assessor
   title: 2017 Property Assessments
   url: http://www.latah.id.us/assessor/2017/PressRelease-2017PropertyAssessments.pdf
   target: _blank
-  home: true
+  home: false
   expire:
 
 - department: Assessor
   title: Having trouble logging in to view your eNotice?
   url: http://www.latah.id.us/assessor/2017/eNoticelogin.pdf
   target: _blank
-  home: true
+  home: false
   expire:
 
 - department: Assessor
   title: More questions & answers for eNotice
   url: https://help.enoticesonline.com/index.php?/Knowledgebase/List
   target: _blank
-  home: true
+  home: false
   expire:
 
 - department: Auditor
@@ -37,7 +37,7 @@
   title: Registering a Boat in 2017? New Requirements!
   url: https://www.latah.id.us/assessor/Boat_Press_Release.pdf
   target: _blank
-  home: true
+  home: false
   expire:
 
   department: SolidWaste

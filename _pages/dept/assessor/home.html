@@ -2,29 +2,127 @@
 layout: page
 title: Assessor
 permalink: /assessor/
+tree: true
 ---
 <div class="row" id="infoRow">
-  <div class="container col-md-4" id="notices">
+  <div class="col-md-8">
+    <div class="container col-md-6" id="notices">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="text-center">Notices</h3>
+        </div>
+        <div class="list-group">
+          {% for notice in site.data.notices %}
+          {% if notice.department == 'Assessor' %}
+          <a href="{{ notice.url }}" target="{{ notice.target }}" rel="noopener" class="list-group-item text-center">
+            {{ notice.title }}
+          </a>
+          {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <div class="container col-md-6" id="news">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="text-center">News</h3>
+        </div>
+        <div class="list-group">
+          {% for news in site.data.news %}
+          {% if news.department == 'Assessor' %}
+          <a href="{{ news.url }}" target="{{ news.target }}" rel="noopener" class="list-group-item text-center">
+            {{ news.title }}
+            {% endif %}
+          </a>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+
+    <!-- description -->
+    <div class="col-md-12">
+      <div class="panel panel-default">
+        <p class="panel-body">
+          The appraisal of all property, real and personal, in Latah County is the responsibility of the elected county Assessor.
+          The two main purposes of the Assessor are to identify current owners of property and to place a value on property for assessment
+          purposes. Another main function is to track all exemptions including homeowner's and circuit breakers.
+          The Assessor also administers the licensing and titling of motor vehicles.
+        </p>
+      </div>
+    </div>
+  </div> <!-- class="col-md-8" -->
+
+  <!-- services -->
+  <div class="col-md-4">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3 class="text-center">Notices</h3>
+        <h3 class="text-center">Our Services</h3>
       </div>
       <div class="list-group">
-        {% for notice in site.data.notices %}
-          {% if notice.department == page.title %}
-            <a href="{{ notice.url }}" target="{{ notice.target}}" rel="noopener" class="list-group-item text-center">
-              {{ notice.title }}
-            </a>
-          {% endif %}
-        {% endfor %}
+        <li class="list-group-item">Property Appraisals</li>
+        <li class="list-group-item">Exemption Tracking</li>
+        <li class="list-group-item">Vehicle licensing and Titling</li>
       </div>
     </div>
-  </div>
-  <div class="container col-md-8" id="about">
-    <div class="well">
-      <p>
-        The appraisal of all property, real and personal, in Latah County is the responsibility of the elected county Assessor. The two main purposes of the Assessor are to identify current owners of property and to place a value on property for assessment purposes. Another main function is to track all exemptions including homeowner's and circuit breakers. The Assessor also administers the licensing and titling of motor vehicles.
-      </p>
+
+    <!-- additional information -->
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="text-center">Additional Information</h3>
+        <hr>
+        <button type="button" href="assessorfaq.html" data-remote="false" class="btn btn-primary btn-sm btn-block billing" data-toggle="modal" data-target="#myModal">Assessor FAQ</button>
+        <a href="https://tax.idaho.gov/i-1051.cfm#sub1" class="btn btn-primary btn-sm btn-block billing" target="_blank">Homeowners & Property Tax</a>
+        <a href="https://gis.latah.id.us/parcelviewer/index.html" class="btn btn-primary btn-sm btn-block billing" target="_blank">Latah County Parcel Viewer</a>
+        <button type="button" href="taxexemptproperty.html" data-remote="false" class="btn btn-primary btn-sm btn-block billing" data-toggle="modal" data-target="#myModal">Tax Exempt Property & FAQ</button>
+      </div>
     </div>
-  </div>
-</div>
+
+    <!-- forms -->
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class=" text-center">Assessor Forms and Files</h4>
+      </div>
+      <div class="list-group">
+        <div id="assessorDir" class="list-group-item"></div>
+      </div>
+      <div class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
+        <div class="list-group pre-scrollable" id="forms">
+          <div id="forms"></div>
+          {% include noscript.html %}
+        </div>
+      </div>
+    </div>
+  </div> <!-- class="col-md-4" -->
+</div> <!-- row -->
+
+<!-- modal object -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title"></h4>
+      </div>
+      <div class="modal-body" id="myModalDiv">
+        <p>&hellip;</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<script>
+$(document).ready(function(){
+  $("#myModal").on("show.bs.modal", function(e){
+    var link = $(e.relatedTarget);
+    $(this).find(".modal-title").text(e.relatedTarget.innerText);
+    $(this).find(".modal-body").load(link.attr("href"));
+  });
+});
+</script>
+
+<script type="text/javascript">
+deptTree("assessorDir", "Assessor")
+</script>

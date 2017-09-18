@@ -2,5 +2,12 @@
   title: Smoke, Fire and Brimestone
   url: https://airnow.gov/index.cfm?action=airnow.local_state&stateid=49
   target: _blank
+  home: true
+  expire:
+
+- department: Assessor
+  title: None at this time.
+  url: null
+  target: _blank
   home: false
   expire:
