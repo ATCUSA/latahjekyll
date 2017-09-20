@@ -27,7 +27,7 @@ permalink: /
         <div class="list-group">
           {% for notice in site.data.notices %}
             {% if notice.home %}
-              <a href="{{ notice.url }}" target="{{ notice.target }}" rel="noopener" class="list-group-item text-center">
+              <a href="{{ notice.url }}" target="{{ notice.target }}" rel="noopener" class="list-group-item list-link text-center">
                 {{ notice.title }}
               </a>
             {% endif %}
@@ -43,7 +43,7 @@ permalink: /
       <div class="list-group">
         {% for news in site.data.news %}
          {% if news.home %}
-          <a href="{{ news.url }}" target="{{ news.target }}" rel="noopener" class="list-group-item text-center">
+          <a href="{{ news.url }}" target="{{ news.target }}" rel="noopener" class="list-group-item list-link text-center">
             {% if news.title == null  %}
               <h4>No news at this time.</h4>
             {% else %}

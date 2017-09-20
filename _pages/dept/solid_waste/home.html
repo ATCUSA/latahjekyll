@@ -28,7 +28,7 @@ tree: true
 				<div class="list-group">
 					{% for notice in site.data.notices %}
 					{% if notice.department == 'SolidWaste' %}
-					<a href="{{ notice.url }}" target="{{ notice.target }}" rel="noopener" class="list-group-item text-center">
+					<a href="{{ notice.url }}" target="{{ notice.target }}" rel="noopener" class="list-group-item text-center list-link">
 						{{ notice.title }}
 					</a>
 					{% endif %}
@@ -44,7 +44,7 @@ tree: true
 				<div class="list-group">
 					{% for news in site.data.news %}
 					{% if news.department == 'SolidWaste' %}
-					<a href="{{ news.url }}" target="{{ news.target }}" rel="noopener" class="list-group-item text-center">
+					<a href="{{ news.url }}" target="{{ news.target }}" rel="noopener" class="list-group-item text-center list-link">
 						{% if news.title == null  %}
 						<h5>No news at this time.</h5>
 						{% else %}
@@ -110,19 +110,19 @@ tree: true
 				<h3 class="text-center">Additional Information</h3>
 			</div>
 			<div class="list-group">
-				<a href="billing.html" data-remote="false" class="list-group-item text-center" data-toggle="modal" data-target="#myModal">Billing Procedures</a>
-				<a href="onlinepayments.html" data-remote="false" class="list-group-item text-center" data-toggle="modal" data-target="#myModal">Online Payments</a>
-				<a href="bulkywaste.html" data-remote="false" class="list-group-item text-center"  data-toggle="modal" data-target="#myModal">Bulky Waste</a>
-				<a href="commercialaccounts.html" data-remote="false" class="list-group-item text-center"  data-toggle="modal" data-target="#myModal">Commercial Billing</a>
-				<a href="drivewayservice.html" data-remote="false" class="list-group-item text-center"  data-toggle="modal" data-target="#myModal">Driveway Service</a>
-				<a href="empiredisposal.html" data-remote="false" class="list-group-item text-center"  data-toggle="modal" data-target="#myModal">Empire Disposal Accounts</a>
-				<a href="exemptioninfo.html" data-remote="false" class="list-group-item text-center"  data-toggle="modal" data-target="#myModal">Exemption Information</a>
-				<a href="hazardouswaste.html" data-remote="false" class="list-group-item text-center"  data-toggle="modal" data-target="#myModal">Household Hazardous Waste</a>
-				<a href="holidaycollection.html" data-remote="false" class="list-group-item text-center"  data-toggle="modal" data-target="#myModal">Holiday Collection Schedule</a>
-				<a href="moscowrecycling.html" data-remote="false" class="list-group-item text-center"  data-toggle="modal" data-target="#myModal">Moscow Recycling Center Services</a>
-				<a href="ruralrecycling.html" data-remote="false" class="list-group-item text-center"  data-toggle="modal" data-target="#myModal">Rural Recycling Program</a>
-				<a href="advisorycommittee.html" data-remote="false" class="list-group-item text-center"  data-toggle="modal" data-target="#myModal">Solid Waste Advisory Committee (SWAC)</a>
-				<a href="processingfacility.html" data-remote="false" class="list-group-item text-center"  data-toggle="modal" data-target="#myModal">Solid Waste Processing Facility (SWPF)</a>
+				<a href="billing.html" data-remote="false" class="list-group-item list-link text-center" data-toggle="modal" data-target="#myModal">Billing Procedures</a>
+				<a href="onlinepayments.html" data-remote="false" class="list-group-item list-link text-center" data-toggle="modal" data-target="#myModal">Online Payments</a>
+				<a href="bulkywaste.html" data-remote="false" class="list-group-item list-link text-center"  data-toggle="modal" data-target="#myModal">Bulky Waste</a>
+				<a href="commercialaccounts.html" data-remote="false" class="list-group-item list-link text-center"  data-toggle="modal" data-target="#myModal">Commercial Billing</a>
+				<a href="drivewayservice.html" data-remote="false" class="list-group-item list-link text-center"  data-toggle="modal" data-target="#myModal">Driveway Service</a>
+				<a href="empiredisposal.html" data-remote="false" class="list-group-item list-link text-center"  data-toggle="modal" data-target="#myModal">Empire Disposal Accounts</a>
+				<a href="exemptioninfo.html" data-remote="false" class="list-group-item list-link text-center"  data-toggle="modal" data-target="#myModal">Exemption Information</a>
+				<a href="hazardouswaste.html" data-remote="false" class="list-group-item list-link text-center"  data-toggle="modal" data-target="#myModal">Household Hazardous Waste</a>
+				<a href="holidaycollection.html" data-remote="false" class="list-group-item list-link text-center"  data-toggle="modal" data-target="#myModal">Holiday Collection Schedule</a>
+				<a href="moscowrecycling.html" data-remote="false" class="list-group-item list-link text-center"  data-toggle="modal" data-target="#myModal">Moscow Recycling Center Services</a>
+				<a href="ruralrecycling.html" data-remote="false" class="list-group-item list-link text-center"  data-toggle="modal" data-target="#myModal">Rural Recycling Program</a>
+				<a href="advisorycommittee.html" data-remote="false" class="list-group-item list-link text-center"  data-toggle="modal" data-target="#myModal">Solid Waste Advisory Committee (SWAC)</a>
+				<a href="processingfacility.html" data-remote="false" class="list-group-item list-link text-center"  data-toggle="modal" data-target="#myModal">Solid Waste Processing Facility (SWPF)</a>
 			</div>
 		</div>
 
@@ -141,7 +141,6 @@ tree: true
 				</div>
 			</div>
 		</div>
-
 	</div>
 </div>
 
