@@ -18,7 +18,7 @@ tree: true
         </p>
       </div>
     </div>
-    
+
     <div class="container col-md-6" id="notices">
       <div class="panel panel-default">
         <div class="panel-heading">
@@ -27,9 +27,11 @@ tree: true
         <div class="list-group">
           {% for notice in site.data.notices %}
           {% if notice.department == 'Assessor' %}
-          <a href="{{ notice.url }}" target="{{ notice.target }}" rel="noopener" class="list-group-item text-center">
+
+          <a href="{{ notice.url }}" target="{{ notice.target }}" rel="noopener" class="list-group-item text-center " >
             {{ notice.title }}
           </a>
+
           {% endif %}
           {% endfor %}
         </div>
@@ -43,7 +45,7 @@ tree: true
         <div class="list-group">
           {% for news in site.data.news %}
           {% if news.department == 'Assessor' %}
-          <a href="{{ news.url }}" target="{{ news.target }}" rel="noopener" class="list-group-item text-center">
+          <a href="{{ news.url }}" target="{{ news.target }}" rel="noopener" class="text-center list-group-item" >
             {{ news.title }}
             {% endif %}
           </a>
@@ -62,9 +64,9 @@ tree: true
         <h3 class="text-center">Our Services</h3>
       </div>
       <div class="list-group">
-        <li class="list-group-item">Property Appraisals</li>
-        <li class="list-group-item">Exemption Tracking</li>
-        <li class="list-group-item">Vehicle licensing and Titling</li>
+        <li class="list-group-item text-center">Property Appraisals</li>
+        <li class="list-group-item text-center">Exemption Tracking</li>
+        <li class="list-group-item text-center">Vehicle licensing and Titling</li>
       </div>
     </div>
 
@@ -72,12 +74,13 @@ tree: true
     <div class="panel panel-default">
       <div class="panel-heading">
         <h3 class="text-center">Additional Information</h3>
-        <hr>
-        <button type="button" href="assessorfaq.html" data-remote="false" class="btn btn-primary btn-sm btn-block billing" data-toggle="modal" data-target="#myModal">Assessor FAQ</button>
-        <a href="https://tax.idaho.gov/i-1051.cfm#sub1" class="btn btn-primary btn-sm btn-block billing" target="_blank">Homeowners & Property Tax</a>
-        <a href="https://gis.latah.id.us/parcelviewer/index.html" class="btn btn-primary btn-sm btn-block billing" target="_blank">Latah County Parcel Viewer</a>
-        <button type="button" href="taxexemptproperty.html" data-remote="false" class="btn btn-primary btn-sm btn-block billing" data-toggle="modal" data-target="#myModal">Tax Exempt Property & FAQ</button>
       </div>
+         <div class="list-group">
+          <a href="assessorfaq.html" class="list-group-item text-center" data-remote="false" data-toggle="modal" data-target="#myModal">Assessor FAQ</a>
+          <a href="https://tax.idaho.gov/i-1051.cfm#sub1" class="list-group-item text-center" target="_blank">Homeowners & Property Tax</a>
+          <a href="https://gis.latah.id.us/parcelviewer/index.html"  class="list-group-item text-center" target="_blank">Latah County Parcel Viewer</a>
+          <a href="taxexemptproperty.html" class="list-group-item text-center" data-remote="false" data-toggle="modal" data-target="#myModal">Tax Exempt Property & FAQ</a>
+        </div>
     </div>
 
     <!-- forms -->
