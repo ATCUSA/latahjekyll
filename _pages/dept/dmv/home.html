@@ -1,0 +1,112 @@
+---
+layout: page
+title: Department of Motor Vehicles
+permalink: /dmv/
+---
+
+<div class="row">
+	<div class="col-md-8">
+    <!-- Department Description -->
+    <div class="col-md-12">
+			<div class="panel panel-default">
+				<p class="panel-body">
+					Administered by the <a href="/assessor/">County Assessor</a>, the Motor Vehicle Licensing office transfers titles and registrations on new, used and out-of-state automobiles and manufactured homes, collects sales tax on private sales and out-of-state dealers, registers and titles recreational vehicles and vessels, adds liens and clears titles, and registers previously owned vehicles, and when necessary, performs Vehicle Identification Number (VIN) inspections. This department is located at the Latah County Annex at 200 S. Almon Street in Moscow.
+				</p>
+			</div>
+    </div>
+		<!-- End Description -->
+
+  <!-- Notices and News -->
+    <div class="container col-md-6" id="notices">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="text-center">Notices</h3>
+        </div>
+        <div class="list-group">
+          {% for notice in site.data.notices %}
+          {% if notice.department == 'DMV' %}
+          <a href="{{ notice.url }}" target="{{ notice.target }}" rel="noopener" class="list-group-item text-center list-link">
+            {{ notice.title }}
+          </a>
+          {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <div class="container col-md-6" id="news">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="text-center">News</h3>
+        </div>
+        <div class="list-group">
+          {% for news in site.data.news %}
+          {% if news.department == 'DMV' %}
+          <a href="{{ news.url }}" target="{{ news.target }}" rel="noopener" class="list-group-item text-center list-link">
+            {% if news.title == null  %}
+            <h5>No news at this time.</h5>
+            {% else %}
+              {{ news.title }}
+            {% endif %}
+          </a>
+          {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <!-- end notices and news -->
+  </div> <!-- class="col-md-8" -->
+
+    <!-- services -->
+    <div class="col-md-4">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="text-center">Our Services</h3>
+        </div>
+        <div class="list-group">
+          <li class="list-group-item text-center">Title Transfers & Registration</li>
+          <li class="list-group-item text-center">Vehicle Identification Inspections</li>
+          <li class="list-group-item text-center">Sales Tax Collection</li>
+        </div>
+      </div>
+
+      <!-- additional information -->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="text-center">Additional Information</h3>
+        </div>
+           <div class="list-group">
+            <a href="vehicleregfaq.html" class="list-group-item list-link text-center" data-remote="false" data-toggle="modal" data-target="#myModal">Vehicle Registration & Titles FAQ</a>
+            <a href="salestaxfaq.html" class="list-group-item list-link text-center" data-remote="false" data-toggle="modal" data-target="#myModal">Sales Tax on Vehicles FAQ</a>
+            <a href="http://itd.idaho.gov/itddmv" class="list-group-item list-link text-center" target="_blank">Idaho Department of Transportation</a>
+          </div>
+      </div>
+    </div> <!-- class="col-md-4" -->
+</div>
+
+<!-- modal object -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+	<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title"></h4>
+			</div>
+			<div class="modal-body" id="myModalDiv">
+				<p>&hellip;</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<script>
+$(document).ready(function(){
+	$("#myModal").on("show.bs.modal", function(e){
+		var link = $(e.relatedTarget);
+		$(this).find(".modal-title").text(e.relatedTarget.innerText);
+		$(this).find(".modal-body").load(link.attr("href"));
+	});
+});
+</script>
