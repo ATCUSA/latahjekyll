@@ -50,5 +50,9 @@
     {% js fileTree.js %}
   {% endif %}
 
+{% if page.news %}
+  {% js news.js %}
+{% endif %}
+
   <!-- WorkAround: Force asset to be included -->
 </head>
