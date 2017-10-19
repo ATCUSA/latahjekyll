@@ -1,5 +1,5 @@
 function getNewsandNotices(id, dept, type){
-  $(document).ready(function(){
+  //$(document).ready(function(){
     $.ajax({
       url: "https://www.latah.id.us/api/getnewsnotice?dept=" + dept,
       type: "GET",
@@ -16,19 +16,13 @@ function getNewsandNotices(id, dept, type){
                 $('<a class="list-group-item text-center list-link" ' +
                   ' href="#">' +  this.ArticleTitle + '</a>')
               )
-              $('.list-group-item').on('click', function() {
-                var index = $(this).index();
-
-                     if(data[index].PdfPath != null){
-
-                       var url = 'https://www.latah.id.us/api/downloadFile?fileName=' + data[index].PdfPath;
-                       //var link = document.createElement('a');
-                       //link.href = url;
-                       //link.download = data[index].FileAttached;
-                       //link.click();
-                       setTimeout(() => window.location = url, 1000);
-                   }
-              })
+              $('.list-group-item').click({param1: this.PdfPath}, downloadFile);
+                function downloadFile(event){
+                  if(event.data.param1 != null){
+                    var url = 'https://www.latah.id.us/api/downloadFile?fileName=' + event.data.param1;
+                    setTimeout(() => window.location = url, 1000);
+                }
+              }               
             }
             else if(this.Url != null){
               $('#' + id).append(
@@ -39,16 +33,9 @@ function getNewsandNotices(id, dept, type){
                 ) //append
 
             }
-            // $('#' + id).append(
-            //   $('<a class="list-group-item text-center list-link" ' +
-            //   'href="' + link + '">' +
-            //   this.ArticleTitle +
-            //   '</a>')
-
           }//id equals type
-
         });//each
       }//success
     });//ajax
-  });//ready
+  //});//ready
 }
