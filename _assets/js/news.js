@@ -1,5 +1,5 @@
 function getNewsandNotices(id, dept, type){
-  //$(document).ready(function(){
+  $(document).ready(function(){
     $.ajax({
       url: "https://www.latah.id.us/api/getnewsnotice?dept=" + dept,
       type: "GET",
@@ -22,7 +22,7 @@ function getNewsandNotices(id, dept, type){
                     var url = 'https://www.latah.id.us/api/downloadFile?fileName=' + event.data.param1;
                     setTimeout(() => window.location = url, 1000);
                 }
-              }               
+              }
             }
             else if(this.Url != null){
               $('#' + id).append(
@@ -37,5 +37,5 @@ function getNewsandNotices(id, dept, type){
         });//each
       }//success
     });//ajax
-  //});//ready
+  });//ready
 }
