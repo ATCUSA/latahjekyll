@@ -1,5 +1,5 @@
 function getNewsandNotices(id, dept, type){
-  $(document).ready(function(){
+  //$(document).ready(function(){
     $.ajax({
       url: "https://www.latah.id.us/api/getnewsnotice?dept=" + dept,
       type: "GET",
@@ -37,5 +37,5 @@ function getNewsandNotices(id, dept, type){
         });//each
       }//success
     });//ajax
-  });//ready
+  //});//ready
 }
