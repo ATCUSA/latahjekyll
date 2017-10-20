@@ -1,8 +1,9 @@
 var globalpath = null;
 function downloadfile(p){
 		if(p != null){
-					window.location.href = 'https://www.latah.id.us/api/DownloadFile?filename=' + p;	
-				}
+				var url = 'https://www.latah.id.us/api/DownloadFile?filename=' + p;
+				setTimeout(() => window.open(url, '_blank'), 500);
+			}
 }
 
 function deptTree(id, dept) {
