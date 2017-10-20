@@ -21,8 +21,11 @@ function getNewsandNotices(args, dept){
               function downloadFile(event){
                 if(event.data.param1 != null){
                   var url = 'https://www.latah.id.us/api/downloadFile?fileName=' + event.data.param1;
-                  // setTimeout(() => window.open(url, '_blank'), 500);
-                  window.open(url, '_blank');
+                  $.get(url, function(){
+                  })
+                  .done(function() {
+                      window.open(url, '_blank');
+                  });
                 }
               }
             }
