@@ -1,6 +1,7 @@
 ---
 layout: page
 permalink: /
+news: true
 ---
 
 <div class="row" id="aboutRow">
@@ -19,8 +20,31 @@ permalink: /
   </div>
 </div>
 <div class="row" id="infoRow">
-  {% include notices.html %}
-  {% include news.html %}
+  <div class="col-md-8">
+  <!-- Notices and News -->
+    <div class="container col-md-6" id="notices">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="text-center">Notices</h3>
+        </div>
+        <div class="list-group">
+          <div id="homeNotice" ></div>
+        </div>
+      </div>
+    </div>
+    <div class="container col-md-6" id="news">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="text-center">News</h3>
+        </div>
+        <div class="list-group">
+          <div id="homeNews" ></div>
+        </div>
+      </div>
+    </div>
+    <!-- end notices and news -->
+  </div>
+
   <div class="container col-md-4" id="contact">
     <div class="panel panel-default">
       <div class="panel-heading">
@@ -74,3 +98,10 @@ permalink: /
     </div>
   </div>
 </div>
+
+<script type="text/javascript">
+//args contains the list of control elements that needs to be examined
+const args = ['homeNews', 'homeNotice'];
+//pass in the args array and the department
+getNewsandNotices(args, "home")
+</script>
