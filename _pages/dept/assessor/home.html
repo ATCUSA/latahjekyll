@@ -3,6 +3,7 @@ layout: page
 title: Assessor
 permalink: /assessor/
 tree: true
+news: true
 ---
 <div class="row" id="infoRow">
   <div class="col-md-8">
@@ -25,15 +26,7 @@ tree: true
           <h3 class="text-center">Notices</h3>
         </div>
         <div class="list-group">
-          {% for notice in site.data.notices %}
-          {% if notice.department == 'Assessor' %}
-
-          <a href="{{ notice.url }}" target="{{ notice.target }}" rel="noopener" class="list-group-item text-center list-link" >
-            {{ notice.title }}
-          </a>
-
-          {% endif %}
-          {% endfor %}
+          <div id="assrNotice" class="list-group-item"></div>
         </div>
       </div>
     </div>
@@ -43,19 +36,11 @@ tree: true
           <h3 class="text-center">News</h3>
         </div>
         <div class="list-group">
-          {% for news in site.data.news %}
-          {% if news.department == 'Assessor' %}
-          <a href="{{ news.url }}" target="{{ news.target }}" rel="noopener" class="text-center list-group-item list-link" >
-            {{ news.title }}
-            {% endif %}
-          </a>
-          {% endfor %}
+          <div id="assrNews" class="list-group-item"></div>
         </div>
       </div>
     </div>
-
-
-  </div> <!-- class="col-md-8" -->
+  </div> <!--class="col-md-8" -->
 
   <!-- services -->
   <div class="col-md-4">
@@ -75,14 +60,14 @@ tree: true
       <div class="panel-heading">
         <h3 class="text-center">Additional Information</h3>
       </div>
-         <div class="list-group">
-          <a href="assessorfaq.html" class="list-group-item list-link text-center" data-remote="false" data-toggle="modal" data-target="#myModal">Assessor FAQ</a>
-          <a href="https://tax.idaho.gov/i-1051.cfm#sub1" class="list-group-item list-link text-center" target="_blank">Homeowners & Property Tax</a>
-          <a href="https://gis.latah.id.us/parcelviewer/index.html"  class="list-group-item list-link text-center" target="_blank">Latah County Parcel Viewer</a>
-          <a href="taxexemptproperty.html" class="list-group-item list-link text-center" data-remote="false" data-toggle="modal" data-target="#myModal">Tax Exempt Property & FAQ</a>
-        </div>
+      <div class="list-group">
+        <a href="assessorfaq.html" class="list-group-item list-link text-center" data-remote="false" data-toggle="modal" data-target="#myModal">Assessor FAQ</a>
+        <a href="https://tax.idaho.gov/i-1051.cfm#sub1" class="list-group-item list-link text-center" target="_blank">Homeowners & Property Tax</a>
+        <a href="https://gis.latah.id.us/parcelviewer/index.html"  class="list-group-item list-link text-center" target="_blank">Latah County Parcel Viewer</a>
+        <a href="taxexemptproperty.html" class="list-group-item list-link text-center" data-remote="false" data-toggle="modal" data-target="#myModal">Tax Exempt Property & FAQ</a>
+      </div>
     </div>
-
+    
     <!-- forms -->
     <div class="panel panel-default">
       <div class="panel-heading">
@@ -99,36 +84,43 @@ tree: true
       </div>
     </div>
   </div> <!-- class="col-md-4" -->
-</div> <!-- row -->
 
-<!-- modal object -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title"></h4>
-      </div>
-      <div class="modal-body" id="myModalDiv">
-        <p>&hellip;</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
 
-<script>
-$(document).ready(function(){
-  $("#myModal").on("show.bs.modal", function(e){
-    var link = $(e.relatedTarget);
-    $(this).find(".modal-title").text(e.relatedTarget.innerText);
-    $(this).find(".modal-body").load(link.attr("href"));
+  <!-- modal object -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title"></h4>
+        </div>
+        <div class="modal-body" id="myModalDiv">
+          <p>&hellip;</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+  <script>
+  $(document).ready(function(){
+    $("#myModal").on("show.bs.modal", function(e){
+      var link = $(e.relatedTarget);
+      $(this).find(".modal-title").text(e.relatedTarget.innerText);
+      $(this).find(".modal-body").load(link.attr("href"));
+    });
   });
-});
-</script>
+  </script>
 
-<script type="text/javascript">
-deptTree("assessorDir", "Assessor")
-</script>
+  <script type="text/javascript">
+  deptTree("assessorDir", "Assessor")
+  </script>
+
+  <script type="text/javascript">
+  //args contains the list of control elements that needs to be examined
+  const args = ['assrNews', 'assrNotice'];
+  //pass in the args array and the department
+  getNewsandNotices(args, "Assr")
+  </script>

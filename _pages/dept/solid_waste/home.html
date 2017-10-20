@@ -29,7 +29,7 @@ news: true
 					<h3 class="text-center">Notices</h3>
 				</div>
 				<div class="list-group">
-					<div id="swNotices" class="list-group-item"></div>
+					<div id="swNotice" class="list-group-item"></div>
 				</div>
 			</div>
 		</div>
@@ -164,7 +164,8 @@ deptTree("swDir", "SolidWaste")
 </script>
 
 <script type="text/javascript">
-//p1=control id, p2=department, p3=article type
-getNewsandNotices("swNews", "SW", "News")
-getNewsandNotices("swNotices", "SW", "Notice")
+//args contains the list of control elements that needs to be examined
+const args = ['swNews', 'swNotice'];
+//pass in the args array and the department
+getNewsandNotices(args, "SW")
 </script>
