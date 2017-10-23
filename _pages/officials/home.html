@@ -132,17 +132,11 @@ permalink: /officials/
   <h1 class="text-center"><small>Judges</small></h1>
   {% for official in site.data.officials.judges %}
   <div class="col-md-6">
-    <a href="{{ official.bio }}">
-      <img class=" img img-responsive center-block hidden-xs" src="{{ official.image }}">
-      <h3 class="text-center">
-        {{ official.name }}<br />
-      </h3>
-    </a>
+    <h3 class="text-center">
+      {{ official.name }}<br />
+    </h3>
     <a href="{{ official.page }}"><h3 class="text-center"><small>{{ official.court }}</small></h3></a>
-    <p class="text-justify">
-      {{ official.description | truncate: 120 }}<br />
-      <a href="{{ official.bio }}">more...</a>
-    </p>
+    <br />
   </div>
   {% endfor %}
 </div>

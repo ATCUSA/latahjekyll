@@ -114,20 +114,9 @@ judges:
   - name: John Judge
     position: Judge
     court: Magistrate Court
-    description: >
-      <p>
-        Grant me the serenity to accept the things I cannot change, Courage to change the things I can, And wisdom to know the difference.  ~ Reinhold Niebuhr
-      </p>
-    image: https://placehold.it/250x300
-    bio: /judges/bio/john_judge/
+    page: /district_court/magistrate/
 
   - name: John Stegner
     position: Judge
     court: District Court
-    description: >
-      <p>
-        Grant me the serenity to accept the things I cannot change, Courage to change the things I can, And wisdom to know the difference.  ~ Reinhold Niebuhr
-      </p>
-
-    image: https://placehold.it/250x300
-    bio: /judges/bio/john_stegner/
+    page: /district_court/district/
