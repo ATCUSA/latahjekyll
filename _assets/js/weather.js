@@ -2,11 +2,11 @@
 
 // jQuery request
 (function() {
-	var url = "https://api.openweathermap.org/data/2.5/weather?q=Moscow,ID";
-	var apiKey = "cc4e7370ecf22d9912261553507519a5"; // Replace "APIKEY" with your own API key; otherwise, your HTTP request will not work
+	var url = "https://api.weather.gov/stations/KPUW/observations/current";
 
-	$.get(url + '&appid=' + apiKey).done(function(response) {
-//		console.log(response);
+	$.get(url).done(function(response) {
+	// $.get(url + '&appid=' + apiKey).done(function(response) {
+  // console.log(response);
 		updateUISuccess(response);
 	}).fail(function(error) {
 		console.log(error);
@@ -15,21 +15,20 @@
 
 	// handle XHR success
 	function updateUISuccess(response) {
-		var condition = response.weather[0].main;
-		var degC = response.main.temp - 273.15;
-		var degCInt = Math.floor(degC);
-		var degF = degC * 1.8 + 32;
-		var degFInt = Math.floor(degF);
-//		var weatherBox = document.getElementById("weather");
-//		weatherBox.innerHTML = "<p>" + degCInt + "&#176; C / " + degFInt + "&#176; F</p><p>" + condition + "</p>";
+		// var condition = response.properties.temperature.value;
+		var degC = response.properties.temperature.value;
+		var degCInt = Math.round(degC);
+		var degF = degC * 9 / 5 + 32;
+		var degFInt = Math.round(degF);
+		var windSpeed = response.properties.windSpeed.value / 0.44704;
+		var windSpeedInt = Math.round(windSpeed);
 		var $weatherBox = $('#weather');
-		$weatherBox.append("<p>" + degFInt + "&#176; F / " + degCInt + "&#176; C </p><p>" + condition + "</p>");
+		$weatherBox.append("<p>" + degFInt + "&#176; F / " + degCInt + "&#176; C </p><p>" + windSpeedInt + " MPH</p>");
+		console.log(degCInt);
 	}
 
 	// handle XHR error
 	function updateUIError() {
-//		var weatherBox = document.getElementById("weather");
-//		weatherBox.className = "hidden";
 		var $weatherBox = $('#weather');
 		$weatherBox.addClass('hidden');
 	}
