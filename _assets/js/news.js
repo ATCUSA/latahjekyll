@@ -12,22 +12,23 @@ function getNewsandNotices(args, dept){
           if(args[i].indexOf(data[index].ArticleType) !== -1){
             var link=null;
             if(data[index].PdfPath != null){
-              $('#' + args[i]).append(
-                $('<a class="list-group-item text-center list-link" ' +
-                ' href="#">' +  data[index].ArticleTitle + '</a>')
-              )
+               $('#' + args[i]).append(
+                 $('<a class="list-group-item text-center list-link" ' +
+                 'href="' + 'javascript:void(0)' + '"' + 'target="_blank">' +  data[index].ArticleTitle + '</a>')
+               )
+
               $('#' + args[i]).click({param1: data[index].PdfPath}, downloadFile);
 
-              function downloadFile(event){
-                if(event.data.param1 != null){
-                  var url = 'https://www.latah.id.us/api/downloadFile?fileName=' + event.data.param1;
-                  $.get(url, function(){
-                  })
-                  .done(function() {
-                      window.open(url, '_blank');
-                  });
-                }
-              }
+               function downloadFile(event){
+                 var url = 'https://www.latah.id.us/api/downloadFile?fileName=' + event.data.param1
+                 $.ajax({
+                   url: '',
+                   success: function(){
+                     window.open(url);
+                   },
+                   async: false
+                 });
+               }
             }
             else if(this.Url != null){
               $('#' + args[i]).append(
