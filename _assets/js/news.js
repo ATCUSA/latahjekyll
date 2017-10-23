@@ -6,7 +6,7 @@ function getNewsandNotices(args, dept){
     type: "GET",
     async: true,
     dataType: 'json',
-    success: function(data){      
+    success: function(data){
       $.each(data, function(index){
         for(var i=0; i < args.length; i++){
           if(args[i].indexOf(data[index].ArticleType) !== -1){
@@ -21,14 +21,18 @@ function getNewsandNotices(args, dept){
               function downloadFile(event){
                 if(event.data.param1 != null){
                   var url = 'https://www.latah.id.us/api/downloadFile?fileName=' + event.data.param1;
-                  setTimeout(() => window.open(url, '_blank'), 500);
+                  $.get(url, function(){
+                  })
+                  .done(function() {
+                      window.open(url, '_blank');
+                  });
                 }
               }
             }
             else if(this.Url != null){
               $('#' + args[i]).append(
                 $('<a class="list-group-item text-center list-link" ' +
-                'href="' + data[index].Url + '">' +
+                'href="' + data[index].Url + '" target="_blank"' + '>' +
                 data[index].ArticleTitle +
                 '</a>')
               ) //append
