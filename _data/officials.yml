@@ -55,7 +55,17 @@ assessor:
 auditor:
   - name: Henrianne Westberg
     position: Auditor/Clerk/Recorder
-    description: Grant me the serenity to accept the things I cannot change, Courage to change the things I can, And wisdom to know the difference.  ~ Reinhold Niebuhr
+    description: >
+      <p>
+        Henrianne arrived on the Palouse in 1976 to attend the University of Idaho, and graduated in 1980 with a degree in Wildlife Habitat.  In 1981 she married Wayne Westberg, and together they farm and ranch on the Lenville Road southeast of Moscow.  They have 3 children, Emily, who is married to Walker Berg and teaches in Vancouver, Washington, Amy, who works in Social Service at Ulster County New York, and John who is involved in the family farm operation.
+      </p>
+      <p>
+        Henrianne began working for Latah County in the Auditor’s Office in 1985 doing Payroll and Accounts Payable before transferring to the District Court Office in 1990 and working there until 1998.  She then spent 16 years in the Finance Department of the City of Moscow, before becoming the Elected Clerk in 2014.
+      </p>
+      <p>
+        Besides traveling to Georgia and Texas to visit family, Henrianne enjoys our many local area events, and participation in various community organizations.
+      </p>
+
     page: /auditor/
     bio: /auditor/bio/
     image: /img/HenrianneWestberg.png
