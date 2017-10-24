@@ -37,6 +37,8 @@ Departments:
     url: /historical_society/
   - title: ITS
     url: /its/
+  - title: Noxious Weed Control
+    url: /weed_control/
   - title: Parks & Recreation
     url: /parks_rec/
   - title: Planning & Building
@@ -57,8 +59,6 @@ Departments:
     url: /treasurer/
   - title: Veteran's Services
     url: /veterans_services/
-  - title: Noxious Weed Control
-    url: /weed_control/
   - title: Youth Advocacy
     url: /youth_advocacy/
   - title: Youth Services
