@@ -1,0 +1,15 @@
+---
+layout: null
+permalink: /api/searchIndex.json
+---
+[
+  {% assign pages = site.pages %}
+  {% for page in pages %}
+    {
+      "title": {{ page.title | jsonify }},
+      "url": {{ page.url | jsonify }},
+      "body": {{ page.content | strip_newlines | strip_html | jsonify }}
+    }
+    {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]
