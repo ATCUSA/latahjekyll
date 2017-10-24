@@ -2,7 +2,7 @@
 layout: page
 title: Commissioners
 permalink: /commissioners/
-util: true
+tree: true
 ---
 <div class="row">
   <div class="col-md-4 hidden-xs">
@@ -34,51 +34,41 @@ util: true
 <div class="row">
 	<!-- Agendas -->
   <div class="col-md-4">
-		<div class="panel panel-default" id="accordion" role="tablist" aria-multiselectable="true">
-      <div class="panel-heading">
-        <h4 class="text-center">Agendas</h4>
-      </div>
-			{% include noscript.html %}
-			<!-- 2017 -->
-			<div class="panel-heading" role="tab" id="headingA2017">
-				<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseA2017" aria-expanded="false" aria-controls="collapseA2017" class="collapsed" id="agendasCtrl">
-					<h4 class="panel-title text-center">
-						2017
-					</h4>
-				</a>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class=" text-center">Agendas</h4>
 			</div>
-			<div id="collapseA2017" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingA2017" aria-expanded="false" style="height: 0px;">
+			<div class="list-group">
+				<div id="comAgendas" class="list-group-item pre-scrollable"></div>
+			</div>
+			<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
 				<div class="list-group pre-scrollable" id="agendas">
+					<div id="agendas"></div>
+					<noscript>To view agendas please enable JavaScript or update your browser</noscript>
 				</div>
 			</div>
-			<!-- 2017 -->
 		</div>
 	</div>
 	<!-- End Agendas -->
 	<!-- Proceedings -->
   <div class="col-md-4">
-		<div class="panel panel-default" id="accordion" role="tablist" aria-multiselectable="true">
-      <div class="panel-heading">
-        <h4 class="text-center">Proceedings</h4>
-      </div>
-			{% include noscript.html %}
-			<!-- 2017 -->
-			<div class="panel-heading" role="tab" id="headingP2017">
-				<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseP2017" aria-expanded="false" aria-controls="collapseP2017" class="collapsed" id="proceedingsCtrl">
-					<h4 class="panel-title text-center">
-						2017
-					</h4>
-				</a>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class=" text-center">Proceedings</h4>
 			</div>
-			<div id="collapseP2017" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingP2017" aria-expanded="false" style="height: 0px;">
+			<div class="list-group">
+				<div id="comProceedings" class="list-group-item pre-scrollable"></div>
+			</div>
+			<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
 				<div class="list-group pre-scrollable" id="proceedings">
-					<noscript>To view forms please enable JavaScript or update your browser</noscript>
+					<div id="proceedings"></div>
+					<noscript>To view proceedings please enable JavaScript or update your browser</noscript>
 				</div>
 			</div>
-			<!-- 2017 -->
 		</div>
 	</div>
 	<!-- End Procedings -->
+	<!-- Links -->
   <div class="col-md-4">
   	<div class="panel panel-default">
   		<div class="panel-heading">
@@ -89,21 +79,20 @@ util: true
       	<a href="#myModal" data-toggle="modal" class="list-group-item">Agenda Notifications<noscript> - <small>You must enable Javascript or update your browser to view this content.</small></noscript></a>
       	<a href="http://www.latah.id.us/assessor/tax_exempt_property.php" class="list-group-item">Tax Exempt Property Info and Application</a>
       	<a href="/commissions/#laws" class="list-group-item">Idaho Open Meeting Laws</a>
-				<a class="list-group-item" id="proclamationsCtrl">Proclamations
-				</a>
-				<div class="list-group-item pre-scrollable" id="proclamations"></div>
+				<a href="#proclamationsModal" data-toggle="modal" class="list-group-item">Proclamations</a>
 			</div>
   	</div>
   </div>
-  <!-- Modal -->
+	<!-- End Links -->
+  <!-- Agenda Notify Modal -->
 	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-	  <div class="modal-dialog" role="document">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-	        <h4 class="modal-title" id="myModalLabel">Signup for Meeting Notices</h4>
-	      </div>
-	      <div class="modal-body">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">Signup for Meeting Notices</h4>
+				</div>
+				<div class="modal-body">
 					<form name="subscribe" method="post" action="http://www.latah.id.us/mailman/subscribe/agendanotify">
 						<p>
 							If you subscribe to this service you will receive an e-mail every time a BOCC agenda or proceeding is added or amended to this web site.
@@ -118,13 +107,48 @@ util: true
 						E-mail Address: <input name="sAddr" type="email" size="35">
 						<input type="submit" value="Send Request">
 					</form>
-	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-	      </div>
-	    </div>
-	  </div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
 	</div>
-	<!-- End Meeting Notice Signup -->
+	<!-- Proclamations Modal -->
+	<div class="modal fade" id="proclamationsModal" tabindex="-1" role="dialog" aria-labelledby="proclamationsLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="proclamationsLabel">Proclamations</h4>
+				</div>
+				<div class="modal-body">
+					<!-- Proclamations -->
+					<div class="panel panel-default">
+						<div class="list-group">
+							<div id="comProclamations" class="list-group-item"></div>
+						</div>
+						<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false" style="height: 0px;">
+							<div class="list-group pre-scrollable" id="proclamations">
+								<div id="proclamations"></div>
+								<noscript>To view proclamations please enable JavaScript or update your browser</noscript>
+							</div>
+						</div>
+					</div>
+					<!-- End Proclamations -->
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Proclamations Modal -->
 </div>
 <!-- End Row -->
+
+<script type="text/javascript">
+deptTree("comAgendas", "Commissioners\\Agendas")
+deptTree("comProceedings", "Commissioners\\Proceedings")
+deptTree("comProclamations", "Commissioners\\Proclamations")
+</script>
