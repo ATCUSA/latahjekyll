@@ -71,6 +71,11 @@ cloudinary:
       attributes:
         class: "img img-responsive img-thumbnail center-block hidden-xs"
         width: "250"
+    book_thumb:
+      max_width: 150
+      attributes:
+        class: "img img-responsive img-thumbnail center-block"
+        width: 150
 
 # Build settings
 markdown: kramdown
