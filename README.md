@@ -24,6 +24,7 @@ The development site can be viewed at https://latah-site.netlify.com.
 - Round 1:1
 - Portrait 5:6
 - Landscape 6:5
+
 #### Officials
 - Portfolio 250px X 300px 5:6
 - Bio 500px X 600px 5:6
