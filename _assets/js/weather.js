@@ -2,9 +2,11 @@
 
 // jQuery request
 (function() {
-	var url = "https://api.weather.gov/stations/KPUW/observations/current";
+	var baseUrl = "https://api.weather.gov/stations/";
+	var station = "FTHID";
+	var forcastType = "/observations/current";
 
-	$.get(url).done(function(response) {
+	$.get(baseUrl + station + forcastType).done(function(response) {
 	// $.get(url + '&appid=' + apiKey).done(function(response) {
   // console.log(response);
 		updateUISuccess(response);
@@ -22,9 +24,11 @@
 		var degFInt = Math.round(degF);
 		var windSpeed = response.properties.windSpeed.value / 0.44704;
 		var windSpeedInt = Math.round(windSpeed);
+		var lastUpdated = response.properties.timestamp;
+		var lastUpdatedTime = moment(lastUpdated, "YYYY-MM-DDTHH:mm:ssZ").format("h:mm A");
 		var $weatherBox = $('#weather');
-		$weatherBox.append("<p>" + degFInt + "&#176; F / " + degCInt + "&#176; C </p><p>" + windSpeedInt + " MPH</p>");
-		console.log(degCInt);
+		$weatherBox.append("<p>" + degFInt + "&#176; F / " + degCInt + "&#176; C <br />" + windSpeedInt + " MPH <br /><small>As of " + lastUpdatedTime + "</small></p>");
+		console.log("Weather provided by NOAA from https://www.weather.gov.");
 	}
 
 	// handle XHR error
