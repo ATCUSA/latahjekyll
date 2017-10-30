@@ -100,14 +100,22 @@ prosecutor:
     image: /img/officials/BillThompson.png
 sheriff:
   - name: Richard Skiles
-    description: Grant me the serenity to accept the things I cannot change, Courage to change the things I can, And wisdom to know the difference.  ~ Reinhold Niebuhr
-    page:
+    description: >
+      <p>
+        Grant me the serenity to accept the things I cannot change, Courage to change the things I can, And wisdom to know the difference.  ~ Reinhold Niebuhr
+      </p>
+    page: /sheriff/
+    bio: /sheriff/bio/
     image: /img/officials/RichardSkiles.png
 
 treasurer:
   - name: Lois Reed
-    description: Grant me the serenity to accept the things I cannot change, Courage to change the things I can, And wisdom to know the difference.  ~ Reinhold Niebuhr
-    page:
+    description: >
+      <p>
+        Grant me the serenity to accept the things I cannot change, Courage to change the things I can, And wisdom to know the difference.  ~ Reinhold Niebuhr
+      </p>
+    page: /treasurer/
+    bio: /treasurer/bio/
     image: /img/officials/LoisReed.png
 
 judges:
