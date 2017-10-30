@@ -13,7 +13,7 @@ commissioners:
     district: District 1
     page: /commissioners/district_1/
     bio: /commissioners/bio/dick_walser/
-    image: /img/RichardWalser.png
+    image: /img/officials/RichardWalser.png
   - name: Tom Lamar
     district: District 2
     description: >
@@ -28,7 +28,7 @@ commissioners:
       </p>
     page: /commissioners/district_2
     bio: /commissioners/bio/tom_lamar/
-    image: /img/TomLamar.png
+    image: /img/officials/TomLamar.png
     facebook: https://www.facebook.com/tomlamar.org
     twitter: https://twitter.com/lamartom
     website: http://tomlamar.org/
@@ -40,7 +40,7 @@ commissioners:
       </p>
     page: /commissioners/district_3/
     bio: /commissioners/bio/dave_mcgraw/
-    image: /img/DaveMcGraw.png
+    image: /img/officials/DaveMcGraw.png
 
 assessor:
   - name: Pat Vaughan
@@ -50,7 +50,7 @@ assessor:
       </p>
     page: /assessor/
     bio: /assessor/bio/
-    image: https://placehold.it/250x300
+    image: /img/officials/PatrickVaughan.png
 
 auditor:
   - name: Henrianne Westberg
@@ -68,7 +68,7 @@ auditor:
 
     page: /auditor/
     bio: /auditor/bio/
-    image: /img/HenrianneWestberg.png
+    image: /img/officials/HenrianneWestberg.png
 
 coroner:
   - name: Cathy Mabbutt
@@ -97,18 +97,18 @@ prosecutor:
       </p>
     page: /prosecutor/
     bio: /prosecutor/bio/
-    image: /img/BillThompson.png
+    image: /img/officials/BillThompson.png
 sheriff:
   - name: Richard Skiles
     description: Grant me the serenity to accept the things I cannot change, Courage to change the things I can, And wisdom to know the difference.  ~ Reinhold Niebuhr
     page:
-    image: https://placehold.it/250x300
+    image: /img/officals/RichardSkiles.png
 
 treasurer:
   - name: Lois Reed
     description: Grant me the serenity to accept the things I cannot change, Courage to change the things I can, And wisdom to know the difference.  ~ Reinhold Niebuhr
     page:
-    image: https://placehold.it/250x300
+    image: /img/officials/LoisReed.png
 
 judges:
   - name: John Judge
