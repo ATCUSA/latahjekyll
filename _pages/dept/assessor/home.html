@@ -5,6 +5,7 @@ permalink: /assessor/
 tree: true
 news: true
 ---
+
 <div class="row" id="infoRow">
   <div class="col-md-8">
 
@@ -12,9 +13,9 @@ news: true
     <div class="col-md-12">
       <div class="panel panel-default">
         <p class="panel-body">
-          The appraisal of all property, real and personal, in Latah County is the responsibility of the elected county Assessor.
-          The two main purposes of the Assessor are to identify current owners of property and to place a value on property for assessment
-          purposes. Another main function is to track all exemptions including homeowner's and circuit breakers.
+          The appraisal of all property, real and personal, in Latah County is the responsibility of the elected county Assessor. The
+          two main purposes of the Assessor are to identify current owners of property and to place a value on property for
+          assessment purposes. Another main function is to track all exemptions including homeowner's and circuit breakers.
           The Assessor also administers the licensing and titling of motor vehicles.
         </p>
       </div>
@@ -40,10 +41,12 @@ news: true
         </div>
       </div>
     </div>
-  </div> <!--class="col-md-8" -->
+  </div>
+  <!--class="col-md-8" -->
 
   <!-- services -->
   <div class="col-md-4">
+    {% include contactBlock.html %}
     <div class="panel panel-default">
       <div class="panel-heading">
         <h3 class="text-center">Our Services</h3>
@@ -63,11 +66,11 @@ news: true
       <div class="list-group">
         <a href="assessorfaq.html" class="list-group-item list-link text-center" data-remote="false" data-toggle="modal" data-target="#myModal">Assessor FAQ</a>
         <a href="https://tax.idaho.gov/i-1051.cfm#sub1" class="list-group-item list-link text-center" target="_blank">Homeowners & Property Tax</a>
-        <a href="https://gis.latah.id.us/parcelviewer/index.html"  class="list-group-item list-link text-center" target="_blank">Latah County Parcel Viewer</a>
+        <a href="https://gis.latah.id.us/parcelviewer/index.html" class="list-group-item list-link text-center" target="_blank">Latah County Parcel Viewer</a>
         <a href="taxexemptproperty.html" class="list-group-item list-link text-center" data-remote="false" data-toggle="modal" data-target="#myModal">Tax Exempt Property & FAQ</a>
       </div>
     </div>
-    
+
     <!-- forms -->
     <div class="panel panel-default">
       <div class="panel-heading">
@@ -83,7 +86,8 @@ news: true
         </div>
       </div>
     </div>
-  </div> <!-- class="col-md-4" -->
+  </div>
+  <!-- class="col-md-4" -->
 
 
   <!-- modal object -->
@@ -91,7 +95,9 @@ news: true
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
           <h4 class="modal-title"></h4>
         </div>
         <div class="modal-body" id="myModalDiv">
@@ -100,27 +106,31 @@ news: true
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
-      </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-  </div><!-- /.modal -->
+      </div>
+      <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+  </div>
+  <!-- /.modal -->
+</div>
 
-  <script>
-  $(document).ready(function(){
-    $("#myModal").on("show.bs.modal", function(e){
+<script>
+  $(document).ready(function () {
+    $("#myModal").on("show.bs.modal", function (e) {
       var link = $(e.relatedTarget);
       $(this).find(".modal-title").text(e.relatedTarget.innerText);
       $(this).find(".modal-body").load(link.attr("href"));
     });
   });
-  </script>
+</script>
 
-  <script type="text/javascript">
+<script type="text/javascript">
   deptTree("assessorDir", "Assessor")
-  </script>
+</script>
 
-  <script type="text/javascript">
+<script type="text/javascript">
   //args contains the list of control elements that needs to be examined
   const args = ['assrNews', 'assrNotice'];
   //pass in the args array and the department
   getNewsandNotices(args, "Assr")
-  </script>
+</script>
