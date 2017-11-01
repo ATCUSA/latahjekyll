@@ -1,0 +1,44 @@
+<div class="panel panel-default">
+  <div class="list-group" data-toggle="modal" data-target="#contactBlock">
+    <a href="#contactBlock" class="list-group-item text-center">Contact Us</a>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="contactBlock" tabindex="-1" role="dialog" aria-labelledby="contactBlockLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="contactBlockLabel">Department Contact Information</h4>
+      </div>
+      <div class="modal-body">
+        <div class="well">
+          <div class="">
+            <h3 class="text-center" id="contactDept"></h3>
+            <div class="list-group-item">
+              <strong>Phone: </strong><span id="contactFax"></span><br />
+            </div>
+            <div class="list-group-item">
+              <strong>Fax:</strong><br />
+              <span id="contactFax"></span>
+            </div>
+            <div class="list-group-item">
+              <strong>Address:</strong><br />
+              <span id="contactAddress"></span>
+            </div>
+            <div class="list-group-item">
+              <strong>Hours:</strong><br />
+              <span id="contactHours"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% js contactInfo.js %}
