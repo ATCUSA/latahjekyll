@@ -12,7 +12,12 @@ function contactInfo() {
       $('#contactAddress').append(result.AddressLn1 + '<br />');
       $('#contactAddress').append(result.AddressLn2 + '<br />');
       $('#contactAddress').append(result.AddressCSZ);
-      $('#contactHours').append(result.DeptHours);
+      $('#contactRoom').append(result.AddressRoom);
+      $("#contactHours").append(result.DeptHours);
+      
+      // Append ID to  email button href
+      $("#emailButton").attr('href', '/contact/#' + result.Id );
+
       console.log(result);
     });
   });

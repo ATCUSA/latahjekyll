@@ -1,6 +1,6 @@
 <div class="panel panel-default">
   <div class="list-group" data-toggle="modal" data-target="#contactBlock">
-    <a href="#contactBlock" class="list-group-item text-center">Contact Us</a>
+    <a class="list-group-item text-center">Contact Us</a>
   </div>
 </div>
 
@@ -14,27 +14,29 @@
       </div>
       <div class="modal-body">
         <div class="well">
-          <div class="">
-            <h3 class="text-center" id="contactDept"></h3>
-            <div class="list-group-item">
-              <strong>Phone: </strong><span id="contactFax"></span><br />
-            </div>
-            <div class="list-group-item">
-              <strong>Fax:</strong><br />
-              <span id="contactFax"></span>
-            </div>
-            <div class="list-group-item">
-              <strong>Address:</strong><br />
-              <span id="contactAddress"></span>
-            </div>
-            <div class="list-group-item">
-              <strong>Hours:</strong><br />
-              <span id="contactHours"></span>
-            </div>
+          <h3 class="text-center" id="contactDept"></h3>
+          <div class="list-group-item">
+            <strong>Phone: </strong><span id="contactPhone"></span><br />
+          </div>
+          <div class="list-group-item">
+            <strong>Fax: </strong><span id="contactFax"></span><br />
+          </div>
+          <div class="list-group-item">
+            <strong>Address:</strong><br />
+            <span id="contactAddress"></span>
+          </div>
+          <div class="list-group-item">
+            <strong>Room:</strong><br />
+            <span id="contactRoom"></span>
+          </div>
+          <div class="list-group-item">
+            <strong>Hours:</strong><br />
+            <span id="contactHours"></span>
           </div>
         </div>
       </div>
       <div class="modal-footer">
+        <a href="/contact/" type="button"  id="emailButton" class="btn btn-primary btn-default pull-left">Email</a>
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
       </div>
     </div>
