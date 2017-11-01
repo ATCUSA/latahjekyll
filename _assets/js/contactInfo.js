@@ -1,11 +1,11 @@
-function contactInfo(deptName) {
+function contactInfo() {
   $(document).ready(function() {
     
     var restURL = 'https://www.latah.id.us/api/getcontact?dept=';
     var dept = encodeURIComponent($("#deptHeader").text());
 
     $.getJSON(restURL + dept, function(data){
-      var result = data[deptName]
+      var result = data[0];
       $('#contactDept').append(result.Department);
       $('#contactPhone').append(result.Phone);
       $('#contactFax').append(result.Fax);
