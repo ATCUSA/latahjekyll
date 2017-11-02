@@ -4,7 +4,7 @@
     <div class="input-group">
         <span class="input-group-addon"><i class="fa fa-users" aria-hidden="true"></i></span>
         <select class="form-control" id="department" required>
-          <option value="loading" disabled selected>Loading...</option>
+          <option id="deptList" value="loading" disabled selected>Loading...</option>
         </select>
       </div>
     </div>
@@ -46,6 +46,5 @@
 </form>
 
 <script text/javascript>
-  departmentDropdown();
-  changeActionEmail();
+  deptList();
 </script>
