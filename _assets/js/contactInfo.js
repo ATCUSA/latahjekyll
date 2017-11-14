@@ -33,13 +33,13 @@ function deptList() {
       $('#department').html('<option id="0" disabled selected>Select Department</option>');
       $.each(data, function(index, result) {
         var dept = result.Department;
-        var id = '#' + result.Id;
+        var id = result.Id;
         //console.log(id + ': ' + dept); // Uncomment to debug
         
         if (id == queryString) {
-          $("#department").append('<option id="' + id + '" value="' + dept + '" selected>' + dept + '</option>');
+          $("#department").append('<option id="#' + id + '" value="' + id + '" selected>' + dept + '</option>');
         } else {
-          $("#department").append('<option id="' + id + '" value="' + dept + '">' + dept + '</option>');
+          $("#department").append('<option id="#' + id + '" value="' + id + '">' + dept + '</option>');
         }
       });
     });
