@@ -7,8 +7,11 @@ contacts: true
 <div class="row">
   <div class="col-md-3">
     <div class="panel panel-default">
-      <div class="panel-body text-center">
-        <h4><a href="/contacts/">Department Contact List</a></h4>
+      <div class="panel-heading text-center">
+        <h4 id="deptName">Department Info</h4>
+      </div>
+      <div class="list group" id="currentDept">
+        <div class="list-group-item">Select a Department</div>
       </div>
     </div>
     <div id="departmentInfo">
@@ -28,3 +31,6 @@ contacts: true
     </div>
   </div>
 </div>
+<script>
+  deptBox();
+</script>
