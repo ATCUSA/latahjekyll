@@ -1,0 +1,156 @@
+---
+layout: page
+title: Sheriff
+permalink: /sheriff/
+tree: true
+news: true
+---
+
+<div class="row">
+	<div class="col-md-8">
+
+		<!-- Department Description -->
+		<div class="col-md-12">
+			<div class="panel panel-default">
+				<p class="panel-body">
+					Latah County's elected Sheriff, provides law enforcement, jail, 911 emergency and county-wide dispatch, and search and rescue services to Latah County on a 24-hour, 365-day-a-year basis.
+					In addition, this office provides service of civil papers, drivers' licensing, vehicle identification inspections, concealed weapons permits, road condition reports,
+					crime prevention, and community service programs Monday through Friday during regular business hours. Salvation Army and American Red Cross assitance referrals are made
+					by this office. For jail visiting hours contact the office for scheduled times.
+					<br>
+					<br>
+					Fingerprinting is available at the Driver's License office at the Latah County Annex, M-F from 8:00 am to 12:00 pm.
+				</p>
+			</div>
+		</div>
+		<!-- End Description -->
+
+		<div class="container col-md-6" id="notices">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="text-center">Notices</h3>
+				</div>
+				<div class="list-group">
+					<div id="sheriffNotice" ></div>
+				</div>
+			</div>
+		</div>
+		<div class="container col-md-6" id="news">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="text-center">News</h3>
+				</div>
+				<div class="list-group">
+					<div id="sheriffNews" ></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-12">
+
+			<div class="panel panel-default" >
+				<div class="panel-heading">
+					<h3 class="panel-title">Drug Tip Hotline</h3>
+				</div>
+				<div class="panel-body">
+					To report suspicious activity you think is drug related, call (208) 892-3898.
+				</div>
+			</div>
+
+			<!-- forms -->
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class=" text-center">Sheriff Office Forms and Files</h4>
+				</div>
+				<div class="list-group">
+					<div id="sheriffDir"></div>
+				</div>
+				<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
+					<div class="list-group pre-scrollable" id="forms">
+						<div id="forms" class="list-group-item"></div>
+						<noscript>To view forms please enable JavaScript or update your browser</noscript>
+					</div>
+				</div>
+			</div>
+
+		</div><!-- 	<div class="col-md-12"> -->
+	</div><!-- <div class="col-md-8"> -->
+
+	<div class="col-md-4">
+		{% include contactBlock.html %}
+		<!-- Services -->
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="text-center">Our Services</h3>
+			</div>
+			<div class="list-group">
+				<li class="list-group-item text-center">Law Enforcement</li>
+				<li class="list-group-item text-center">Jail</li>
+				<li class="list-group-item text-center">911 Emergency</li>
+				<li class="list-group-item text-center">Search and Rescue</li>
+				<li class="list-group-item text-center">Civil Papers</li>
+				<li class="list-group-item text-center">Vehicle Id Inspections</li>
+				<li class="list-group-item text-center">Conceal Weapons Permits</li>
+				<li class="list-group-item text-center">Road Condition Reporting</li>
+				<li class="list-group-item text-center">Crime Prevention</li>
+				<li class="list-group-item text-center">Community Service Programs</li>
+			</div>
+		</div>
+
+
+		<!-- additional information menu -->
+		<!-- <div class="col-md-4"> -->
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="text-center">Additional Information</h3>
+			</div>
+			<div class="list-group">
+				<a href="civil.html" data-remote="false" class="list-group-item list-link text-center" data-toggle="modal" data-target="#myModal">Civil Office</a>
+				<a href="concealWeapons.html" data-remote="false" class="list-group-item list-link text-center" data-toggle="modal" data-target="#myModal">Concealed Weapons Licenses</a>
+				<a href="emailNotification.html" data-remote="false" class="list-group-item list-link text-center" data-toggle="modal" data-target="#myModal">Email Notification Service</a>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+
+
+<!-- modal object -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+	<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title"></h4>
+			</div>
+			<div class="modal-body" id="myModalDiv">
+				<p>&hellip;</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<script>
+$(document).ready(function(){
+	$("#myModal").on("show.bs.modal", function(e){
+		var link = $(e.relatedTarget);
+		$(this).find(".modal-title").text(e.relatedTarget.innerText);
+		$(this).find(".modal-body").load(link.attr("href"));
+	});
+});
+</script>
+
+<script type="text/javascript">
+deptTree("sheriffDir", "Sheriff")
+</script>
+
+<script type="text/javascript">
+//args contains the list of control elements that needs to be examined
+const args = ['sheriffNews', 'sheriffNotice'];
+//pass in the args array and the department
+getNewsandNotices(args, "SO")
+</script>
