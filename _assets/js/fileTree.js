@@ -9,7 +9,7 @@ function downloadfile(p){
 function deptTree(id, dept) {
   $(document).ready(function(){
     $.ajax({
-      url: "https://www.latah.id.us/api/getdirectorystructure?path=\\\\hvh01-store\\common\\ITS\\WebContent\\Departments\\" + dept + "\\",
+      url: "https://www.latah.id.us/api/getdirectorystructure?dept=" + dept,
       type: "GET",
       async: false, // set to false so order of operations is correct
       success: function(treedata){
