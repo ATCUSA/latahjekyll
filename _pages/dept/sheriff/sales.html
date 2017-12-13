@@ -1,0 +1,57 @@
+---
+layout: page
+title: Sheriff Sales
+permalink: /sheriff/sales
+tree: true
+---
+
+<div class="row">
+  <div class="col-md-8">
+		<!-- Department Description -->
+		<div class="col-md-12">
+			<div class="panel panel-default">
+				<p class="panel-body">
+          <b>Sheriff Sales Notice:</b>
+          <br><br>
+          Sheriff´s Sales are subject to cancellation if the debtor pays in full prior to sale. Please check the website or call the Sheriff´s Office for updates on sale day.
+          <br><br>
+          For more information regarding Sheriff's Sales, please contact the Sheriff's Civil Clerk: (208) 882-2216 or civil. Please read the FAQ section prior to calling with questions.
+          <br><br>
+          <b>E-mail Notification List</b>
+          To be placed on an e-mail notification list of upcoming Sheriff's Sales, send an email request to: civil@latah.id.us
+				</p>
+			</div>
+      <!-- Sales Directory -->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class=" text-center">Sheriff Office Current Sales</h4>
+        </div>
+        <div class="list-group">
+          <div id="sheriffSalesDir"></div>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
+          <div class="list-group pre-scrollable" id="forms">
+            <div id="forms" class="list-group-item"></div>
+            <noscript>To view forms please enable JavaScript or update your browser</noscript>
+          </div>
+        </div>
+      </div>
+		</div><!--<div class="col-md-12">-->
+  </div><!--<div class="col=md-8">-->
+
+  <div class="col-md-4">
+    <!-- additional information menu -->
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="text-center">Additional Information</h3>
+      </div>
+      <div class="list-group">
+        <a href="/sheriff/" data-remote="false" class="list-group-item list-link text-center">Sheriff Home</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+deptTree("sheriffSalesDir", "SheriffSales")
+</script>
