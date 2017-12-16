@@ -1,0 +1,28 @@
+---
+layout: page
+title: Disaster Services
+permalink: /disaster_services/
+---
+
+
+<div class="col-md-8">
+  
+</div>
+<div class="col-md-4">
+  {% include contactBlock.html %}
+  <div class="panel alert alert-danger">
+    <h3 class="panel-title text-center">Current Weather Alerts</h3>
+  <!-- <div class="alert alert-danger text-center hidden" id="weatherAlertBox"></div> -->
+    <div class="panel-body">
+      <div id="weatherAlertBox">
+        <div id="weatherAlert">
+        </div>
+      </div>
+    </div>    
+  </div>
+</div>
+
+{% js weatherAlerts.js %}
+<script>
+  weatherBoxAlerts();
+</script>
