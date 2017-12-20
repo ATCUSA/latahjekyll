@@ -6,7 +6,76 @@ permalink: /disaster_services/
 
 
 <div class="col-md-8">
-  
+  <div class="row">
+    <div class="well" id="deptDesc">
+      With the cooperation and supervision of the County Commissioners the Department of Disaster Services is responsible for
+      the development, maintenance and implementation of the Latah County Emergency Operations Plan. This department is also responsible
+      for the coordination of response to emergencies/disasters whether natural, manmade, technological or war related. The department
+      coordinates the efforts of the Local Emergency Planning Committee in accomplishing these goals; as well as providing emergency
+      preparedness information and training for individuals, families, industry, local government officials and first-responders.
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">The 5 Stages of Emergency Management</h3>
+          </div>
+          <div class="panel-body">
+             {% cloudinary /img/EMcycle.jpg alt="The Five Stages of Emergency Management" %}
+             <div class="text-center"><a href="https://www.stlouis-mo.gov/government/departments/public-safety/emergency-management/Steps-of-Emergency-Management.cfm" target="_blank" rel="noopener">Learn More</a></div>
+          </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Volunteer Opportunities</h3>
+          </div>
+          <div class="list-group text-center pre-scrollable">
+            <a href="https://latahaux.com/" target="_blank" rel="noopener" class="list-group-item">Latah County <abbr title="Auxiliary Communications">Aux Comm</abbr></a>
+            <a href="https://www.idahoares.info/" target="_blank" rel="noopener" class="list-group-item"><abbr title="Amateur Radio Emergency Services">Latah ARES</abbr></a>
+            <a href="https://www.facebook.com/Latah-County-CERT-312969472139663/" target="_blank" rel="noopener" class="list-group-item">Latah County <abbr title="Community Emergency Response Team">CERT</abbr></a>
+            <a href="http://www.latahsar.org/" target="_blank" rel="noopener" class="list-group-item">Latah Search and Rescue</a>
+            <a href="http://www.palouseclearwatersar.org/" target="_blank" rel="noopener" class="list-group-item">Palouse-Clearwater Search and Rescue</a>
+            <a href="" target="_blank" rel="noopener" class="list-group-item">Mounted Posse</a>
+            <a href="" target="_blank" rel="noopener" class="list-group-item">Vehicle Posse</a>
+            <a href="http://www.redcross.org/local/idaho" target="_blank" rel="noopener" class="list-group-item">American Red Cross</a>
+            <a href="http://idahopublichealth.com/emergency-preparedness/medicalreservecorps" target="_blank" rel="noopener" class="list-group-item">Medical Reserve Corps</a>
+            <a href="https://www.ci.moscow.id.us/fire" target="_blank" rel="noopener" class="list-group-item">Moscow Fire</a>
+            <a href="https://www.ci.moscow.id.us/fire/Pages/ems.aspx" target="_blank" rel="noopener" class="list-group-item">Moscow Ambulance</a>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">External Resources</h3>
+        </div>
+        <div class="list-group text-center">
+          <a href="https://ready.gov" target="_blank" rel="noopener" class="list-group-item">Ready.gov</a>
+          <a href="https://ioem.idaho.gov/" target="_blank" rel="noopener" class="list-group-item">Idaho Office of Emergency Management</a>
+          <a href="http://www.redcross.org/" target="_blank" rel="noopener" class="list-group-item">American Red Cross</a>
+          <a href="http://www.redcross.org/local/idaho" target="_blank" rel="noopener" class="list-group-item">American Red Cross of Greater Idaho
+          <a href="http://idahopublichealth.com/" target="_blank" rel="noopener" class="list-group-item">Idaho Public Health - North Central District</a>
+          <a href="https://www.fema.gov/" target="_blank" rel="noopener" class="list-group-item">FEMA</a>
+          <a href="https://idvoad.communityos.org/cms/home" target="_blank" rel="noopener" class="list-group-item">Idaho <abbr title="Voluntary Organizations Active in Disasters">VOAD</abbr></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">Latah County Plans</h3>
+        </div>
+        <div class="panel-body">
+          Coming Soon
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 <div class="col-md-4">
   {% include contactBlock.html %}
@@ -27,19 +96,6 @@ permalink: /disaster_services/
     </div>
   </div>
 
-
-
-
-
-
-  <!-- <div id="weatherAlertBox" class=" alert alert-danger">
-    <div class="panel">
-      <h3 class="panel-title text-center">Current Weather Alerts</h3>
-      <div class="panel-body">
-        <div id="weatherAlert"></div>
-      </div>    
-    </div>
-  </div> -->
 </div>
 
 {% js weatherAlerts.js %}
