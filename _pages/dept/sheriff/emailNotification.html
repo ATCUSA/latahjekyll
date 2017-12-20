@@ -45,10 +45,23 @@ permalink: /sheriff/emailNotification
 $(document).ready(function(){
   console.log('emailNotification Ready');
     $("#emailSubscription").submit(function(event) {
-          console.log("Submit button clicked");
           var email = $('input[name=Email]').val();
           var subscribeFlag = $('input[name=emailSubscription]:checked').val();
-          console.log(email, subscribeFlag);
+          var sub = false;
+          if(subscribeFlag === 'subscribe'){
+            sub = true;
+          }
+          $.ajax({
+            url: 'https://www.latah.id.us/api/SetEmailSubscription?email=' + email + '&subscribe=' + sub,
+            type: 'GET',
+            dataType: 'json',
+            success: function(){
+              alert('Subscription Updated Successfully!');
+            },
+            error: function(){
+              alert('Error Updating Subscription!');
+            }
+          });//ajax
           event.preventDefault();
     });
   });
