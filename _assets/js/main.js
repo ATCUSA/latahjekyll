@@ -1,18 +1,19 @@
 /* Set Dept Window to Scroll for Small Windows */
 // Set Scroll Based on Window Size
-$(window).on
-function setScroll(){
+function setScroll(wh){
   var dh = $("#deptNav").height();
   var h = $(window).innerHeight() - $('#navFooter').height();
-  if (dh >  (h - 75)) {
+  if (dh >  h) {
     $("#deptNav").addClass('pre-scrollable');
+  } else {
+    $("#deptNav").removeClass('pre-scrollable');
   }
 }
 // Check Window Size on Page Load
-setScroll();
+setScroll($(window).innerHeight());
 // Dynamically Update Window Size
 $(window).resize(function() {
-  setScroll();
+  setScroll($(window).innerHeight());
 });
 
 /* Keep Footer Year Current */
