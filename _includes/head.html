@@ -30,17 +30,17 @@
 
   <!-- Calendar -->
   {% if page.calendar %}
-    {% js calendar.js %}
+    {% asset calendar.js %}
   {% endif %}
 
   <!-- Contacts -->
   {% if page.title == "Contact" %}
-    {% js contactInfo.js %}
+    {% asset contactInfo.js %}
   {% endif %}
 
   <!-- Contacts -->
   {% if page.contacts %}
-    {% js contactInfo.js %}
+    {% asset contactInfo.js %}
   {% endif %}
 
   <!-- Bootstrap Treeview -->
@@ -50,11 +50,11 @@
     <!-- Bootstrap-Treeview JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-treeview/1.2.0/bootstrap-treeview.min.js" integrity="sha256-rmZZb5ESAjCE4Al5RfENzQBpw1VbShzLes76aW8c+kc=" crossorigin="anonymous"></script>
     <!-- fileTree.js -->
-    {% js fileTree.js %}
+    {% asset fileTree.js %}
   {% endif %}
 
 {% if page.news %}
-  {% js news.js %}
+  {% asset news.js %}
 {% endif %}
 
   <!-- WorkAround: Force asset to be included -->
