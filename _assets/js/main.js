@@ -23,10 +23,19 @@ var NowMoment = moment().format("YYYY");
 var eDisplayMoment = document.getElementById('currentYear');
 eDisplayMoment.innerHTML = NowMoment;
 
+
 $(function () {
-  $('.panel').matchHeight(
-    {
-      property: 'min-height'
-    }
-  );
+  if ($('#newsNotices').length == 0) {
+    $('.panel').matchHeight(
+      {
+        property: 'min-height'
+      }
+    );
+  } else if ($('#newsNotices').length != 0) {
+    $('#newsNotices .panel').matchHeight(
+      {
+        property: 'min-height'
+      }
+    );
+  }
 });
