@@ -3,7 +3,6 @@ _site/
 .sass-cache/
 .jekyll-metadata
 .asset-cache
-Gemfile.lock
 .jekyll-cache
 # ===== End Jekyll.gitignore =====
 
