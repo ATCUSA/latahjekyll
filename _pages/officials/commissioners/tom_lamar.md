@@ -4,7 +4,7 @@ title: Tom Lamar
 permalink: /commissioners/bio/tom_lamar2/
 ---
 
-![Commissioner Tom Lamar]({% asset_path TomLamar.png %}){: #portrait .col-md-4}
+![Commissioner Tom Lamar]({% asset TomLamar.png %}){: #portrait .col-md-4}
 
 Tom Lamar was elected to the Latah County Commission, District 2 in November 2014, and began his term in January 2015. Lamar previously served on the Moscow City Council from June 2007 to January 2015.
 
