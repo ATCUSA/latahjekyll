@@ -23,7 +23,7 @@ var NowMoment = moment().format("YYYY");
 var eDisplayMoment = document.getElementById('currentYear');
 eDisplayMoment.innerHTML = NowMoment;
 
-
+// Makes the panels the same height
 $(function () {
   if ($('#newsNotices').length == 0) {
     $('.panel').matchHeight(
@@ -39,3 +39,12 @@ $(function () {
     );
   }
 });
+
+// Changes panel heading from default to darker color
+$(
+  $('.panel').removeClass('panel-default').css('border', '#000000'),
+  $('.panel-heading').css({
+    'background-color': '#222222',
+    'color': '#FFFFFF'
+  })
+);
