@@ -22,3 +22,20 @@ var NowMoment = moment().format("YYYY");
 // display value of moment object in #displayMoment div
 var eDisplayMoment = document.getElementById('currentYear');
 eDisplayMoment.innerHTML = NowMoment;
+
+
+$(function () {
+  if ($('#newsNotices').length == 0) {
+    $('.panel').matchHeight(
+      {
+        property: 'min-height'
+      }
+    );
+  } else if ($('#newsNotices').length != 0) {
+    $('#newsNotices .panel').matchHeight(
+      {
+        property: 'min-height'
+      }
+    );
+  }
+});
