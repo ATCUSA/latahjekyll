@@ -5,80 +5,60 @@ permalink: /commissioners/
 tree: true
 ---
 <div class="row">
-  <div class="col-md-4 hidden-xs">
-    <figure class="img-thumbnail">
-      {% cloudinary /img/commissioners.jpg alt="Latah County Commissioners." %}
-      <figcaption class="text-justify">
-        Latah County Board of County Commissioners from left to right: Tom Lamar (Chair, District II), Richard Walser (District I), and Dave McGraw (District II)
-      </figcaption>
-    </figure>
-  </div>
   <div class="col-md-8">
-		<div class="well">
-	    <p>
-	      This elected three-member board is the governing body of Latah County. The Board has the ability, by ordinance, to meet Monday through Friday, 9:00 to 5:00 p.m. Usually however, the Board meets Mondays and Wednesdays, between 9:00 a.m. and 5:00 p.m. The Board Members also attends off-site and evening meetings throughout the week as scheduled.
-	    </p>
-	    <p>
-	      All meetings of the Board are open to the public with the exception of Executive Sessions. Books, records and accounts of the meetings are open for public inspection in the Clerk's office.
-	    </p>
-	    <p>
-	      The Board of Commissioners is a unique body in government. It is the only office that has legislative, executive and judicial responsibilities and duties. The Commissioners have the power to pass ordinances, adopt budgets, fix tax levy rate and oversee the county budget. They are charged with the duty of supervising the official conduct of all county officers as their conduct relates to public monies and revenues, as well as supervising appointed boards and committees. They also act as the Board of Equalization.
-	    </p>
-	    <p>
-	      The Board sits as a quasi-judicial body to hear various matters including planning and zoning requests, property valuation protests and requests for cancellation of taxes, and indigent issues among many others.
-	    </p>
-		</div>
-  </div>
-</div>
+    <!-- Department Description -->
+    <div class="col-md-12">
+      <div class="panel panel-primary">
+        <figure style="float:left; padding:0.5em; margin-right:10px; ">
+          <img class="figure-img img-responsive rounded" style="width:250px; height:300px;" src={% cloudinary /img/commissioners.jpg %}</img>
+          <figcaption class="figure-caption text-center">
+          Latah County Commissioners
+        </figcaption>
+      </figure>
+      <p class="panel-body">
+        This elected three-member board is the governing body of Latah County, from left to right: Tom Lamar (Chair, District II), Richard Walser (District I), and Dave McGraw (District II). The Board has the ability, by ordinance, to meet Monday through Friday, 9:00 to 5:00 p.m. Usually however, the Board meets Mondays and Wednesdays, between 9:00 a.m. and 5:00 p.m. The Board Members also attends off-site and evening meetings throughout the week as scheduled.
+        <br><br>
+        All meetings of the Board are open to the public with the exception of Executive Sessions. Books, records and accounts of the meetings are open for public inspection in the Clerk's office.
+        <br><br>
+        The Board of Commissioners is a unique body in government. It is the only office that has legislative, executive and judicial responsibilities and duties. The Commissioners have the power to pass ordinances, adopt budgets, fix tax levy rate and oversee the county budget. They are charged with the duty of supervising the official conduct of all county officers as their conduct relates to public monies and revenues, as well as supervising appointed boards and committees. They also act as the Board of Equalization.
+        <br><br>
+        The Board sits as a quasi-judicial body to hear various matters including planning and zoning requests, property valuation protests and requests for cancellation of taxes, and indigent issues among many others.
+       </p>
+      </p>
+    </div><!-- <div class="panel panel-default"> -->
 
-<div class="row">
-	<!-- Agendas -->
-  <div class="col-md-4">
-		<div class="panel panel-default">
-			<div class="panel-heading">
-				<h4 class=" text-center">Agendas</h4>
-			</div>
-			<div class="list-group">
-				<div id="comAgendas" class="list-group-item pre-scrollable"></div>
-			</div>
-			<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
-				<div class="list-group pre-scrollable" id="agendas">
-					<div id="agendas"></div>
-					<noscript>To view agendas please enable JavaScript or update your browser</noscript>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- End Agendas -->
-	<!-- Proceedings -->
-  <div class="col-md-4">
-		<div class="panel panel-default">
-			<div class="panel-heading">
-				<h4 class=" text-center">Proceedings</h4>
-			</div>
-			<div class="list-group">
-				<div id="comProceedings" class="list-group-item pre-scrollable"></div>
-			</div>
-			<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
-				<div class="list-group pre-scrollable" id="proceedings">
-					<div id="proceedings"></div>
-					<noscript>To view proceedings please enable JavaScript or update your browser</noscript>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- End Procedings -->
+      <!-- Agendas Proceedings and Proclamations -->
+        <div class="panel panel-primary">
+          <div class="panel-heading" >
+            <h4 class="panel-title text-center">Agendas Proceedings and Proclamations</h4>
+          </div>
+          <div class="list-group">
+            <div id="comAgendas"></div>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
+            <div class="list-group pre-scrollable" id="agendas">
+              <div id="agendas" class="list-group-item"></div>
+              <noscript>To view agendas please enable JavaScript or update your browser</noscript>
+            </div>
+          </div>
+        </div>
+      <!-- End Agendas Proceedings and Proclamations -->
+	</div><!-- <div class="col-md-12"> -->
+
+  </div><!-- <div class="col-md-8"> -->
+
+
 	<!-- Links -->
   <div class="col-md-4">
 		{% include contactBlock.html %}
-  	<div class="panel panel-default">
+  	<div class="panel panel-primary">
   		<div class="panel-heading">
-				<h4 class="text-center">Links</h4>
+				<h4 class="panel-title text-center">Additional Information</h4>
 			</div>
-  		<div class="list-group">
-      	<a href="http://www.latah.id.us/commissioners/CommissionerDistricts.pdf" target="_blank" rel="noopener" class="list-group-item">Commissioner District Maps</a>
+  		<div class="list-group text-center">
+      	<a href="#" class="list-group-item" onclick="downloadFile('CommissionerDistricts.pdf'); return false;">Commissioner District Maps</a>
       	<a href="#myModal" data-toggle="modal" class="list-group-item">Agenda Notifications<noscript> - <small>You must enable Javascript or update your browser to view this content.</small></noscript></a>
-      	<a href="http://www.latah.id.us/assessor/tax_exempt_property.php" class="list-group-item">Tax Exempt Property Info and Application</a>
+      	<a href="/assessor/" class="list-group-item">Tax Exempt Property Information</a>
       	<a href="/commissions/#laws" class="list-group-item">Idaho Open Meeting Laws</a>
 				<a href="#proclamationsModal" data-toggle="modal" class="list-group-item">Proclamations</a>
 			</div>
@@ -145,11 +125,15 @@ tree: true
 		</div>
 	</div>
 	<!-- End Proclamations Modal -->
-</div>
-<!-- End Row -->
+</div><!-- row -->
 
 <script type="text/javascript">
-deptTree("comAgendas", "Commissioners\\Agendas")
-deptTree("comProceedings", "Commissioners\\Proceedings")
-deptTree("comProclamations", "Commissioners\\Proclamations")
+deptTree("comAgendas", "Commissioners")
+</script>
+
+<script text/javascript>
+function downloadFile(filename){
+				var url = 'https://www.latah.id.us/api/DownloadFileEx?filename=' + filename;
+				setTimeout(() => window.open(url, '_blank'), 500);
+			}
 </script>

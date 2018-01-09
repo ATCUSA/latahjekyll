@@ -116,7 +116,7 @@ news: true
 				<a href="http://www.sheriffalerts.com/cap_main.php?office=55417" class="list-group-item list-link text-center">Sex Offender Search</a>
 				<a href="patrolDivision.html" data-remote="false" class="list-group-item list-link text-center" data-toggle="modal" data-target="#myModal">Patrol Division</a>
 				<a href="records.html" data-remote="false" class="list-group-item list-link text-center" data-toggle="modal" data-target="#myModal">Records</a>
-				<a href="#" id=recordsRequest data-remote="false" class="list-group-item list-link text-center">Records Request Form</a>
+				<a href="#" id=recordsRequest data-remote="false" class="list-group-item list-link text-center" onclick="downloadFile('Public-Records-Request-Form.pdf'); return false;">Records Request Form</a>
 				<a href="sales.html" data-remote="false" class="list-group-item list-link text-center">Sheriff Sales</a>
 				<a href="https://www.vinelink.com/vinelink/siteInfoAction.do?siteId=13000" data-remote="false" class="list-group-item list-link text-center">VINE (victim notification of offender custody status)</a>
 			</div>
@@ -139,12 +139,6 @@ const args = ['sheriffNews', 'sheriffNotice'];
 getNewsandNotices(args, "SO")
 </script>
 
-<script text/javascript>
-	$('#recordsRequest').click(function(){
-			downloadFile('Public-Records-Request-Form.pdf');
-			return false;
-	});
-</script>
 
 <script text/javascript>
 function downloadFile(p){
