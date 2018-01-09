@@ -57,7 +57,7 @@
             <li>
               {% for link in site.data.menu.Resources %}
                 <li>
-                  <a class="page-link" href="{{ link.url | prepend: site.baseurl }} {{ link.target }}">{{ link.title }}</a>
+                  <a class="page-link" href="{{ link.url | prepend: site.baseurl }}">{{ link.title }}</a>
                 </li>
               {% endfor %}
             </li>
