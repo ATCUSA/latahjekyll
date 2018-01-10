@@ -1,0 +1,107 @@
+---
+layout: page
+title: Auditor
+permalink: /auditor/
+news: true
+---
+<div class="row">
+	<div class="col-md-8">
+
+		<!-- Department Description -->
+		<div class="col-md-12">
+			<div class="panel panel-default">
+				<figure style="float:left; padding:0.5em; margin-right:10px; ">
+					<img class="figure-img img-responsive rounded" style="width:250px; height:300px;" src={% cloudinary /img/officials/HenrianneWestberg.png %}</img>
+					<figcaption class="figure-caption text-center">Clerk Henrianne Westberg</figcaption>
+				</figure>
+				<p class="panel-body">
+					Welcome to the Latah County Auditor, Elections and Recorder’s Office. We prepare the county's payroll and manage all accounts receivable and payable. Our Auditing staff also prepares the county's annual budget and its year-end financial reports. We are also the Election’s Office, where we register voters, maintain the database of registered voters, and organize our county, state and national elections. Furthermore, our office records documents associated with property, issues marriage license applications and are agents for executing U.S. Passports.
+				</p>
+			</div>
+		</div>
+		<!-- End Description -->
+
+		<div class="container col-md-6" id="notices">
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="panel-title text-center">Notices</h3>
+				</div>
+				<div class="list-group">
+					<div id="audNotice" ></div>
+				</div>
+			</div>
+		</div>
+		<div class="container col-md-6" id="news">
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="panel-title text-center">News</h3>
+				</div>
+				<div class="list-group">
+					<div id="audNews" ></div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- Right Column -->
+	<div class="col-md-4">
+		{% include contactBlock.html %}
+		<!-- Services -->
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h3 class="panel-title text-center">Our Services</h3>
+			</div>
+			<div class="list-group">
+				<li class="list-group-item text-center">Marriage License</li>
+				<li class="list-group-item text-center">Deed Recording</li>
+				<li class="list-group-item text-center">Passorts</li>
+			</div>
+		</div>
+
+
+		<!-- additional information menu -->
+		<!-- <div class="col-md-4"> -->
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h3 class="panel-title text-center">Additional Information</h3>
+			</div>
+			<div class="list-group">
+				<a href="billing.html" data-remote="false" class="list-group-item list-link text-center" data-toggle="modal" data-target="#myModal">Billing Procedures</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- modal object -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+	<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title"></h4>
+			</div>
+			<div class="modal-body" id="myModalDiv">
+				<p>&hellip;</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<script>
+$(document).ready(function(){
+	$("#myModal").on("show.bs.modal", function(e){
+		var link = $(e.relatedTarget);
+		$(this).find(".modal-title").text(e.relatedTarget.innerText);
+		$(this).find(".modal-body").load(link.attr("href"));
+	});
+});
+</script>
+
+<script type="text/javascript">
+//args contains the list of control elements that needs to be examined
+const args = ['audNews', 'audNotice'];
+//pass in the args array and the department
+getNewsandNotices(args, "AUD")
+</script>

@@ -9,6 +9,9 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
 
+  <!-- Favicons -->
+  {% include favicon.html %}
+
   <!-- Latest Minified External CSS -->
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" >
@@ -23,21 +26,21 @@
   <script src="https://cdn.jsdelivr.net/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous" ></script>
 
   <!-- ##### Custom Scripts ##### -->
-  {% js upload.js %}
+  
 
   <!-- Calendar -->
   {% if page.calendar %}
-    {% js calendar.js %}
+    {% asset calendar.js %}
   {% endif %}
 
   <!-- Contacts -->
   {% if page.title == "Contact" %}
-    {% js contacts.js %}
+    {% asset contactInfo.js %}
   {% endif %}
 
   <!-- Contacts -->
   {% if page.contacts %}
-    {% js contacts.js %}
+    {% asset contactInfo.js %}
   {% endif %}
 
   <!-- Bootstrap Treeview -->
@@ -47,8 +50,12 @@
     <!-- Bootstrap-Treeview JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-treeview/1.2.0/bootstrap-treeview.min.js" integrity="sha256-rmZZb5ESAjCE4Al5RfENzQBpw1VbShzLes76aW8c+kc=" crossorigin="anonymous"></script>
     <!-- fileTree.js -->
-    {% js fileTree.js %}
+    {% asset fileTree.js %}
   {% endif %}
+
+{% if page.news %}
+  {% asset news.js %}
+{% endif %}
 
   <!-- WorkAround: Force asset to be included -->
 </head>

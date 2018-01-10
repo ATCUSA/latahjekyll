@@ -1,91 +1,84 @@
 ---
 layout: page
 permalink: /
+news: true
 ---
 
-<div class="row" id="aboutRow">
+<div class="row display-flex" id="aboutRow">
   <div id="homeimgL" class="thumbnail col-md-2 col-sm-2 hidden-xs">
     {% cloudinary /img/field.png alt="Wheat Field" %}
   </div>
-  <div class="col-md-8 col-sm-8" id="about">
-    <div class="well">
-      <p class="text-justify">
-        Latah County is located in the northern Idaho panhandle; to the immediate west lies <a href="http://www.co.whitman.wa.us/" target="_blank" rel="noopener">Whitman County</a>, Washington. These counties are referred to as <strong>The Palouse</strong>, which produces a large share of the wheat, lentils, peas, oats and barley in the United States. The Palouse is home to two major universities, <a href="http://www.uidaho.edu/" target="_blank" rel="noopener">University of Idaho</a> and <a href="http://www.wsu.edu" target="_blank" rel="noopener">Washington State University</a>.  Latah County incorporated cities include Bovill, <a href="http://www.deary-id.com/" target="_blank" rel="noopener">Deary</a>, Genesee, Juliaetta, Kendrick, <a href="http://www.ci.moscow.id.us/" targer="_blank" rel="noopener">Moscow</a>, <a href="http://www.potlatch.com/" target="_blank" rel="noopener">Onaway</a>, <a href="http://www.potlatch.com/" target="_blank" rel="noopener">Potlatch</a> and Troy.  Our unincorporated communities are Avon, Cedar Creek, Farmington, Harvard, Helmer, Howell, Joel, Princeton and Viola.
-      </p>
-    </div>
+  <div class="col-md-8 col-sm-8 well" id="about">
+    <p class="text-justify">
+      Latah County is located in the northern Idaho panhandle; to the immediate west lies <a href="http://www.co.whitman.wa.us/" target="_blank" rel="noopener">Whitman County</a>, Washington. These counties are referred to as The Palouse, which produces a large share of the wheat, lentils, peas, oats and barley in the United States. The Palouse is home to two major universities, <a href="http://www.uidaho.edu/" target="_blank" rel="noopener">University of Idaho</a> and <a href="http://www.wsu.edu" target="_blank" rel="noopener">Washington State University</a>.  Latah County incorporated cities include Bovill, <a href="http://www.deary-id.com/" target="_blank" rel="noopener">Deary</a>, Genesee, Juliaetta, Kendrick, <a href="http://www.ci.moscow.id.us/" targer="_blank" rel="noopener">Moscow</a>, <a href="http://www.potlatch.com/" target="_blank" rel="noopener">Onaway</a>, <a href="http://www.potlatch.com/" target="_blank" rel="noopener">Potlatch</a> and Troy.  Our unincorporated communities are Avon, Cedar Creek, Farmington, Harvard, Helmer, Howell, Joel, Princeton and Viola.
+    </p>
   </div>
   <div id="homeimgR" class="thumbnail col-md-2 col-sm-2 hidden-xs">
     {% cloudinary /img/barn.png alt="Barn" %}
   </div>
 </div>
 <div class="row" id="infoRow">
-  <div class="container col-md-4" id="notices">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h3 class="text-center">Notices</h3>
-      </div>
+  <div class="col-md-8" id="newsNotices">
+  <!-- Notices and News -->
+    <div class="col-md-6" id="notices">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <div class="panel-title text-center">Notices</div>
+        </div>
         <div class="list-group">
-          {% for notice in site.data.notices %}
-            {% if notice.home %}
-              <a href="{{ notice.url }}" target="{{ notice.target }}" rel="noopener" class="list-group-item text-center">
-                {{ notice.title }}
-              </a>
-            {% endif %}
-          {% endfor %}
+          <div id="homeNotice" ></div>
         </div>
       </div>
     </div>
-  <div class="container col-md-4" id="news">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <h3 class="text-center">News</h3>
-      </div>
-      <div class="list-group">
-        {% for news in site.data.news %}
-          <a href="{{ news.url }}" target="{{ news.target }}" rel="noopener" class="list-group-item text-center">
-            {% if news.title == null  %}
-              <h4>No news at this time.</h4>
-            {% else %}
-              {{ news.title }}
-            {% endif %}
-          </a>
-        {% endfor %}
+    <div class="col-md-6" id="news">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <div class="panel-title text-center">News</div>
+        </div>
+        <div class="list-group">
+          <div id="homeNews" ></div>
+        </div>
       </div>
     </div>
+    <!-- end notices and news -->
   </div>
-  <div class="container col-md-4" id="contact">
+
+  <div class="col-md-4" id="contact">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3 class="text-center">Contact</h3>
+        <div class="panel-title text-center">Contact</div>
       </div>
       <div class="panel-body">
         <ul class="list-group">
           <ul class="list-group">
             <li class="list-group-item">
-              <h4>Office hours</h4>
+              <h4>Building Hours</h4>
             </li>
             <li class="list-group-item">
               8:00 a.m. – 5:00 p.m. <br  />
-              M – F, except for recognized holidays
+              M – F, except for recognized <a href="#holidays" data-toggle="modal">holidays</a>
             </li>
           </ul>
           <ul class="list-group">
             <li class="list-group-item">
               <h4>Address</h4>
             </li>
-            <li class="list-group-item">
+            <li class="list-group-item text-center">
+              <strong>Latah County Courthouse</strong><br />
               <address>
-                <strong>Latah County</strong><br />
                 522 S Adams<br />
                 Moscow, ID 83843<br />
-                <abbr title="Phone">P:</abbr> (208) 883-8580
               </address>
             </li>
-          </ul>
-          <ul class="list-group">
-            <li class="list-group-item">
-              See <a href="http://www.latah.id.us/contact.php" class="link">Contact Us</a> page for department listings.
-              Map to Latah County Courthouse
+            <li class="list-group-item text-center">
+              <strong>Latah County Annex</strong><br />
+              <address>
+                200 S Almon<br />
+                Moscow, ID 83843<br />
+              </address>
+            </li>
+            <li class="list-group-item text-center">
+              <button type="button" class="btn btn-default" data-toggle="modal" data-target="#mapBox">Map</button>
             </li>
           </ul>
           <ul class="list-group">
@@ -93,9 +86,12 @@ permalink: /
               <h4>Social</h4>
             </li>
             <li class="list-group-item">
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-                <i class="fa fa-instagram" aria-hidden="true"></i>
+              <div class="row text-center">
+                <a href="https://www.facebook.com/LatahCountyID/" target="_blank" rel="noopener" class="btn"><i class="fa fa-2x fa-facebook" aria-hidden="true"></i></a>
+                <a href="#" target="_blank" rel="noopener" class="btn disabled"><i class="fa fa-2x fa-twitter" aria-hidden="true"></i></a>
+                <a href="#" target="_blank" rel="noopener" class="btn disabled"><i class="fa fa-2x fa-instagram" aria-hidden="true"></i></a>
+                <a href="/contact/" class="btn"><i class="fa fa-2x fa-envelope" aria-hidden="true"></i></a>
+              </div>
             </li>
           </ul>
         </ul>
@@ -103,3 +99,64 @@ permalink: /
     </div>
   </div>
 </div>
+
+<!-- Modal -->
+<div class="modal fade" id="holidays" tabindex="-1" role="dialog" aria-labelledby="holidaysLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="holidaysLabel">County Holidays</h4>
+      </div>
+      <div class="modal-body">
+        <ul class="list-group text-center">
+          <li class="list-group-item">New Year's Day</li>
+          <li class="list-group-item">Martin Luther King, Jr./Human Rights Day</li>
+          <li class="list-group-item">Presidents' Day</li>
+          <li class="list-group-item">Memorial Day</li>
+          <li class="list-group-item">Independence Day</li>
+          <li class="list-group-item">Labor Day</li>
+          <li class="list-group-item">Columbus Day</li>
+          <li class="list-group-item">Veteran's Day</li>
+          <li class="list-group-item">Thanksgiving Day</li>
+          <li class="list-group-item">Employee Appreciation Day (the day after Thanksgiving)</li>
+          <li class="list-group-item">Christmas Day</li>
+        </ul>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="mapBox" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="mapBoxTitle">Map</h4>
+      </div>
+      <div class="modal-body">
+        <div class="text-center" id="maps"></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+//args contains the list of control elements that needs to be examined
+const args = ['homeNews', 'homeNotice'];
+//pass in the args array and the department
+getNewsandNotices(args, "home")
+</script>
+
+<!-- Scripts  -->
+{% asset maps.js %}
+<!-- Call Script Functions -->
+<script>
+  address2Maps()
+</script>

@@ -13,7 +13,7 @@ commissioners:
     district: District 1
     page: /commissioners/district_1/
     bio: /commissioners/bio/dick_walser/
-    image: /img/RichardWalser.png
+    image: /img/officials/RichardWalser.png
   - name: Tom Lamar
     district: District 2
     description: >
@@ -28,7 +28,7 @@ commissioners:
       </p>
     page: /commissioners/district_2
     bio: /commissioners/bio/tom_lamar/
-    image: /img/TomLamar.png
+    image: /img/officials/TomLamar.png
     facebook: https://www.facebook.com/tomlamar.org
     twitter: https://twitter.com/lamartom
     website: http://tomlamar.org/
@@ -40,7 +40,7 @@ commissioners:
       </p>
     page: /commissioners/district_3/
     bio: /commissioners/bio/dave_mcgraw/
-    image: /img/DaveMcGraw.png
+    image: /img/officials/DaveMcGraw.png
 
 assessor:
   - name: Pat Vaughan
@@ -50,21 +50,31 @@ assessor:
       </p>
     page: /assessor/
     bio: /assessor/bio/
-    image: https://placehold.it/250x300
+    image: /img/officials/PatrickVaughan.png
 
 auditor:
   - name: Henrianne Westberg
     position: Auditor/Clerk/Recorder
-    description: Grant me the serenity to accept the things I cannot change, Courage to change the things I can, And wisdom to know the difference.  ~ Reinhold Niebuhr
+    description: >
+      <p>
+        Henrianne arrived on the Palouse in 1976 to attend the University of Idaho, and graduated in 1980 with a degree in Wildlife Habitat.  In 1981 she married Wayne Westberg, and together they farm and ranch on the Lenville Road southeast of Moscow.  They have 3 children, Emily, who is married to Walker Berg and teaches in Vancouver, Washington, Amy, who works in Social Service at Ulster County New York, and John who is involved in the family farm operation.
+      </p>
+      <p>
+        Henrianne began working for Latah County in the Auditor’s Office in 1985 doing Payroll and Accounts Payable before transferring to the District Court Office in 1990 and working there until 1998.  She then spent 16 years in the Finance Department of the City of Moscow, before becoming the Elected Clerk in 2014.
+      </p>
+      <p>
+        Besides traveling to Georgia and Texas to visit family, Henrianne enjoys our many local area events, and participation in various community organizations.
+      </p>
+
     page: /auditor/
     bio: /auditor/bio/
-    image: /img/HenrianneWestberg.png
+    image: /img/officials/HenrianneWestberg.png
 
 coroner:
   - name: Cathy Mabbutt
     description: >
       <p>
-        Grant me the serenity to accept the things I cannot change, Courage to change the things I can, And wisdom to know the difference.  ~ Reinhold Niebuhr
+        Cathy Mabbutt’s professional background is in law as well as nursing. She graduated from the Sacred Heart School of Nursing in 1971 and completed her law degree in 2001 at the University of Idaho. She was elected as coroner for the first time in 2006.
       </p>
     page: /coroner/
     bio: /coroner/bio/
@@ -87,37 +97,43 @@ prosecutor:
       </p>
     page: /prosecutor/
     bio: /prosecutor/bio/
-    image: /img/BillThompson.png
+    image: /img/officials/BillThompson.png
 sheriff:
   - name: Richard Skiles
-    description: Grant me the serenity to accept the things I cannot change, Courage to change the things I can, And wisdom to know the difference.  ~ Reinhold Niebuhr
-    page:
-    image: https://placehold.it/250x300
+    description: >
+      <p>
+        Richie Skiles has served as chief of police in Troy from 2013 - 2016. His law enforcement experience also includes 12 years with the Latah County Sheriff’s Office and five years as a reserve officer for the St. Maries Police Department. He also spent four years in the Marines and managed the Moscow Zips Drive-Thru for five years.  He has served as Sheriff of Latah County since 2016.
+      </p>
+    page: /sheriff/
+    bio: /sheriff/bio/
+    image: /img/officials/RichardSkiles.png
 
 treasurer:
   - name: Lois Reed
-    description: Grant me the serenity to accept the things I cannot change, Courage to change the things I can, And wisdom to know the difference.  ~ Reinhold Niebuhr
-    page:
-    image: https://placehold.it/250x300
+    description: >
+      <p>
+        Lois Reed was born and raised in Northern California, about 80 miles north of Sacramento.  She attended the University of the Pacific, San Juaquin Delta College and finishing at the University of Oregon with a degree in Business.  She spent 15 years working in the banking and Savings and Loan industry before relocating to Idaho.
+      </p>
+      <p>
+        Lois moved to Idaho in 1984 and began working in the Latah County Treasurer’s Office in 1992.  She quickly became involved in County Government and found she was truly happy to work with and serve the people of Latah County.  She often refers to herself as a civil servant, never forgetting her role to assist and educate the public.
+      </p>
+      <p>
+        Elected to office in 2010 and again in 2014 Lois feels honored to serve as the Latah County Treasurer.
+      </p>
+      <p>
+      Lois has 1 daughter, Leona, a graduate of the University of Idaho, Go Vandals!
+      </p>
+    page: /treasurer/
+    bio: /treasurer/bio/
+    image: /img/officials/LoisReed.png
 
 judges:
   - name: John Judge
     position: Judge
     court: Magistrate Court
-    description: >
-      <p>
-        Grant me the serenity to accept the things I cannot change, Courage to change the things I can, And wisdom to know the difference.  ~ Reinhold Niebuhr
-      </p>
-    image: https://placehold.it/250x300
-    bio: /judges/bio/john_judge/
+    page: /district_court/magistrate/
 
   - name: John Stegner
     position: Judge
     court: District Court
-    description: >
-      <p>
-        Grant me the serenity to accept the things I cannot change, Courage to change the things I can, And wisdom to know the difference.  ~ Reinhold Niebuhr
-      </p>
-
-    image: https://placehold.it/250x300
-    bio: /judges/bio/john_stegner/
+    page: /district_court/district/

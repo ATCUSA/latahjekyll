@@ -9,7 +9,7 @@ permalink: /weed_control/
   <div class="col-md-8">
     <!-- Department Description -->
     <div class="">
-      <div class="panel panel-default">
+      <div class="panel panel-primary">
         <div class="panel-body text-justify">
           <p>
             Supervised by the County Commissioners, this department is responsible for enforcement of the State Noxious Weed Law; the Idaho Department of Agriculture Rules and Regulations and the County Noxious Weed Ordinance. The department's activities include inspecting land in Latah County for compliance with the above laws, rules, regulations and ordinances, while checking for the invasion of weeds new to the state or county or new outbreaks of known noxious weeds and to consult, advise and provide direction on matters pertaining to the most effective and practical methods of noxious weed control.
@@ -21,7 +21,7 @@ permalink: /weed_control/
     <!-- Resources List -->
     <h4>Resources</h4>
     <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-      <div class="panel panel-default">
+      <div class="panel panel-primary">
         <div class="panel-heading" role="tab" id="headingOne">
           <h4 class="panel-title">
             <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -35,7 +35,7 @@ permalink: /weed_control/
           </ul>
         </div>
       </div>
-      <div class="panel panel-default">
+      <div class="panel panel-primary">
         <div class="panel-heading" role="tab" id="headingTwo">
           <h4 class="panel-title">
             <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -52,7 +52,7 @@ permalink: /weed_control/
           </ul>
         </div>
       </div>
-      <div class="panel panel-default">
+      <div class="panel panel-primary">
         <div class="panel-heading" role="tab" id="headingThree">
           <h4 class="panel-title">
             <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -67,7 +67,7 @@ permalink: /weed_control/
           </ul>
         </div>
       </div>
-      <div class="panel panel-default">
+      <div class="panel panel-primary">
         <div class="panel-heading" role="tab" id="headingFour">
           <h4 class="panel-title">
             <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
@@ -82,7 +82,7 @@ permalink: /weed_control/
           </ul>
         </div>
       </div>
-      <div class="panel panel-default">
+      <div class="panel panel-primary">
         <div class="panel-heading" role="tab" id="headingFive">
           <h4 class="panel-title">
             <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
@@ -99,7 +99,7 @@ permalink: /weed_control/
           </ul>
         </div>
       </div>
-      <div class="panel panel-default">
+      <div class="panel panel-primary">
         <div class="panel-heading" role="tab" id="headingSix">
           <h4 class="panel-title">
             <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
@@ -121,12 +121,13 @@ permalink: /weed_control/
   <!-- End Left Pane -->
   <!-- Right Pane -->
   <div class="col-md-4">
+    {% include contactBlock.html %}
     <!-- Services -->
-    <div class="panel panel-default">
+    <div class="panel panel-primary">
       <div class="panel-heading">
-        <h4 class="text-center">Our Services</h4>
+        <hd class="panel-title text-center">Our Services</hd>
       </div>
-      <div class="list-group">
+      <div class="list-group text-center">
         <li class="list-group-item">Inspecting Lands for Compliance</li>
         <li class="list-group-item">Checking for New Weed Invasions</li>
         <li class="list-group-item">Advising on Noxious Weed Control</li>
@@ -138,7 +139,71 @@ permalink: /weed_control/
   <div class="col-md-4">
     <h4>Idaho Noxious Weed Book</h4>
     <div class="well">
-      If you are a Latah County resident and would like a free copy of the Idaho Noxious Weed Book, Click <a href="#">Here</a>.
+      <a href="http://www.cals.uidaho.edu/edComm/pdf/BUL/BUL816.pdf" download>
+        {% cloudinary book_thumb /img/noxWeedsBook.png alt="Idaho Noxious Weeds Book" %}
+      </a>
+      <p>
+        A free copy of the Idaho Noxious Weed Book is available for Latah County residents. A PDF copy is also available.
+      </p>
+      <div class="row">
+        <div class="col-md-6">
+          <button class="btn btn-default" href="#bookRequest" data-toggle="modal">Request Copy</button>
+        </div>
+        <div class="col-md-6 text-right">
+          <a class="btn btn-default" href="http://www.cals.uidaho.edu/edComm/pdf/BUL/BUL816.pdf" download>Download PDF</a>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="bookRequest" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="bookRequest">
+              Idaho Noxious Weed Book
+            </h4>
+          </div>
+          <div class="modal-body">
+            <form class="form-horizontal well" id="contact" name="Noxious Weeds Book Request" netlify-honeypot="_gotcha" action="thank-you" netlify>
+              <div class="form-group">
+                <label for="name" class="control-label">Name</label>
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                  <input type="text" class="form-control" id="name" name="Name:" placeholder="Name" required />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email" class="control-label">Email</label>
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                  <input type="email" class="form-control" id="email" name="Email" placeholder="Email" required multiple />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="phone" class="control-label">Phone</label>
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                  <input type="tel" class="form-control" id="phone" name="Phone" placeholder="Phone" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="address" class="control-label">Address</label>
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                  <textarea rows="4" class="form-control" id="address" name="Address" placeholder="Enter address here..." required></textarea>
+                </div>
+              </div>
+              <div class="form-group">
+                <input class="btn btn-info" type="submit" value="Send">
+              </div>
+              <input type="text" name="_gotcha" style="display:none" />
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- End Weed Book Request -->
   </div>

@@ -1,0 +1,148 @@
+---
+layout: page
+title: Sheriff Home
+permalink: /sheriff/
+tree: true
+news: true
+---
+
+<div class="row">
+	<div class="col-md-8">
+		<!-- Department Description -->
+		<div class="col-md-12">
+			<div class="panel panel-primary">
+				<figure style="float:left; padding:0.5em; margin-right:10px; ">
+					<img class="figure-img img-responsive rounded" style="width:250px; height:300px;" src={% cloudinary /img/officials/RichardSkiles.png %}</img>
+					<figcaption class="figure-caption text-center">Sheriff Richard Skiles</figcaption>
+				</figure>
+				<p class="panel-body">
+					Latah County's elected Sheriff, provides law enforcement, jail, 911 emergency and county-wide dispatch, and search and rescue services to Latah County on a 24-hour, 365-day-a-year basis.
+					In addition, this office provides service of civil papers, drivers' licensing, vehicle identification inspections, concealed weapons permits, road condition reports,
+					crime prevention, and community service programs Monday through Friday during regular business hours. Salvation Army and American Red Cross assitance referrals are made
+					by this office. For jail visiting hours contact the office for scheduled times.
+					<br>
+					<br>
+					Fingerprinting is available at the Driver's License office at the Latah County Annex, M-F from 8:00 am to 12:00 pm.
+				</p>
+			</div>
+		</div>
+		<!-- End Description -->
+
+		<div class="container col-md-6" id="notices">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title text-center">Notices</h3>
+				</div>
+				<div class="list-group">
+					<div id="sheriffNotice" ></div>
+				</div>
+			</div>
+		</div>
+		<div class="container col-md-6" id="news">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title text-center">News</h3>
+				</div>
+				<div class="list-group">
+					<div id="sheriffNews" ></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-12">
+
+			<div class="panel panel-default" >
+				<div class="panel-heading">
+					<h3 class="panel-title">Drug Tip Hotline</h3>
+				</div>
+				<div class="panel-body">
+					To report suspicious activity you think is drug related, call (208) 892-3898.
+				</div>
+			</div>
+
+			<!-- forms -->
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title text-center">Sheriff Office Forms and Files</h4>
+				</div>
+				<div class="list-group">
+					<div id="sheriffDir"></div>
+				</div>
+				<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
+					<div class="list-group pre-scrollable" id="forms">
+						<div id="forms" class="list-group-item"></div>
+						<noscript>To view forms please enable JavaScript or update your browser</noscript>
+					</div>
+				</div>
+			</div>
+
+		</div><!-- 	<div class="col-md-12"> -->
+	</div><!-- <div class="col-md-8"> -->
+
+	<div class="col-md-4">
+		{% include contactBlock.html %}
+		<!-- Services -->
+		<!-- <div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="text-center">Our Services</h3>
+			</div>
+			<div class="list-group">
+				<li class="list-group-item text-center">Law Enforcement</li>
+				<li class="list-group-item text-center">Jail</li>
+				<li class="list-group-item text-center">911 Emergency</li>
+				<li class="list-group-item text-center">Search and Rescue</li>
+				<li class="list-group-item text-center">Civil Papers</li>
+				<li class="list-group-item text-center">Vehicle Id Inspections</li>
+				<li class="list-group-item text-center">Conceal Weapons Permits</li>
+				<li class="list-group-item text-center">Road Condition Reporting</li>
+				<li class="list-group-item text-center">Crime Prevention</li>
+				<li class="list-group-item text-center">Community Service Programs</li>
+			</div>
+		</div> -->
+
+		<!-- additional information menu -->
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title text-center">Additional Information</h3>
+			</div>
+			<div class="list-group">
+				<a href="civil.html" data-remote="false" class="list-group-item list-link text-center" data-toggle="modal" data-target="#myModal">Civil Office</a>
+				<a href="concealWeapons.html" data-remote="false" class="list-group-item list-link text-center" data-toggle="modal" data-target="#myModal">Concealed Weapons Licenses</a>
+				<a href="emailNotification.html" data-remote="false" class="list-group-item list-link text-center" data-toggle="modal" data-target="#myModal">Email Notification Service</a>
+				<a href="generalfaq.html" data-remote="false" class="list-group-item list-link text-center" data-toggle="modal" data-target="#myModal">Sheriff General FAQ</a>
+				<a href="salesfaq.html" data-remote="false" class="list-group-item list-link text-center" data-toggle="modal" data-target="#myModal">Sheriff Sales FAQ</a>
+				<a href="jaildivision.html" data-remote="false" class="list-group-item list-link text-center">Jail Division</a>
+				<a href="http://gis.latah.id.us/JailRoster/ListNames.aspx" class="list-group-item list-link text-center">Jail Roster</a>
+				<a href="http://www.sheriffalerts.com/cap_main.php?office=55417" class="list-group-item list-link text-center">Sex Offender Search</a>
+				<a href="patrolDivision.html" data-remote="false" class="list-group-item list-link text-center" data-toggle="modal" data-target="#myModal">Patrol Division</a>
+				<a href="records.html" data-remote="false" class="list-group-item list-link text-center" data-toggle="modal" data-target="#myModal">Records</a>
+				<a href="#" id=recordsRequest data-remote="false" class="list-group-item list-link text-center" onclick="downloadFile('Public-Records-Request-Form.pdf'); return false;">Records Request Form</a>
+				<a href="sales.html" data-remote="false" class="list-group-item list-link text-center">Sheriff Sales</a>
+				<a href="https://www.vinelink.com/vinelink/siteInfoAction.do?siteId=13000" data-remote="false" class="list-group-item list-link text-center">VINE (victim notification of offender custody status)</a>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+{% include modalPopup.html %}
+
+
+<script type="text/javascript">
+deptTree("sheriffDir", "Sheriff")
+</script>
+
+<script type="text/javascript">
+//args contains the list of control elements that needs to be examined
+const args = ['sheriffNews', 'sheriffNotice'];
+//pass in the args array and the department
+getNewsandNotices(args, "SO")
+</script>
+
+
+<script text/javascript>
+function downloadFile(p){
+				var url = 'https://www.latah.id.us/api/DownloadFileEx?filename=' + p;
+				setTimeout(() => window.open(url, '_blank'), 500);
+			}
+</script>

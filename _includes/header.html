@@ -5,7 +5,7 @@
         {% cloudinary logo_sm /img/logo_sm.png alt="Latah County Seal" %}
       </div>
       <div class="page-header text-center col-md-8 col-sm-8 col-xs-10">
-        <h1>Latah County Idaho</h1>
+        <h1>Latah County, Idaho</h1>
         <hr />
         {% if page.title %}
           <h2 id="deptHeader">{{ page.title }}</h2>
@@ -13,6 +13,10 @@
       </div>
       <div class="col-md-2 col-sm-2 hidden-xs">
         {% cloudinary stateseal /img/StateSeal.png alt="Idaho State Seal" %}
+        <div class="info" id="weatherBox">
+          <div id="weather"></div>
+          <!-- Weather provided by NOAA. -->
+        </div>
       </div>
     </div>
   </div>

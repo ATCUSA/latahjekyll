@@ -1,7 +1,8 @@
 source "https://rubygems.org"
 
 gem 'jekyll'
-gem 'jekyll-assets'
+# gem 'jekyll-assets'
+gem "jekyll-assets", group: :jekyll_plugins
 gem 'wdm', '0.1.1'
 gem 'autoprefixer-rails'
 

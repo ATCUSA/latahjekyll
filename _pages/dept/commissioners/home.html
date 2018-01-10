@@ -2,108 +2,78 @@
 layout: page
 title: Commissioners
 permalink: /commissioners/
-util: true
+tree: true
 ---
 <div class="row">
-  <div class="col-md-4 hidden-xs">
-    <figure class="img-thumbnail">
-      {% cloudinary /img/commissioners.jpg alt="Latah County Commissioners." %}
-      <figcaption class="text-justify">
-        Latah County Board of County Commissioners from left to right: Tom Lamar (Chair, District II), Richard Walser (District I), and Dave McGraw (District II)
-      </figcaption>
-    </figure>
-  </div>
   <div class="col-md-8">
-		<div class="well">
-	    <p>
-	      This elected three-member board is the governing body of Latah County. The Board has the ability, by ordinance, to meet Monday through Friday, 9:00 to 5:00 p.m. Usually however, the Board meets Mondays and Wednesdays, between 9:00 a.m. and 5:00 p.m. The Board Members also attends off-site and evening meetings throughout the week as scheduled.
-	    </p>
-	    <p>
-	      All meetings of the Board are open to the public with the exception of Executive Sessions. Books, records and accounts of the meetings are open for public inspection in the Clerk's office.
-	    </p>
-	    <p>
-	      The Board of Commissioners is a unique body in government. It is the only office that has legislative, executive and judicial responsibilities and duties. The Commissioners have the power to pass ordinances, adopt budgets, fix tax levy rate and oversee the county budget. They are charged with the duty of supervising the official conduct of all county officers as their conduct relates to public monies and revenues, as well as supervising appointed boards and committees. They also act as the Board of Equalization.
-	    </p>
-	    <p>
-	      The Board sits as a quasi-judicial body to hear various matters including planning and zoning requests, property valuation protests and requests for cancellation of taxes, and indigent issues among many others.
-	    </p>
-		</div>
-  </div>
-</div>
+    <!-- Department Description -->
+    <div class="col-md-12">
+      <div class="panel panel-primary">
+        <figure style="float:left; padding:0.5em; margin-right:10px; ">
+          <img class="figure-img img-responsive rounded" style="width:350px; height:263px;" src={% cloudinary /img/commissioners.jpg %}</img>
+          <figcaption class="figure-caption text-center">
+          Latah County Commissioners
+        </figcaption>
+      </figure>
+      <p class="panel-body">
+        This elected three-member board is the governing body of Latah County, from left to right: Tom Lamar (Chair, District II), Richard Walser (District I), and Dave McGraw (District II). The Board has the ability, by ordinance, to meet Monday through Friday, 9:00 to 5:00 p.m. Usually however, the Board meets Mondays and Wednesdays, between 9:00 a.m. and 5:00 p.m. The Board Members also attends off-site and evening meetings throughout the week as scheduled.
+        <br><br>
+        All meetings of the Board are open to the public with the exception of Executive Sessions. Books, records and accounts of the meetings are open for public inspection in the Clerk's office.
+        <br><br>
+        The Board of Commissioners is a unique body in government. It is the only office that has legislative, executive and judicial responsibilities and duties. The Commissioners have the power to pass ordinances, adopt budgets, fix tax levy rate and oversee the county budget. They are charged with the duty of supervising the official conduct of all county officers as their conduct relates to public monies and revenues, as well as supervising appointed boards and committees. They also act as the Board of Equalization.
+        <br><br>
+        The Board sits as a quasi-judicial body to hear various matters including planning and zoning requests, property valuation protests and requests for cancellation of taxes, and indigent issues among many others.
+       </p>
+      </p>
+    </div><!-- <div class="panel panel-default"> -->
 
-<div class="row">
-	<!-- Agendas -->
+      <!-- Agendas Proceedings and Proclamations -->
+        <div class="panel panel-primary">
+          <div class="panel-heading" >
+            <h4 class="panel-title text-center">Agendas Proceedings and Proclamations</h4>
+          </div>
+          <div class="list-group">
+            <div id="comAgendas"></div>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
+            <div class="list-group pre-scrollable" id="agendas">
+              <div id="agendas" class="list-group-item"></div>
+              <noscript>To view agendas please enable JavaScript or update your browser</noscript>
+            </div>
+          </div>
+        </div>
+      <!-- End Agendas Proceedings and Proclamations -->
+	</div><!-- <div class="col-md-12"> -->
+
+  </div><!-- <div class="col-md-8"> -->
+
+
+	<!-- Links -->
   <div class="col-md-4">
-		<div class="panel panel-default" id="accordion" role="tablist" aria-multiselectable="true">
-      <div class="panel-heading">
-        <h4 class="text-center">Agendas</h4>
-      </div>
-			{% include noscript.html %}
-			<!-- 2017 -->
-			<div class="panel-heading" role="tab" id="headingA2017">
-				<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseA2017" aria-expanded="false" aria-controls="collapseA2017" class="collapsed" id="agendasCtrl">
-					<h4 class="panel-title text-center">
-						2017
-					</h4>
-				</a>
-			</div>
-			<div id="collapseA2017" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingA2017" aria-expanded="false" style="height: 0px;">
-				<div class="list-group pre-scrollable" id="agendas">
-				</div>
-			</div>
-			<!-- 2017 -->
-		</div>
-	</div>
-	<!-- End Agendas -->
-	<!-- Proceedings -->
-  <div class="col-md-4">
-		<div class="panel panel-default" id="accordion" role="tablist" aria-multiselectable="true">
-      <div class="panel-heading">
-        <h4 class="text-center">Proceedings</h4>
-      </div>
-			{% include noscript.html %}
-			<!-- 2017 -->
-			<div class="panel-heading" role="tab" id="headingP2017">
-				<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseP2017" aria-expanded="false" aria-controls="collapseP2017" class="collapsed" id="proceedingsCtrl">
-					<h4 class="panel-title text-center">
-						2017
-					</h4>
-				</a>
-			</div>
-			<div id="collapseP2017" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingP2017" aria-expanded="false" style="height: 0px;">
-				<div class="list-group pre-scrollable" id="proceedings">
-					<noscript>To view forms please enable JavaScript or update your browser</noscript>
-				</div>
-			</div>
-			<!-- 2017 -->
-		</div>
-	</div>
-	<!-- End Procedings -->
-  <div class="col-md-4">
-  	<div class="panel panel-default">
+		{% include contactBlock.html %}
+  	<div class="panel panel-primary">
   		<div class="panel-heading">
-				<h4 class="text-center">Links</h4>
+				<h4 class="panel-title text-center">Additional Information</h4>
 			</div>
-  		<div class="list-group">
-      	<a href="http://www.latah.id.us/commissioners/CommissionerDistricts.pdf" target="_blank" rel="noopener" class="list-group-item">Commissioner District Maps</a>
+  		<div class="list-group text-center">
+      	<a href="#" class="list-group-item" onclick="downloadFile('CommissionerDistricts.pdf'); return false;">Commissioner District Maps</a>
       	<a href="#myModal" data-toggle="modal" class="list-group-item">Agenda Notifications<noscript> - <small>You must enable Javascript or update your browser to view this content.</small></noscript></a>
-      	<a href="http://www.latah.id.us/assessor/tax_exempt_property.php" class="list-group-item">Tax Exempt Property Info and Application</a>
+      	<a href="/assessor/" class="list-group-item">Tax Exempt Property Information</a>
       	<a href="/commissions/#laws" class="list-group-item">Idaho Open Meeting Laws</a>
-				<a class="list-group-item" id="proclamationsCtrl">Proclamations
-				</a>
-				<div class="list-group-item pre-scrollable" id="proclamations"></div>
+				<a href="#proclamationsModal" data-toggle="modal" class="list-group-item">Proclamations</a>
 			</div>
   	</div>
   </div>
-  <!-- Modal -->
+	<!-- End Links -->
+  <!-- Agenda Notify Modal -->
 	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-	  <div class="modal-dialog" role="document">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-	        <h4 class="modal-title" id="myModalLabel">Signup for Meeting Notices</h4>
-	      </div>
-	      <div class="modal-body">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">Signup for Meeting Notices</h4>
+				</div>
+				<div class="modal-body">
 					<form name="subscribe" method="post" action="http://www.latah.id.us/mailman/subscribe/agendanotify">
 						<p>
 							If you subscribe to this service you will receive an e-mail every time a BOCC agenda or proceeding is added or amended to this web site.
@@ -118,13 +88,52 @@ util: true
 						E-mail Address: <input name="sAddr" type="email" size="35">
 						<input type="submit" value="Send Request">
 					</form>
-	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-	      </div>
-	    </div>
-	  </div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
 	</div>
-	<!-- End Meeting Notice Signup -->
-</div>
-<!-- End Row -->
+	<!-- Proclamations Modal -->
+	<div class="modal fade" id="proclamationsModal" tabindex="-1" role="dialog" aria-labelledby="proclamationsLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="proclamationsLabel">Proclamations</h4>
+				</div>
+				<div class="modal-body">
+					<!-- Proclamations -->
+					<div class="panel panel-default">
+						<div class="list-group">
+							<div id="comProclamations" class="list-group-item"></div>
+						</div>
+						<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false" style="height: 0px;">
+							<div class="list-group pre-scrollable" id="proclamations">
+								<div id="proclamations"></div>
+								<noscript>To view proclamations please enable JavaScript or update your browser</noscript>
+							</div>
+						</div>
+					</div>
+					<!-- End Proclamations -->
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Proclamations Modal -->
+</div><!-- row -->
+
+<script type="text/javascript">
+deptTree("comAgendas", "Commissioners")
+</script>
+
+<script text/javascript>
+function downloadFile(filename){
+				var url = 'https://www.latah.id.us/api/DownloadFileEx?filename=' + filename;
+				setTimeout(() => window.open(url, '_blank'), 500);
+			}
+</script>
