@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Extensions
-permalink: /extensions/
+permalink: /extension/
 ---
 
 {% include contactBlock.html %}
