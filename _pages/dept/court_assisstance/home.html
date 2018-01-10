@@ -30,9 +30,7 @@ tree: true
 
             <div id="collapseOne" class="collapse">
               <div class="panel-body">
-                Court Assistance Office forms and instructions are available in the forms section and on the web at <a href="https://courtselfhelp.idaho.gov">Court Self Help</a> and <a href="https://www.adaweb.net">Ada Web</a>. You can also obtain contact information for other Court Assistance Offices in the state on the website.
-                If telephone assistance is needed immediately, Ada County Court Assistance Office hours are 8:00 a.m. - 5:00 p.m. MST. They can be reached at (208) 287-6963 or (208) 287-6944.
-                You may also contact us with questions and you will receive a response after the office reopens.
+                <a href="#" onclick="downloadFile('Court-Assistance-Calendar.pdf'); return false;">Court Assistance Calendar</a>
               </div>
             </div>
           </div>
@@ -173,9 +171,7 @@ tree: true
           <h3 class="panel-title text-center">Our Services</h3>
         </div>
         <div class="list-group">
-          <li class="list-group-item text-center">Attorney Information</li>
-          <li class="list-group-item text-center">Legal Aid</li>
-          <li class="list-group-item text-center">Form Instructions</li>
+          <li class="list-group-item text-center">Standard Forms and Instructions</li>
         </div>
       </div>
     </div><!-- <div class="col-md-4"> -->
@@ -183,4 +179,11 @@ tree: true
 
   <script type="text/javascript">
   deptTree("caoDir", "CourtAssistance")
+  </script>
+
+  <script text/javascript>
+  function downloadFile(filename){
+  				var url = 'https://www.latah.id.us/api/DownloadFileEx?filename=' + filename;
+  				setTimeout(() => window.open(url, '_blank'), 500);
+  			}
   </script>
