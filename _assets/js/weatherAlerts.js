@@ -2,8 +2,8 @@ function weatherBoxAlerts() {
   $(document).ready(function () {
     var baseUrl = 'https://api.weather.gov/alerts?';
     var params = 'active=1&';
-    // var zone = 'zone=IDZ003';
-    var zone = 'zone=MTZ003'; // Use to test active alerts.
+    var zone = 'zone=IDZ003';
+    // var zone = 'zone=MTZ003'; // Use to test active alerts.
 
     $.getJSON(baseUrl + params + zone, function (data) {
       for (var i in data.features) {
