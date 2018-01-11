@@ -8,43 +8,57 @@ news: true
 
 <div class="row" id="infoRow">
   <div class="col-md-8">
-
     <!-- description -->
-    <div class="col-md-12">
-      <div class="panel panel-primary">
-        <figure style="float:left; padding:0.5em; margin-right:10px; ">
-					<img class="figure-img img-responsive rounded" style="width:250px; height:300px;" src={% cloudinary /img/officials/PatrickVaughan.png %}</img>
-					<figcaption class="figure-caption text-center">Assessor Patrick Vaughan</figcaption>
-				</figure>
-        <p class="panel-body">
-          The appraisal of all property, real and personal, in Latah County is the responsibility of the elected county Assessor. The
-          two main purposes of the Assessor are to identify current owners of property and to place a value on property for
-          assessment purposes. Another main function is to track all exemptions including homeowner's and circuit breakers.
-          The Assessor also administers the licensing and titling of motor vehicles.
-        </p>
+    <div class="row" id="deptDescription">
+      <div class="col-md-12">
+        <div class="panel panel-primary">
+          <div class="panel-body">
+            <figure style="float:left; padding:0.5em; margin-right:10px; ">
+              <img class="figure-img img-responsive rounded" style="width:250px; height:300px;" src={% cloudinary /img/officials/PatrickVaughan.png %}</img>
+              <figcaption class="figure-caption text-center">Assessor Patrick Vaughan</figcaption>
+            </figure>
+            <p>
+              The County Assessor maintains a current record of ownership of all property within Latah County, prepares a map or “assessor’s plat record” of all real property within the county, and assesses the market value of all property in the county. The Assessor must notify each property owner of the assessed value of their property on an annual Assessment Notice.
+            </p>
+            <p>
+              The Assessor submits annual property rolls and abstracts with all of the county’s assessment data to the County Auditor and the State Tax Commission. These reports include the overall taxable value of all property located within the boundaries of local taxing districts. This total taxable value is part of the calculation used by local taxing districts to set their annual property tax levies.
+            </p>
+            <p>
+              The property tax levy is the rate at which all property will be taxed in order to collect the amount of property taxes approved in that year’s budget. The assessed value of each property determines that property owner’s share of the annual property taxes to be collected.
+            </p>
+            <p>
+              The Assessor’s Office also administers homeowner exemption applications, as well as the state Property Tax Reduction Program (also known as “Circuit Breaker”) for qualifying senior citizens or disabled homeowners.
+            </p>
+            <p>
+              In Idaho, the licensing and titling of vehicles and vessels performed at DMVs also falls under the responsibility of the County Assessor.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row" id="newsNotices">
+      <div class="container col-md-6" id="notices">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title text-center">Notices</h3>
+          </div>
+          <div class="list-group">
+            <div id="assrNotice" class="list-group-item"></div>
+          </div>
+        </div>
+      </div>
+      <div class="container col-md-6" id="news">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title text-center">News</h3>
+          </div>
+          <div class="list-group">
+            <div id="assrNews" class="list-group-item"></div>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="container col-md-6" id="notices">
-      <div class="panel panel-primary">
-        <div class="panel-heading">
-          <h3 class="panel-title text-center">Notices</h3>
-        </div>
-        <div class="list-group">
-          <div id="assrNotice" class="list-group-item"></div>
-        </div>
-      </div>
-    </div>
-    <div class="container col-md-6" id="news">
-      <div class="panel panel-primary">
-        <div class="panel-heading">
-          <h3 class="panel-title text-center">News</h3>
-        </div>
-        <div class="list-group">
-          <div id="assrNews" class="list-group-item"></div>
-        </div>
-      </div>
-    </div>
   </div>
   <!--class="col-md-8" -->
 
