@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Auditor
+title: Auditor/Clerk/Recorder
 permalink: /auditor/
 news: true
 ---
@@ -51,12 +51,12 @@ news: true
 				<h3 class="panel-title text-center">Our Services</h3>
 			</div>
 			<div class="list-group">
-				<li class="list-group-item text-center">Marriage License</li>
 				<li class="list-group-item text-center">Deed Recording</li>
+				<li class="list-group-item text-center">Elections</li>
+				<li class="list-group-item text-center">Marriage License</li>
 				<li class="list-group-item text-center">Passports</li>
 			</div>
 		</div>
-
 
 		<!-- additional information menu -->
 		<!-- <div class="col-md-4"> -->
@@ -65,39 +65,16 @@ news: true
 				<h3 class="panel-title text-center">Additional Information</h3>
 			</div>
 			<div class="list-group">
-				<a href="billing.html" data-remote="false" class="list-group-item list-link text-center" data-toggle="modal" data-target="#myModal">Billing Procedures</a>
+				<a href="marriage.html" data-remote="false" class="list-group-item list-link text-center" data-toggle="modal" data-target="#myModal">Marriage License</a>
+				<a href="passports.html" data-remote="false" class="list-group-item list-link text-center" data-toggle="modal" data-target="#myModal">Passports</a>
+				<a href="recording.html" data-remote="false" class="list-group-item list-link text-center" data-toggle="modal" data-target="#myModal">Recording</a>
 			</div>
 		</div>
 	</div>
 </div>
 
-<!-- modal object -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
-	<div class="modal-dialog modal-lg" role="document">
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				<h4 class="modal-title"></h4>
-			</div>
-			<div class="modal-body" id="myModalDiv">
-				<p>&hellip;</p>
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-			</div>
-		</div><!-- /.modal-content -->
-	</div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
 
-<script>
-$(document).ready(function(){
-	$("#myModal").on("show.bs.modal", function(e){
-		var link = $(e.relatedTarget);
-		$(this).find(".modal-title").text(e.relatedTarget.innerText);
-		$(this).find(".modal-body").load(link.attr("href"));
-	});
-});
-</script>
+{% include modalPopup.html %}
 
 <script type="text/javascript">
 //args contains the list of control elements that needs to be examined
