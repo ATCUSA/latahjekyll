@@ -14,7 +14,7 @@ news: true
         <div class="panel panel-primary">
           <div class="panel-body">
             <figure style="float:left; padding:0.5em; margin-right:10px; ">
-              <img class="figure-img img-responsive rounded" style="width:250px; height:300px;" src={% cloudinary /img/officials/PatrickVaughan.png %}</img>
+              {% cloudinary /img/officials/PatrickVaughan.png class="figure-img img-responsive rounded" width="250" alt="Latah County Assessor" %}
               <figcaption class="figure-caption text-center">Assessor Patrick Vaughan</figcaption>
             </figure>
             <p>
@@ -69,11 +69,11 @@ news: true
       <div class="panel-heading">
         <h3 class="panel-title text-center">Our Services</h3>
       </div>
-      <div class="list-group">
+      <ul class="list-group">
         <li class="list-group-item text-center">Property Appraisals</li>
         <li class="list-group-item text-center">Exemption Tracking</li>
         <li class="list-group-item text-center">Vehicle licensing and Titling</li>
-      </div>
+      </ul>
     </div>
 
     <!-- additional information -->
@@ -98,7 +98,7 @@ news: true
         <div id="assessorDir" class="list-group-item"></div>
       </div>
       <div class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
-        <div class="list-group pre-scrollable" id="forms">
+        <div class="list-group pre-scrollable">
           <div id="forms"></div>
           {% include noscript.html %}
         </div>

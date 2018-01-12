@@ -68,7 +68,7 @@ function dsWeatherBox() {
       var icon = r.icon;
       var lastUpdated = r.timestamp;
       var lastUpdatedTime = moment(lastUpdated, "YYYY-MM-DDTHH:mm:ssZ").format("h:mm A");
-      $('#dsWeatherBox').append('<div class="col-md-4"><img src="' + icon + '" class="img img-responsive"></div>');
+      $('#dsWeatherBox').append('<div class="col-md-4"><img src="' + icon + '" class="img img-responsive" alt="Current Weather Image"></div>');
       $('#dsWeatherBox').append('<div class="col-md-8">' + degFInt + '&#176; F / ' + degCInt + '&#176; C <br />' + windSpeedInt + ' MPH <br /><small>As of ' + lastUpdatedTime + '</small></div>');
 
       console.log("Weather provided by NOAA from https://www.weather.gov.");

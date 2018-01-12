@@ -10,7 +10,7 @@ tree: true
 		<div class="col-md-12">
 			<div class="panel panel-primary">
 				<figure style="float:left; padding:0.5em; margin-right:10px; ">
-					<img class="figure-img img-responsive rounded" style="width:250px; height:300px;" src={% cloudinary /img/officials/LoisReed.png %}</img>
+					{% cloudinary /img/officials/LoisReed.png class="figure-img img-responsive rounded" width="250" alt="Latah County Treasurer" %}
 					<figcaption class="figure-caption text-center">Treasurer Lois Reed</figcaption>
 				</figure>
 				<p class="panel-body">
@@ -53,11 +53,11 @@ tree: true
 			<div class="panel-heading">
 				<h3 class="panel-title text-center">Our Services</h3>
 			</div>
-			<div class="list-group">
+			<ul class="list-group">
 				<li class="list-group-item text-center">Tax Collection</li>
 				<li class="list-group-item text-center">Tax Record Keeping</li>
 				<li class="list-group-item text-center">Public Administrator</li>
-			</div>
+			</ul>
 		</div>
 
 		<!-- additional information menu -->
@@ -84,7 +84,7 @@ tree: true
         <div id="treasurerDir" class="list-group-item"></div>
       </div>
       <div class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
-        <div class="list-group pre-scrollable" id="forms">
+        <div class="list-group pre-scrollable">
           <div id="forms"></div>
           {% include noscript.html %}
         </div>
