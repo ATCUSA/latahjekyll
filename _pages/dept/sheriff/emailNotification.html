@@ -47,12 +47,13 @@ $(document).ready(function(){
     $("#emailSubscription").submit(function(event) {
           var email = $('input[name=Email]').val();
           var subscribeFlag = $('input[name=emailSubscription]:checked').val();
+          var list = 'pressrelease@lists.latah.id.us';
           var sub = false;
           if(subscribeFlag === 'subscribe'){
             sub = true;
           }
           $.ajax({
-            url: 'https://www.latah.id.us/api/SetEmailSubscription?email=' + email + '&subscribe=' + sub,
+            url: 'https://www.latah.id.us/api/SetEmailSubscription?email=' + email + '&subscribe=' + sub + '&list=' + list,
             type: 'GET',
             dataType: 'json',
             success: function(){
