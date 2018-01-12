@@ -2,8 +2,8 @@ function weatherBoxAlerts() {
   $(document).ready(function () {
     var baseUrl = 'https://api.weather.gov/alerts?';
     var params = 'active=1&';
-    // var zone = 'zone=IDZ003';
-    var zone = 'zone=MTZ003'; // Use to test active alerts.
+    var zone = 'zone=IDZ003';
+    // var zone = 'zone=MTZ003'; // Use to test active alerts.
 
     $.getJSON(baseUrl + params + zone, function (data) {
       for (var i in data.features) {
@@ -68,7 +68,7 @@ function dsWeatherBox() {
       var icon = r.icon;
       var lastUpdated = r.timestamp;
       var lastUpdatedTime = moment(lastUpdated, "YYYY-MM-DDTHH:mm:ssZ").format("h:mm A");
-      $('#dsWeatherBox').append('<div class="col-md-4"><img src="' + icon + '" class="img img-responsive"></div>');
+      $('#dsWeatherBox').append('<div class="col-md-4"><img src="' + icon + '" class="img img-responsive" alt="Current Weather Image"></div>');
       $('#dsWeatherBox').append('<div class="col-md-8">' + degFInt + '&#176; F / ' + degCInt + '&#176; C <br />' + windSpeedInt + ' MPH <br /><small>As of ' + lastUpdatedTime + '</small></div>');
 
       console.log("Weather provided by NOAA from https://www.weather.gov.");
