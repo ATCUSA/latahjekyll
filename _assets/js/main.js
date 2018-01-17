@@ -9,6 +9,12 @@ function setScroll(wh){
     $("#deptNav").removeClass('pre-scrollable');
   }
 }
+// 
+// $("#deptDropDown").click(function(){
+//     //console.log('nav on click event fired');
+//     setScroll($(window).innerHeight());
+// });
+
 // Check Window Size on Page Load
 setScroll($(window).innerHeight());
 // Dynamically Update Window Size
