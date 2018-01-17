@@ -57,7 +57,9 @@ tree: true
 			</div>
   		<div class="list-group text-center">
       	<a href="#" class="list-group-item" onclick="downloadFile('CommissionerDistricts.pdf'); return false;">Commissioner District Maps</a>
-      	<a href="#myModal" data-toggle="modal" class="list-group-item">Agenda Notifications<noscript> - <small>You must enable Javascript or update your browser to view this content.</small></noscript></a>
+        <a href="http://www.latah.id.us/mailman/listinfo/agendanotify" class="list-group-item">Agenda Notifications</a>
+        <!-- TODO: see gitlab issue #66 refactor agenda notifications to use mailgun or some other method other than mailmail on spanky -->
+      	<!-- <a href="#myModal" data-toggle="modal" class="list-group-item">Agenda Notifications<noscript> - <small>You must enable Javascript or update your browser to view this content.</small></noscript></a> -->
       	<a href="/assessor/" class="list-group-item">Tax Exempt Property Information</a>
       	<a href="/commissions/#laws" class="list-group-item">Idaho Open Meeting Laws</a>
 				<a href="#proclamationsModal" data-toggle="modal" class="list-group-item">Proclamations</a>
@@ -66,7 +68,7 @@ tree: true
   </div>
 	<!-- End Links -->
   <!-- Agenda Notify Modal -->
-	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<!-- <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
@@ -74,7 +76,7 @@ tree: true
 					<h4 class="modal-title" id="myModalLabel">Signup for Meeting Notices</h4>
 				</div>
 				<div class="modal-body">
-					<form name="subscribe" method="post" action="http://www.latah.id.us/mailman/subscribe/agendanotify">
+					<form name="subscribe" method="post" action="http://www.latah.id.us/mailman/listinfo/agendanotify">
 						<p>
 							If you subscribe to this service you will receive an e-mail every time a BOCC agenda or proceeding is added or amended to this web site.
 						</p>
@@ -94,7 +96,7 @@ tree: true
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 	<!-- Proclamations Modal -->
 	<div class="modal fade" id="proclamationsModal" tabindex="-1" role="dialog" aria-labelledby="proclamationsLabel">
 		<div class="modal-dialog" role="document">
