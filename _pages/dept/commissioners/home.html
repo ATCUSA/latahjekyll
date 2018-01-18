@@ -16,11 +16,11 @@ tree: true
         </figcaption>
       </figure>
       <p class="panel-body">
-        This elected three-member board is the governing body of Latah County, from left to right: Tom Lamar (Chair, District II), Richard Walser (District I), and Dave McGraw (District II). The Board has the ability, by ordinance, to meet Monday through Friday, 9:00 to 5:00 p.m. Usually however, the Board meets Mondays and Wednesdays, between 9:00 a.m. and 5:00 p.m. The Board Members also attend off-site and evening meetings throughout the week as scheduled.
+        This elected three-member board is the governing body of Latah County, from left to right: Tom Lamar (Chair, District II), Richard Walser (District I), and Dave McGraw (District II). The Board has the ability, by ordinance, to meet Monday through Friday, 9:00 to 5:00 p.m. Usually however, the Board meets Mondays and Wednesdays, between 9:00 a.m. and 5:00 p.m. The Board Members also attends off-site and evening meetings throughout the week as scheduled.
         <br><br>
         All meetings of the Board are open to the public with the exception of Executive Sessions. Books, records and accounts of the meetings are open for public inspection in the Clerk's office.
         <br><br>
-        The Board of Commissioners is a unique body in government. It is the only office that has legislative, executive and judicial responsibilities and duties. The Commissioners have the power to pass ordinances, adopt budgets, fix tax levy rates and oversee the county budget. They are charged with the duty of supervising the official conduct of all county officers as their conduct relates to public monies and revenues, as well as supervising appointed boards and committees. They also act as the Board of Equalization.
+        The Board of Commissioners is a unique body in government. It is the only office that has legislative, executive and judicial responsibilities and duties. The Commissioners have the power to pass ordinances, adopt budgets, fix tax levy rate and oversee the county budget. They are charged with the duty of supervising the official conduct of all county officers as their conduct relates to public monies and revenues, as well as supervising appointed boards and committees. They also act as the Board of Equalization.
         <br><br>
         The Board sits as a quasi-judicial body to hear various matters including planning and zoning requests, property valuation protests and requests for cancellation of taxes, and indigent issues among many others.
        </p>
@@ -56,18 +56,17 @@ tree: true
 				<h4 class="panel-title text-center">Additional Information</h4>
 			</div>
   		<div class="list-group text-center">
-      	<a href="#" class="list-group-item list-link" onclick="downloadFile('CommissionerDistricts.pdf'); return false;">Commissioner District Maps</a>
-        <a href="http://www.latah.id.us/mailman/listinfo/agendanotify" class="list-group-item list-link">Agenda Notifications</a>
-        <!-- TODO: see gitlab issue #66 refactor agenda notifications to use mailgun or some other method other than mailmail on spanky -->
-      	<!-- <a href="#myModal" data-toggle="modal" class="list-group-item">Agenda Notifications<noscript> - <small>You must enable Javascript or update your browser to view this content.</small></noscript></a> -->
-      	<a href="/assessor/" class="list-group-item list-link">Tax Exempt Property Information</a>
-      	<a href="/commissions/#laws" class="list-group-item list-link">Idaho Open Meeting Laws</a>
+      	<a href="#" class="list-group-item" onclick="downloadFile('CommissionerDistricts.pdf'); return false;">Commissioner District Maps</a>
+      	<a href="#myModal" data-toggle="modal" class="list-group-item">Agenda Notifications<noscript> - <small>You must enable Javascript or update your browser to view this content.</small></noscript></a>
+      	<a href="/assessor/" class="list-group-item">Tax Exempt Property Information</a>
+      	<a href="/commissions/#laws" class="list-group-item">Idaho Open Meeting Laws</a>
+				<a href="#proclamationsModal" data-toggle="modal" class="list-group-item">Proclamations</a>
 			</div>
   	</div>
   </div>
 	<!-- End Links -->
   <!-- Agenda Notify Modal -->
-	<!-- <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
@@ -75,7 +74,7 @@ tree: true
 					<h4 class="modal-title" id="myModalLabel">Signup for Meeting Notices</h4>
 				</div>
 				<div class="modal-body">
-					<form name="subscribe" method="post" action="http://www.latah.id.us/mailman/listinfo/agendanotify">
+					<form name="subscribe" method="post" action="http://www.latah.id.us/mailman/subscribe/agendanotify">
 						<p>
 							If you subscribe to this service you will receive an e-mail every time a BOCC agenda or proceeding is added or amended to this web site.
 						</p>
@@ -95,8 +94,37 @@ tree: true
 				</div>
 			</div>
 		</div>
-	</div> -->
-
+	</div>
+	<!-- Proclamations Modal -->
+	<div class="modal fade" id="proclamationsModal" tabindex="-1" role="dialog" aria-labelledby="proclamationsLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="proclamationsLabel">Proclamations</h4>
+				</div>
+				<div class="modal-body">
+					<!-- Proclamations -->
+					<div class="panel panel-default">
+						<div class="list-group">
+							<div id="comProclamations" class="list-group-item"></div>
+						</div>
+						<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false" style="height: 0px;">
+							<div class="list-group pre-scrollable">
+								<div id="proclamations"></div>
+								<noscript>To view proclamations please enable JavaScript or update your browser</noscript>
+							</div>
+						</div>
+					</div>
+					<!-- End Proclamations -->
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Proclamations Modal -->
 </div><!-- row -->
 
 <script type="text/javascript">
