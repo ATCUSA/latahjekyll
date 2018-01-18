@@ -13,18 +13,14 @@ function getNewsandNotices(args, dept){
             var link=null;
             if(data[index].PdfPath != null){
                $('#' + args[i]).append(
-                 $('<a class="list-group-item text-center list-link" ' + 'value=' + index +
-                 ' href="' + 'javascript:void(0)' + '"' + 'target="_blank">' +  data[index].ArticleTitle + '</a>')
+                 $('<a class="list-group-item text-center list-link" ' +
+                 'href="' + 'javascript:void(0)' + '"' + 'target="_blank">' +  data[index].ArticleTitle + '</a>')
                )
 
-              $('.list-group-item').on('click', function(evt){
-                  var index = $(this).attr('value');
-                  downloadFile(data[index].PdfPath);
-                  evt.stopImmediatePropagation();
-              })
+              $('#' + args[i]).click({param1: data[index].PdfPath}, downloadFile);
 
-               function downloadFile(filename){
-                 var url = 'https://www.latah.id.us/api/downloadFile?fileName=' + filename
+               function downloadFile(event){
+                 var url = 'https://www.latah.id.us/api/downloadFile?fileName=' + event.data.param1
                  $.ajax({
                    url: '',
                    success: function(){
