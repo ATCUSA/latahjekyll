@@ -5,21 +5,35 @@ permalink: /employment/
 ---
 
 <div class="row">
-  
+
   <!-- Right Column -->
   <div class="col-md-4 col-md-push-8">
-    
+    {% include contactBlock.html %}
     <div class="panel panel-default">
         <div class="panel-heading">
           <h4 class="panel-title text-center">Employment Resources</h>
         </div>
-        <div class="panel-body">
-          
-        </div>
+        <div class="List-group">
+            <a href="http://labor.idaho.gov/dnn/JobSeekers/JobSearch/tabid/661/Default.aspx" class="list-group-item list-link text-center">Idaho Department of Labor Job Search</a>
+            <a href="http://www.nwmarket.com/index.php?page=top-ads&cat=Jobs" class="list-group-item list-link text-center">Moscow-Pullman Daily News Classifieds</a>
+            <a href="http://www.hr.uidaho.edu/default.aspx?pid=35496" class="list-group-item list-link text-center">University of Idaho Employment Classifieds</a>
+            <a href="http://www.hrs.wsu.edu/" class="list-group-item list-link text-center">WSU Employment Classifieds</a>
+            <a href="http://www.wa.gov/esd/employment.html" class="list-group-item list-link text-center">Washington State WorkSource</a>        
     </div>
-    
+
   </div>
-  
+
+  <div class="panel penel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title text-center">Regional QuickFacts</h>
+      </div>
+      <div class="panel-body">
+          <p>According to 2010 <a href="http://www.census.gov/"> U.S. Census Bureau</a> information, Latah County has a population of 37,244. <a href="https://www.census.gov/quickfacts/ID"> Find more Latah County statistics</a>.</p>
+          <p>The <a href="http://www.ci.moscow.id.us/">City of Moscow</a> has a population of approximately 23,800 and is the location of the <a href="http://www.uidaho.edu/">University of Idaho</a>.</p>
+          <p>The City of Pullman is located 7 miles west of Moscow in the state of Washington, has a population of approximately 29,799 and is the location of <a href="http://www.wsu.edu/">Washington State University</a></p>
+      </div>
+    </div>
+  </div>
   <!-- Left Column -->
   <div class="col-md-8 col-md-pull-4">
     <div class="panel panel-default">
@@ -31,6 +45,34 @@ permalink: /employment/
           <div id="post"></div>
         </div>
       </div>
+
+      <div class="panel-heading">
+          <h4 class="panel-title">Latah County is an Equal Opportunity Employer</h3>
+      </div>
+      <div class="panel-body">
+        Employment selection and related decisions are made without regard to race, color, religion, gender, national origin, age, disability, or any other protected class.
+      </div>
+
+      <div class="panel-heading">
+          <h4 class="panel-title">Veterans’ Preference</h3>
+      </div>
+      <div class="panel-body">
+        Latah County provides veterans’ preference in appointment to preference eligible applicants as defined by Idaho Code, Title 65, Chapter 5. If you wish to seek this preference, please complete the information on the employment application and provide a copy of your DD214 and, if applicable, letter from the Department of Veterans Affairs stating your disability determination. Documentation must be received before the closing date of the position you are applying for.
+      </div>
+
+      <div class="panel-heading">
+          <h4 class="panel-title">Applications for Employment</h3>
+      </div>
+      <div class="panel-body">
+        <a href="#" class="list-group-item list-link " onclick="downloadJobApp('Application_ITS.pdf'); return false;">I.T.S. Department - Blank Form</a>
+        <a href="#" class="list-group-item list-link " onclick="downloadJobApp('Application_Sheriff.pdf'); return false;">Sheriff Department - Blank Form</a>
+        <a href="#" class="list-group-item list-link " onclick="downloadJobApp('Tracker_Application_Form.pdf'); return false;">Probation Officer Assistant Application - Blank Form</a>
+        <a href="#" class="list-group-item list-link " onclick="downloadJobApp('Application_NoFields.pdf'); return false;">Other Departments - Blank Form</a>
+        <a href="#" class="list-group-item list-link " onclick="downloadJobApp('Application.pdf'); return false;">Form With Fields (complete, then print)</a>
+
+      </div>
+
+
     </div>
   </div>
 </div>
@@ -39,4 +81,17 @@ permalink: /employment/
 {% asset employment.js %}
 <script>
   jobsList();
+</script>
+
+<script text/javascript>
+function downloadJobApp(filename){
+  var url = 'https://www.latah.id.us/api/downloadJobApp?fileName=' + filename
+  $.ajax({
+    url: '',
+    success: function(){
+      window.open(url);
+    },
+    async: false
+  });
+}
 </script>
