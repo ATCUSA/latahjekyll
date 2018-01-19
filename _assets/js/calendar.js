@@ -6,7 +6,7 @@ function calendarList(calName, calDays) {
 				center: 'false',
 				right: 'false'
 			},
-			defaultView: 'listMonth',
+			defaultView: 'listYear',
 			eventClick: function(event) {
 				alert(event.title + " - " + event.body)
 				return false;
