@@ -1,19 +1,22 @@
 /* Set Dept Window to Scroll for Small Windows */
 // Set Scroll Based on Window Size
-function setScroll(wh){
+function setScroll(){
   var dh = $("#deptNav").height();
-  var h = $(window).innerHeight() - $('#navFooter').height();
+  var h = $(window).innerHeight() - $('#navFooter').height();  
   if (dh >  h) {
-    $("#deptNav").addClass('pre-scrollable');
+    $("#deptNav").addClass('pre-scrollable');    
   } else {
     $("#deptNav").removeClass('pre-scrollable');
   }
 }
-// Check Window Size on Page Load
-setScroll($(window).innerHeight());
-// Dynamically Update Window Size
-$(window).resize(function() {
-  setScroll($(window).innerHeight());
+//you have to call setScroll for each up/down event, 
+//otherwise it remembers the previous size on close and will just altername
+$('#dropDown').on('show.bs.dropdown', function() {  
+  setScroll();
+});
+
+$('#dropDown').on('hide.bs.dropdown', function() {  
+  setScroll();
 });
 
 /* Keep Footer Year Current */
