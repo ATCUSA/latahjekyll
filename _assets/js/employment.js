@@ -28,7 +28,7 @@ function jobsList() {
         newContent +=           '<h4>' + title + '</h4>';
         newContent +=           '<p>' + r.BriefDescription + '</p>';
         newContent +=           'Hours: ' + r.Hours + '<br />';
-        newContent +=           'Salary Range: ' + r.SalaryRange + '<br />';
+        newContent +=           'Salary Range: ' + r.SalaryRange + '<br /><br />';
         newContent +=           '<a href="#" onclick="downloadJobDesc(' + file + '); return false;' + '">' + 'Full Description' + '</a>' + '<br />';
         newContent +=         '</div>'
         newContent +=       '</div>';
