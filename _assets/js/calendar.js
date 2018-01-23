@@ -7,8 +7,14 @@ function calendarList(calName, calDays) {
 				right: 'false'
 			},
 			defaultView: 'listYear',
+			themeSystem: 'bootstrap3',
 			eventClick: function(event) {
-				alert(event.title + " - " + event.body)
+				// alert(event.title + " - " + event.body);
+				if (event.title != null) {
+					$('#calModal').modal();
+					$('#calModal .modal-title').html(event.title);
+					$('#calModal .modal-body').html(event.body);
+				};
 				return false;
 			},
 			events: 'https://www.latah.id.us/api/GetCalendarEvents?calendarName=' + calName + '&days=' + calDays,
@@ -17,7 +23,8 @@ function calendarList(calName, calDays) {
 				$('.fc-toolbar').remove();
 			},
 			eventRender: function(event, element) {
-				element.find('.fc-list-item-title').append(" - " + event.body);
+				const title = element.find('.fc-list-item-title')
+				
 			},
 		});
 	});
