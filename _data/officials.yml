@@ -73,12 +73,12 @@ auditor:
 coroner:
   - name: Cathy Mabbutt
     description: >
-      <p>
-        Cathy Mabbutt’s professional background is in law as well as nursing. She graduated from the Sacred Heart School of Nursing in 1971 and completed her law degree in 2001 at the University of Idaho. She was elected as coroner for the first time in 2006.
+      <p>        
+        Cathy Mabbutt was first elected coroner in November 2006.  She graduated as registered nurse (RN) from Sacred Heart School of Nursing and worked at Gritman Medical Center Emergency Department for many years.  She graduated with B.S. in political science from University of Idaho and then completed law degree from the University of Idaho in 2001.
       </p>
     page: /coroner/
     bio: /coroner/bio/
-    image: https://placehold.it/250x300
+    image: /img/officials/CathyMabbutt.png
 
 prosecutor:
   - name: Bill Thompson
