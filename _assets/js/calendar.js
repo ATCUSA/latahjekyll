@@ -11,7 +11,7 @@ function calendarList(calName, calDays) {
 			eventClick: function(event) {
 				// alert(event.title + " - " + event.body);
 				if (event.title != null) {
-					$('#myModal').modal();
+					$('#calModal').modal();
 					$('.modal-title').html(event.title);
 					$('.modal-body').html(event.body);
 				};
