@@ -12,8 +12,8 @@ function calendarList(calName, calDays) {
 				// alert(event.title + " - " + event.body);
 				if (event.title != null) {
 					$('#calModal').modal();
-					$('.modal-title').html(event.title);
-					$('.modal-body').html(event.body);
+					$('#calModal .modal-title').html(event.title);
+					$('#calModal .modal-body').html(event.body);
 				};
 				return false;
 			},
