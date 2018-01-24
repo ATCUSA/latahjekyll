@@ -71,7 +71,7 @@ permalink: /officials/
       <h1 class="text-center"><small>Coroner</small></h1>
     </a>
     <a href="{{ official.bio }}">
-      <img class=" img img-responsive center-block hidden-xs" src="{{ official.image }}">
+        {% cloudinary officials_thumb {{ official.image }} alt="{{ official.name }} - {{ official.department }}" %}
       <h3 class="text-center">{{ official.name }}</h3>
     </a>
     <p class="text-justify">
