@@ -72,7 +72,7 @@ tree: true
       <a href="taxpaymentfaq.html" data-remote="false" class="list-group-item list-link text-center" data-toggle="modal" data-target="#myModal">Tax Payment FAQ</a>
 			<a href="taxdeedfaq.html" data-remote="false" class="list-group-item list-link text-center" data-toggle="modal" data-target="#myModal">Tax Deed FAQ</a>
 			<a href="payments.html" data-remote="false" class="list-group-item list-link text-center" data-toggle="modal" data-target="#myModal">Payments</a>
-			<a href="#" data-remote="false" class="list-group-item list-link text-center" onclick="downloadFile('VoterApprovedLevyBondTracker.pdf'); return false;">Levy and Bond Tracker Information</a>
+			<a href="#" data-remote="false" class="list-group-item list-link text-center" onclick="downloadFileEx('VoterApprovedLevyBondTracker.pdf'); return false;">Levy and Bond Tracker Information</a>
 			</div>
 		</div>
 
@@ -98,12 +98,15 @@ tree: true
 
 <script type="text/javascript">
 	deptTree("treasurerDir", "Treasurer")
-	
-	function downloadFile(filename) {
-		var url = 'https://www.latah.id.us/api/DownloadFileEx?filename=' + filename;
-		setTimeout(() => window.open(url, '_blank'), 500);
-	}
-	
+</script>
+
+<script type='text/javascript'>
+	function downloadFileEx(filename) {
+    if(filename != null){
+        var url = 'https://www.latah.id.us/api/DownloadFileEx?filename=' + filename;
+        setTimeout(() => window.open(url, '_blank'), 500);
+    }    
+}
 </script>
 
 
