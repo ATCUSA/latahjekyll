@@ -101,11 +101,12 @@ tree: true
 </script>
 
 <script type='text/javascript'>
-	function downloadFileEx(filename) {
-    if(filename != null){
+//downloadFileEx - searchs for a file within a base dir
+function downloadFileEx(filename) {
+    if (filename != null) {
         var url = 'https://www.latah.id.us/api/DownloadFileEx?filename=' + filename;
-        setTimeout(() => window.open(url, '_blank'), 500);
-    }    
+        setTimeout(() => window.open(url), 500);
+    }
 }
 </script>
 

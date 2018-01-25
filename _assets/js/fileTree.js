@@ -2,7 +2,7 @@ var globalpath = null;
 function downloadfile(p){
 		if(p != null){
 				var url = 'https://www.latah.id.us/api/DownloadFile?filename=' + p;
-				setTimeout(() => window.open(url, '_blank'), 500);
+				setTimeout(() => window.open(url), 500);
 			}
 }
 
