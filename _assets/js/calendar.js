@@ -1,4 +1,4 @@
-function calendarList(calName, calDays) {
+function calendarList(calName, calDaysBefore, calDaysAfter) {
 	$(document).ready(function() {
 		$('#calendar').fullCalendar({
 			header: {
@@ -17,7 +17,7 @@ function calendarList(calName, calDays) {
 				};
 				return false;
 			},
-			events: 'https://www.latah.id.us/api/GetCalendarEvents?calendarName=' + calName + '&days=' + calDays,
+			events: 'https://www.latah.id.us/api/GetCalendarEvents?calendarName=' + calName + '&daysBefore=' + calDaysBefore + '&daysAfter=' + calDaysAfter,
 			loading: function(bool) {
 				$('#loading').toggle(bool);
 				$('.fc-toolbar').remove();
