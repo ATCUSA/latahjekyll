@@ -31,7 +31,7 @@ calendar: true
 
             <div id="collapseOne" class="collapse">
               <div class="panel-body">
-                <a href="#" onclick="downloadFile('Court-Assistance-Calendar.pdf'); return false;">Court Assistance Calendar</a>
+                <a href="#" onclick="downloadFileEx('Court-Assistance-Calendar.pdf'); return false;">Court Assistance Calendar</a>
               </div>
             </div>
           </div>
@@ -195,7 +195,7 @@ calendar: true
   </script>
 
   <script text/javascript>
-  function downloadFile(filename){
+  function downloadFileEx(filename){
   				var url = 'https://www.latah.id.us/api/DownloadFileEx?filename=' + filename;
   				setTimeout(() => window.open(url), 500);
   			}

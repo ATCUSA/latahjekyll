@@ -116,7 +116,7 @@ news: true
 				<a href="http://www.sheriffalerts.com/cap_main.php?office=55417" class="list-group-item list-link text-center" target="_blank" rel="noopener">Sex Offender Search</a>
 				<a href="patrolDivision.html" data-remote="false" class="list-group-item list-link text-center" data-toggle="modal" data-target="#myModal">Patrol Division</a>
 				<a href="records.html" data-remote="false" class="list-group-item list-link text-center" data-toggle="modal" data-target="#myModal">Records</a>
-				<a href="#" id=recordsRequest data-remote="false" class="list-group-item list-link text-center" onclick="downloadFile('Public-Records-Request-Form.pdf'); return false;">Records Request Form</a>
+				<a href="#" id=recordsRequest data-remote="false" class="list-group-item list-link text-center" onclick="downloadFileEx('Public-Records-Request-Form.pdf'); return false;">Records Request Form</a>
 				<a href="sales/" data-remote="false" class="list-group-item list-link text-center">Sheriff Sales</a>
 				<a href="https://www.vinelink.com/vinelink/siteInfoAction.do?siteId=13000" data-remote="false" class="list-group-item list-link text-center" target="_blank" rel="noopener">VINE (victim notification of offender custody status)</a>
 			</div>
@@ -141,7 +141,7 @@ getNewsandNotices(args, "SO")
 
 
 <script text/javascript>
-function downloadFile(p){
+function downloadFileEx(p){
 				var url = 'https://www.latah.id.us/api/DownloadFileEx?filename=' + p;
 				setTimeout(() => window.open(url), 500);
 			}
