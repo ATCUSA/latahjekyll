@@ -14,7 +14,7 @@ tree: true
 					<figcaption class="figure-caption text-center">Treasurer Lois Reed</figcaption>
 				</figure>
 				<p class="panel-body">
-					The county treasurer is elected every four years. In addition to the primary duty of handling county funds, the treasurer is also ex-officio tax collector and ex-officio public administrator. The Board of County Commissioners sets the salary. The treasurer is authorized to appoint as many deputies as deemed necessary to discharge the duties of the office within budgetary limits approved by the commissioners.
+					The County Treasurer is elected every four years. In addition to the primary duty of handling county funds, the treasurer is also ex-officio tax collector and ex-officio public administrator. The Board of County Commissioners sets the salary. The treasurer is authorized to appoint as many deputies as deemed necessary to discharge the duties of the office within budgetary limits approved by the commissioners.
           <br>
           <br>
           <b>Duties as County Treasurer</b>
@@ -25,18 +25,18 @@ tree: true
           daily verification and acceptance of all county warrants paid by the county auditor. Each warrant is verified for validity and funds availability. Upon signature, the bank is authorized to disperse funds on all warrants issued.
           <br>
           <br>
-          The county treasurer is responsible for receiving all monies belonging to the county, accounting for their receipt and the safekeeping of these funds. The treasurer is also responsible for the timely disbursement of funds from the county treasury to comply with budgetary requests from each taxing district. The treasurer is accountable for keeping records of the receipts and expenditures from all funds. Each month the treasurer prepares a financial statement and with the auditor presents it to the county commissioners for their review.
+          The County Treasurer is responsible for receiving all monies belonging to the county, accounting for their receipt and the safekeeping of these funds. The treasurer is also responsible for the timely disbursement of funds from the county treasury to comply with budgetary requests from each taxing district. The treasurer is accountable for keeping records of the receipts and expenditures from all funds. Each month the treasurer prepares a financial statement and with the auditor presents it to the county commissioners for their review.
           <br>
           <br>
           <b>Duties as County Tax Collector</b>
-          <br>A primary responsibility of the county treasurer's office is the collection of all real and personal property taxes within the county. It is the responsibility of the treasurer's office to annually prepare and mail property tax notices. The treasurer's office is also responsible for collecting special (certified) assessments for water districts, fire protection, rural solid waste charges, local improvement districts and yield or deferred timber taxes. verified for validity and funds availability. Upon signature, the bank is authorized to disperse funds on all warrants issued.
+          <br>A primary responsibility of the County Treasurer's office is the collection of all real and personal property taxes within the county. It is the responsibility of the treasurer's office to annually prepare and mail property tax notices. The treasurer's office is also responsible for collecting special (certified) assessments for water districts, fire protection, rural solid waste charges, local improvement districts and yield or deferred timber taxes. verified for validity and funds availability. Upon signature, the bank is authorized to disperse funds on all warrants issued.
           <br>
           <br>
           The treasurer's office is responsible for furnishing detailed and verified tax information to lending institutions, title companies, realtors, accountants, taxing districts and individual taxpayers.
           <br>
           <br>
           <b>Duties as Public Administrator</b>
-          <br>The county treasurer administers estates for any individual within the county who dies intestate (without heirs or assignees). This includes physically cleaning out their home and storing those items, recording and cataloging funds and personal effects. Working closely with the prosecuting attorney's office each estate is researched for heirs and funds, then monitored for all possible expenses and eventually closed after public advertisement. verified for validity and funds availability. Upon signature, the bank is authorized to disperse funds on all warrants issued.
+          <br>The County Treasurer administers estates for any individual within the county who dies intestate (without heirs or assignees). This includes physically cleaning out their home and storing those items, recording and cataloging funds and personal effects. Working closely with the prosecuting attorney's office each estate is researched for heirs and funds, then monitored for all possible expenses and eventually closed after public advertisement. verified for validity and funds availability. Upon signature, the bank is authorized to disperse funds on all warrants issued.
           <br>
           <br>
           The treasurer is also responsible for safeguarding and maintaining funds designated by the courts and their judges. These monies are often as a result of unresolved estates, inheritance, seized funds, etc. The funds arrive with specific instructions from the judge as to investing, holding and disbursement.
@@ -72,7 +72,7 @@ tree: true
       <a href="taxpaymentfaq.html" data-remote="false" class="list-group-item list-link text-center" data-toggle="modal" data-target="#myModal">Tax Payment FAQ</a>
 			<a href="taxdeedfaq.html" data-remote="false" class="list-group-item list-link text-center" data-toggle="modal" data-target="#myModal">Tax Deed FAQ</a>
 			<a href="payments.html" data-remote="false" class="list-group-item list-link text-center" data-toggle="modal" data-target="#myModal">Payments</a>
-			<a href="#" data-remote="false" class="list-group-item list-link text-center" onclick="downloadFile('VoterApprovedLevyBondTracker.pdf'); return false;">Levy and Bond Tracker Information</a>
+			<a href="#" data-remote="false" class="list-group-item list-link text-center" onclick="downloadFileEx('VoterApprovedLevyBondTracker.pdf'); return false;">Levy and Bond Tracker Information</a>
 			</div>
 		</div>
 
@@ -97,12 +97,17 @@ tree: true
 {% include modalPopup.html %}
 
 <script type="text/javascript">
-  deptTree("treasurerDir", "Treasurer")
+	deptTree("treasurerDir", "Treasurer")
 </script>
 
-<script text/javascript>
-function downloadFile(filename){
-				var url = 'https://www.latah.id.us/api/DownloadFileEx?filename=' + filename;
-				setTimeout(() => window.open(url, '_blank'), 500);
-			}
+<script type='text/javascript'>
+//downloadFileEx - searchs for a file within a base dir
+function downloadFileEx(filename) {
+    if (filename != null) {
+        var url = 'https://www.latah.id.us/api/DownloadFileEx?filename=' + filename;
+        window.open(url);
+    }
+}
 </script>
+
+

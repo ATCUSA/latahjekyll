@@ -50,7 +50,7 @@ permalink: /sheriff/jaildivision/
 				<h3 class="panel-title text-center">Additional Information</h3>
 			</div>
 			<div class="list-group">
-				<a href="#" id="inmateTelephone" class="list-group-item list-link text-center" onclick="downloadFile('Latah-County-Website-Phone-Information.pdf'); return false;">Inmate Telephone Services</a>
+				<a href="#" id="inmateTelephone" class="list-group-item list-link text-center" onclick="downloadFileEx('Latah-County-Website-Phone-Information.pdf'); return false;">Inmate Telephone Services</a>
 				<a href="../jailLocation.html" data-remote="false" class="list-group-item list-link text-center" data-toggle="modal" data-target="#myModal">Jail Location</a>
 				<a href="../jailVisitingInfo.html" data-remote="false" class="list-group-item list-link text-center" data-toggle="modal" data-target="#myModal">Visiting Information</a>
 				<a href="../jailContactInmates.html" data-remote="false" class="list-group-item list-link text-center" data-toggle="modal" data-target="#myModal">Contacting Inmates</a>
@@ -66,8 +66,8 @@ permalink: /sheriff/jaildivision/
 {% include modalPopup.html %}
 
 <script text/javascript>
-function downloadFile(filename){
+function downloadFileEx(filename){
 				var url = 'https://www.latah.id.us/api/DownloadFileEx?filename=' + filename;
-				setTimeout(() => window.open(url, '_blank'), 500);
+				window.open(url);
 			}
 </script>
