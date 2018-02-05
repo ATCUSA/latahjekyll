@@ -18,12 +18,12 @@ function getNewsandNotices(args, dept){
                )
                $('.list-group-item').on('click', function(evt){
                                 var index = $(this).attr('value');
-                                downloadFile(data[index].PdfPath);
+                                DownloadNewsNotice(data[index].FileAttached, data[index].ArticleType);
                                 evt.stopImmediatePropagation();
                             })              
 
-                function downloadFile(filename){
-                var url = 'https://www.latah.id.us/api/downloadFile?fileName=' + filename
+                function DownloadNewsNotice(filename, articleType){
+                var url = 'https://www.latah.id.us/api/DownloadNewsNotice?fileName=' + filename + '&type=' + articleType;
 
                  $.ajax({
                    url: '',
