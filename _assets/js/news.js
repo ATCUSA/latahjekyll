@@ -14,7 +14,7 @@ function getNewsandNotices(args, dept){
             if(data[index].PdfPath != null){
                $('#' + args[i]).append(
                  $('<a class="list-group-item text-center list-link" ' + 'value=' + index +
-                 ' href="' + 'javascript:void(0)' + '"' + 'target="_blank">' +  data[index].ArticleTitle + '</a>')
+                 ' href="' + 'javascript:void(0)' + '"' + '>' +  data[index].ArticleTitle + '</a>')
                )
                $('.list-group-item').on('click', function(evt){
                                 var index = $(this).attr('value');
