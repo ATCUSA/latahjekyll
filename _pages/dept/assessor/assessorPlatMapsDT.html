@@ -2,21 +2,20 @@
 layout: page
 title: Assessor Plat Maps 
 permalink: /assessor/assessorPlatMapsDT/
+datatable: true
 ---
-<div class="row" id="platMapQuery">
-    
-    <div class="well">
-        
-            <!-- <div class="panel-heading">
-                <h4 class="panel-title text-center">Assessor Plat Map Search</h4>
-            </div> -->
-            
+<div class="row" id="platMapQuery">   
+    <div class="col-md-12">
+            <div class="col-md-12 text-center">
+                    <a href="/assessor">Back to Assessor Home</a>
+                </div>
+        <div class="well">
             <table id="platMaps" class="table table-striped table-bordered" cellspacing="0" width="100%">
                 <thead>
                     <tr>
-                        <th>Sheet Number</th>
+                        <th width="5%">Sheet</th>
                         <th>SubDivision Name</th>
-                        <th>SubDivision Index Number</th>
+                        <th width="10%">Index #</th>
                         <th>Location</th>
                         <th>Type</th>
                         <th>Plot Date</th>
@@ -24,29 +23,24 @@ permalink: /assessor/assessorPlatMapsDT/
                     </tr>
                 </thead>
                 <tfoot>
-                        <tr>
-                            <th>Sheet Number</th>
-                            <th>SubDivision Name</th>
-                            <th>SubDivision Index Number</th>
-                            <th>Location</th>
-                            <th>Type</th>
-                            <th>Plot Date</th>
-                            <th>PDF</th>
-                        </tr>
-                </tfoot>                
-            </table>    
-        
+                    <tr>
+                        <th width="5%">Sheet</th>
+                        <th>SubDivision Name</th>
+                        <th width="10%">Index #</th>
+                        <th>Location</th>
+                        <th>Type</th>
+                        <th>Plot Date</th>
+                        <th>PDF</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
     </div>
 </div>
 
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs-3.3.7/jq-2.2.4/dt-1.10.15/datatables.min.css\"/>
-<script type="text/javascript" src="https://cdn.datatables.net/v/bs-3.3.7/jq-2.2.4/dt-1.10.15/datatables.min.js"></script>
+
 <script type="text/javascript">
-
-
-$(document).ready(function() {
-
-    //PopulateItemsTable();
+$(document).ready(function() {    
     $('#platMaps').DataTable({
         "ajax" : {
             "url" : "https://www.latah.id.us/api/getPlatMapsDT",
