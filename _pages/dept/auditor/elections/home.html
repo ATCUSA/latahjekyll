@@ -4,6 +4,7 @@ title: Elections
 permalink: /auditor/elections/
 calendar: true
 news: true
+tree: true
 ---
 <!-- Info Row -->
 <div class="row">
@@ -50,40 +51,10 @@ news: true
           <h4 class="panel-title">Upcoming Elections</h4>
         </div>
         <div class="panel-body">
-          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-            <div class="panel panel-default" data-date="03/13/2018">
-              <div class="panel-heading" role="tab" id="headingOne">
-                <h4 class="panel-title">
-                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                    March 13 - Supplemental Levy and Possible Recall
-                  </a>
-                </h4>
-              </div>
-              <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                <div class="panel-body">
-                  <div class="col-md-6">
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        Sample Ballots
-                      </div>
-                      <div class="panel-body">
-                        TBD
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="panel panel-default">
-                      <div class="panel-heading">
-                        Additional Resources
-                      </div>
-                      <div class="panel-body">
-                        TBD
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">            
+
+            <div id="ElectionsDir1" class="list-group-item"></div>             
+
             <div class="panel panel-default" data-date="05/15/2016">
               <div class="panel-heading" role="tab" id="headingTwo">
                 <h4 class="panel-title">
@@ -318,6 +289,10 @@ news: true
 <!-- End Info Row -->
 <div class="row">  
 </div>
+
+<script type="text/javascript">
+  deptTree("ElectionsDir1", "Elections")
+</script>
 
 <script text/javascript>
   calendarList('Elections', 0, 30);
