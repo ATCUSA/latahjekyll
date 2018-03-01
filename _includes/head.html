@@ -20,7 +20,7 @@
 
   <!-- Main CSS  -->
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-
+  
   <!-- Latest compiled and minified JavaScript -->
   <!-- Jquery -->
   <script src="https://cdn.jsdelivr.net/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous" ></script>
@@ -41,6 +41,13 @@
   <!-- Contacts -->
   {% if page.contacts %}
     {% asset contactInfo.js %}
+  {% endif %}
+
+<!-- Bootstrap Datatables -->
+  {% if page.datatable %}  
+  <!-- NOTE: you need to leave jquery and bootstrap elements in this url list -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs/jq-3.2.1/dt-1.10.16/r-2.2.1/datatables.min.css"/>
+  <script type="text/javascript" src="https://cdn.datatables.net/v/bs/jq-3.2.1/dt-1.10.16/r-2.2.1/datatables.min.js"></script>  
   {% endif %}
 
   <!-- Bootstrap Treeview -->
