@@ -2,6 +2,7 @@
 layout: page
 title: Disaster Services
 permalink: /disaster_services/
+tree: true
 ---
 
 
@@ -68,10 +69,17 @@ permalink: /disaster_services/
     <div class="col-md-6">
       <div class="panel panel-primary">
         <div class="panel-heading">
-          <h3 class="panel-title">Latah County Plans</h3>
+          <h3 class="panel-title text-center"> Latah County Plans</h4>
         </div>
-        <div class="panel-body">
-          Coming Soon
+        <div class="list-group">
+          <div id="dsPlans"></div>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false"
+          style="height: 0px;">
+          <div class="list-group pre-scrollable">
+            <div id="ordinances"></div>
+            <noscript>To view forms please enable JavaScript or update your browser</noscript>
+          </div>
         </div>
       </div>
     </div>
@@ -102,4 +110,7 @@ permalink: /disaster_services/
 <script>
   dsWeatherBox();
   weatherBoxAlerts();
+</script>
+<script type="text/javascript">
+  deptTree("dsPlans", "DisasterServices")
 </script>
