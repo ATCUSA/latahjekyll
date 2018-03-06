@@ -11,7 +11,7 @@ function getNewsandNotices(args, dept){
         for(var i=0; i < args.length; i++){
           if(args[i].indexOf(data[index].ArticleType) !== -1){
             var link=null;
-            if(data[index].PdfPath != null){
+            if(data[index].FileAttached != null){
                $('#' + args[i]).append(
                  $('<a class="list-group-item text-center list-link" ' + 'value=' + index +
                  ' href="' + 'javascript:void(0)' + '"' + '>' +  data[index].ArticleTitle + '</a>')
