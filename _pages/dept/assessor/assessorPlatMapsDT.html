@@ -14,23 +14,23 @@ datatable: true
                 <thead>
                     <tr>
                         <th width="5%">Sheet</th>
-                        <th>SubDivision Name</th>
-                        <th width="10%">Index #</th>
-                        <th>Location</th>
-                        <th>Type</th>
+                        <th width="17%">SubDivision Name</th>
+                        <th width="7%">Index #</th>
+                        <th width="23%">Location</th>
+                        <th width="20%">Type</th>
                         <th>Plot Date</th>
-                        <th>PDF</th>
+                        <th width="20%">PDF</th>
                     </tr>
                 </thead>
                 <tfoot>
                     <tr>
                         <th width="5%">Sheet</th>
-                        <th>SubDivision Name</th>
-                        <th width="10%">Index #</th>
-                        <th>Location</th>
-                        <th>Type</th>
+                        <th width="17%">SubDivision Name</th>
+                        <th width="7%">Index #</th>
+                        <th width="23%">Location</th>
+                        <th width="20%">Type</th>
                         <th>Plot Date</th>
-                        <th>PDF</th>
+                        <th width="20%">PDF</th>
                     </tr>
                 </tfoot>
             </table>
@@ -49,8 +49,8 @@ $(document).ready(function() {
             "dataSrc" : function(json){                
                 return json;
             }
-        },
-        "columnDefs" : [{
+        },        
+        "columnDefs" : [{             
             "targets" : 6,
             "render" : function(data, type, row, meta){
                 return '<a href=https://www.latah.id.us/api/downloadPlatMap?fileName=' + row.PDF + '>' + row.PDF + '</' + '>';
@@ -62,7 +62,7 @@ $(document).ready(function() {
             {"data": "SubDivisionIndexNumber"},
             {"data": "Location"},
             {"data": "Type"},
-            {"data": "PlotDate"},
+            {"data": "PlotDate"},                       
             {"data": "PDF"}
         ]
     });
