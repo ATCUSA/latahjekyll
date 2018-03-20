@@ -15,7 +15,7 @@ datatable: true
                     <tr>
                         <th width="5%">Sheet</th>
                         <th width="17%">SubDivision Name</th>
-                        <th width="7%">Index #</th>
+                        <th width="10%">Index #</th>
                         <th width="23%">Location</th>
                         <th width="20%">Type</th>
                         <th>Plot Date</th>
@@ -26,7 +26,7 @@ datatable: true
                     <tr>
                         <th width="5%">Sheet</th>
                         <th width="17%">SubDivision Name</th>
-                        <th width="7%">Index #</th>
+                        <th width="10%">Index #</th>
                         <th width="23%">Location</th>
                         <th width="20%">Type</th>
                         <th>Plot Date</th>
@@ -62,7 +62,13 @@ $(document).ready(function() {
             {"data": "SubDivisionIndexNumber"},
             {"data": "Location"},
             {"data": "Type"},
-            {"data": "PlotDate"},                       
+            {"data": "PlotDate",
+             "render" : function(data){
+                 var date = new Date(data);
+                 var year = date.getFullYear();
+                 return year;
+             }    
+            },                       
             {"data": "PDF"}
         ]
     });
