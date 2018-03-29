@@ -12,7 +12,7 @@ function calendarList(calName, calDaysBefore, calDaysAfter) {
 				};
 				return false;
 			},
-			events: 'https://www.latah.id.us/api/GetCalendarEvents?calendarName=' + calName + '&daysBefore=' + calDaysBefore + '&daysAfter=' + calDaysAfter,
+			events: 'https://gis.latah.id.us/api/GetCalendarEvents?calendarName=' + calName + '&daysBefore=' + calDaysBefore + '&daysAfter=' + calDaysAfter,
 			loading: function(bool) {
 				$('#loading').toggle(bool);
 				$('.fc-toolbar').remove();
@@ -44,7 +44,7 @@ function calendarMonth(calName, calDaysBefore, calDaysAfter) {
 				};
 				return false;
 			},
-			events: 'https://www.latah.id.us/api/GetCalendarEvents?calendarName=' + calName + '&daysBefore=' + calDaysBefore + '&daysAfter=' + calDaysAfter,
+			events: 'https://gis.latah.id.us/api/GetCalendarEvents?calendarName=' + calName + '&daysBefore=' + calDaysBefore + '&daysAfter=' + calDaysAfter,
 			loading: function(bool) {
 				$('#loading').toggle(bool);
 			},
@@ -130,7 +130,7 @@ function listThreeMonths() {
 	  		// 	window.open(event.url, 'gcalevent', 'width=700,height=600');
 	  		// 	return false;
 	  		},
-	      events: 'https://www.latah.id.us/api/GetCalendarEvents?calendarName=ElectionsDemo&days=30',
+	      events: 'https://gis.latah.id.us/api/GetCalendarEvents?calendarName=ElectionsDemo&days=30',
 	      loading: function(bool) {
 	  			$('#loading').toggle(bool);
 					$('.fc-toolbar').remove();

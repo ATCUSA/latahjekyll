@@ -52,7 +52,7 @@ $(document).ready(function(){
             sub = true;
           }
           $.ajax({
-            url: 'https://www.latah.id.us/api/SetEmailSubscription?email=' + email + '&subscribe=' + sub + '&list=' + list,
+            url: 'https://gis.latah.id.us/api/SetEmailSubscription?email=' + email + '&subscribe=' + sub + '&list=' + list,
             type: 'GET',
             dataType: 'json',
             success: function(){
