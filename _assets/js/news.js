@@ -2,7 +2,7 @@
 function getNewsandNotices(args, dept){
 
   $.ajax({
-    url: "https://www.latah.id.us/api/getnewsnotice?dept=" + dept,
+    url: "https://gis.latah.id.us/api/getnewsnotice?dept=" + dept,
     type: "GET",
     async: true,
     dataType: 'json',
@@ -23,7 +23,7 @@ function getNewsandNotices(args, dept){
                             })              
 
                 function DownloadNewsNotice(filename, articleType){
-                var url = 'https://www.latah.id.us/api/DownloadNewsNotice?fileName=' + filename + '&type=' + articleType;
+                var url = 'https://gis.latah.id.us/api/DownloadNewsNotice?fileName=' + filename + '&type=' + articleType;
 
                  $.ajax({
                    url: '',
