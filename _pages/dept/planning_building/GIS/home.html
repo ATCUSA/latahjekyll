@@ -1,0 +1,114 @@
+---
+layout: page
+title: Geographical Information System (GIS)
+permalink: /planning_building/gis/
+tree: true
+---
+
+<div class="row">
+    <div class="col-md-8 ">
+        <div class="row">
+            <a href="http://gis.latah.id.us/ParcelViewer/index.html">
+                <figure class="col-md-6" >
+                    <figcaption class="text-center" style="font-size: 1.5em">Parcel Viewier</figcaption>
+                    <!-- <img class="figure-img img-responsive rounded center-block" src="/img/gis1.jpg"
+                        alt="Parcel Viewer"> -->
+                    {% cloudinary /img/gis1.jpg class="figure-img img-responsive rounded center-block" width="200" alt="Parcel Viewer" %}                    
+                </figure>
+            </a>
+            <a href="http://gis.latah.id.us/publicmap/index.html">
+                <figure class="col-md-6">
+                    <figcaption class="text-center" style="font-size: 1.5em">Public Map</figcaption>
+                    <!-- <img class="figure-img img-responsive rounded center-block" src="/img/gis1.jpg"
+                        alt="Public Map"> -->
+                    {% cloudinary /img/gis1.jpg class="figure-img img-responsive rounded center-block" width="200" alt="Public Map" %}                    
+                </figure>
+            </a>
+        </div>
+        <div class="row">
+            <a href="https://gis.latah.id.us/Subscription/Index.html">
+                <figure class="col-md-6">
+                    <figcaption class="text-center" style="font-size: 1.5em">Subscription Map</figcaption>
+                    <!-- <img class="figure-img img-responsive rounded center-block" src="/img/gis1.jpg"
+                        alt="Subscription Map"> -->
+                    {% cloudinary /img/gis1.jpg class="figure-img img-responsive rounded center-block" width="200" alt="Subscription Map" %}                    
+                </figure>
+                <a href="https://www.latah.id.us/latahview">
+                    <figure class="col-md-6">
+                        <figcaption class="text-center" style="font-size: 1.5em">Historic Places</figcaption>
+                        <!-- <img class="figure-img img-responsive rounded center-block" src="/img/gis1.jpg"
+                            alt="Historic Places"> -->
+                        {% cloudinary /img/gis1.jpg class="figure-img img-responsive rounded center-block" width="200" alt="Historic Places" %}                    
+                    </figure>
+                </a>
+        </div>
+    </div>
+    <div class="col-md-4">
+        {% include contactBlock.html %}
+        <!-- Services -->
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title text-center">Additional Information</h3>
+            </div>
+            <div class="list-group text-center">
+                <a href="#" class="list-group-item list-link text-center" onclick="downloadFileEx('Subscription Application.pdf'); return false;">Mail-In Subscription Application Form</a>
+                <a href="#" class="list-group-item list-link text-center" onclick="downloadFileEx('Fee Schedule - Map and GIS.pdf'); return false;">Map and GIS Fee Schedule</a>
+                <a href="../GIS/OnlineSubscription.html" data-remote="false" class="list-group-item list-link text-center" data-toggle="modal" data-target="#myModal" >Online Subscription Application Form</a>
+            </div>
+        </div>
+    
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title text-center">Documents</h3>
+            </div>
+            <div class="list-group">
+                <div id="gisDir"></div>
+            </div>
+    
+        </div>
+    </div>
+
+   <!-- modal object -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body" id="myModalDiv">
+                    <p>&hellip;</p>
+                </div>
+                <div class="modal-footer">
+                    <button id="iAgreeBtn" type="button" class="btn btn-default" data-dismiss="modal">I Agree</button>                    
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    
+    <script type='text/javascript'>
+    $(document).ready(function(){
+        $("#myModal").on("show.bs.modal", function(e){
+            var link = $(e.relatedTarget);
+            $(this).find(".modal-title").text(e.relatedTarget.innerText);
+            $(this).find(".modal-body").load(link.attr("href"));
+        });
+        $('#iAgreeBtn').on('click', function(e){
+            e.preventDefault();
+            window.open("https://client.pointandpay.net/web/LatahCountyIDPlanning&Building");
+        });
+    });
+</script>
+    
+
+<script type="text/javascript">
+	deptTree("gisDir", "GIS Documents")
+</script>
+
+<script text/javascript>
+    function downloadFileEx(p) {
+        var url = 'https://gis.latah.id.us/api/DownloadFileEx?filename=' + p;
+        window.open(url);
+    }
+</script>

@@ -113,19 +113,9 @@ Elections:
 #    url: http://portal.latah.id.us
 #    target: target="_blank"
 
-Mapping:
-  - title: GIS
-    url: /underConstruction/ #/gis/
-  - title: Online Maps
-    url: /underConstruction/ #/gis/maps/
-  - title: Map & GIS Pricing
-    url: /underConstruction/ #/gis/maps/pricing/
-  - title: GIS Ordinance
-    url: /underConstruction/ #/gis/ordinance/
-  - title: Fee Waiver Request
-    url: /underConstruction/ #/gis/waiver/
-  - title: Data License Agreement
-    url: /underConstruction/ #/gis/agreement/
+Maps:
+  - title: Maps
+    url: /planning_building/gis/
 
 Contact:
   - title: Contact Us

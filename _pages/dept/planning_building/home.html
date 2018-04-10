@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Planning and Building
+title: Planning, Building and GIS
 permalink: /planning_building/
 calendar: true
 tree: true
@@ -11,31 +11,31 @@ tree: true
 	<div class="col-md-8 hidden-xs">
 		<div class="panel panel-primary">
 			<p class="panel-body">
-				The County Planning and Building Department administers the county's land use and development ordinances and reviews applications for conditional use permits, subdivisions and zone changes for presentation to the Planning Commission, Zoning Commission and the Board of County Commissioners. The department provides assistance with various land use issues and ensures compliance with existing regulations. Other functions of this department include the enforcement of adopted building code regulations, and providing assistance with community development projects.
+				The County Planning and Building Department administers the county's land use and development ordinances and
+				 reviews applications for conditional use permits, subdivisions and zone changes for presentation to the 
+				 Planning Commission, Zoning Commission and the Board of County Commissioners. The department provides 
+				 assistance with various land use issues and ensures compliance with existing regulations.
+				 This department also conducts the Geographic Information Systems (computer mapping) activity for the County. Other functions 
+				 of this department include the enforcement of adopted building code regulations, and providing assistance 
+				 with community development projects.
 			</p>
 		</div>
 	</div>
 	<!-- End Description -->
 	<div class="col-md-4">
 	{% include contactBlock.html %}
-	<!-- Services -->
-  	<div class="panel panel-primary">
-  		<div class="panel-heading">
-				<h3 class="panel-title text-center">Our Services</h3>
-			</div>
-  		<ul class="list-group text-center">
-      	<li class="list-group-item">Mapping</li>
-      	<li class="list-group-item">Building Permits</li>      	
-    	</ul>
-  	</div>
-		<!-- Meeting Notice Signup -->
+		<!-- Additional Information -->
 		<div class="panel panel-primary">
-			<!-- Button trigger modal -->
-			<a href="#myModal" data-toggle="modal">
-					<p class="list-group-item list-link text-center">
-						<a href="http://www.latah.id.us/mailman/listinfo/planzone">Signup for Meeting Notices</a>
-					</p>					
-			</a>
+			<div class="panel-heading">
+				<h3 class="panel-title text-center">Additional Information</h3>
+			</div>
+			<div class="list-group text-center">
+				<a href="#" class="list-group-item list-link text-center" onclick="downloadFileEx('Current Planning Commission Agenda.pdf'); return false;">Current Planning Commission Agenda</a>				
+				<a href="#" class="list-group-item list-link text-center" onclick="downloadFileEx('Current Public Hearing Packets.pdf'); return false;">Current Public Hearing Packets</a>				
+				<a href="#" class="list-group-item list-link text-center" onclick="downloadFileEx('Current Zoning Commission Agenda.pdf'); return false;">Current Zoning Commission Agenda</a>				
+				<a href="gis/" class="list-group-item list-link text-center">Maps</a>
+				<a href="http://www.latah.id.us/mailman/listinfo/planzone" class="list-group-item list-link text-center" >Signup for Meeting Notices</a>   	
+			</div>
 		</div>		
 	</div>
 </div>
@@ -86,4 +86,10 @@ tree: true
 </script>
 <script type="text/javascript">
 	deptTree("pbDir", "PlanningBuilding")
+</script>
+<script text/javascript>
+    function downloadFileEx(p) {
+        var url = 'https://gis.latah.id.us/api/DownloadFileEx?filename=' + p;
+        window.open(url);
+    }
 </script>
