@@ -43,6 +43,37 @@ function deptList() {
           $("#department").append('<option id="#' + id + '" value="' + id + '">' + dept + '</option>');
         }
       });
+
+      /* Removes PA Contact Form */
+      const hideForm = () => {
+        $('#formName').addClass('hidden');
+        $('#formEmail').addClass('hidden');
+        $('#formPhone').addClass('hidden');
+        $('#formMessage').addClass('hidden');
+        $('#formSend').addClass('hidden');
+      };
+      const showForm = () => {
+        $('#formName').removeClass('hidden');
+        $('#formEmail').removeClass('hidden');
+        $('#formPhone').removeClass('hidden');
+        $('#formMessage').removeClass('hidden');
+        $('#formSend').removeClass('hidden');
+      }
+      // Hide from qs
+      if (queryString == '34'){
+        hideForm();
+      } else {
+        showForm();
+      }
+      // Hide from select
+      $('#department').change(function () {
+        const selID = $('#department option:selected');
+        if (selID.text() == 'Prosecutor') {
+          hideForm();
+        } else{
+          showForm();
+        }
+      });
     });
   });
 }
