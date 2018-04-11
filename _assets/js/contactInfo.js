@@ -43,6 +43,23 @@ function deptList() {
           $("#department").append('<option id="#' + id + '" value="' + id + '">' + dept + '</option>');
         }
       });
+      // Removes PA Contact Form
+      $('#department').change(function () {
+        const selID = $('#department option:selected').text();
+        if (selID == 'Prosecutor') {
+          $('#formName').addClass('hidden');
+          $('#formEmail').addClass('hidden');
+          $('#formPhone').addClass('hidden');
+          $('#formMessage').addClass('hidden');
+          $('#formSend').addClass('hidden');
+        } else{
+          $('#formName').removeClass('hidden');
+          $('#formEmail').removeClass('hidden');
+          $('#formPhone').removeClass('hidden');
+          $('#formMessage').removeClass('hidden');
+          $('#formSend').removeClass('hidden');
+        }
+      });
     });
   });
 }
