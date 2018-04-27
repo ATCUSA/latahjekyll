@@ -151,3 +151,13 @@ function deptMap() {
     });
   });
 }
+
+function formCheck() {
+  $('#contact').submit((e) => {
+    var selID = $('#department option:selected').attr('id');
+    if (selID == 0){
+      alert('Please select a department.');
+      e.preventDefault();
+    }
+  });
+}
