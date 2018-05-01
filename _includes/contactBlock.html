@@ -45,3 +45,11 @@
 <script>
   contactInfo();
 </script>
+<script>
+  $( () => {
+    const isPA = $("#deptHeader").text();
+    if (isPA == "Prosecuting Attorney"){
+      $("#emailButton").addClass("hidden")
+    }
+  })
+</script>
