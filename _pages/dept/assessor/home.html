@@ -175,9 +175,10 @@ news: true
         <h3 class="panel-title text-center">Additional Information</h3>
       </div>
       <div class="list-group">
-        <a href="assessorPlatMapsDT/" class="list-group-item list-link text-center">Assessor Plat Maps</a>
+        <a href="#" class="list-group-item list-link text-center" onclick="downloadFileEx('Latah_ID_Bar_Graph_Sample.pdf'); return false;">Assessment Notice Sample</a>
         <a href="assessorfaq.html" class="list-group-item list-link text-center" data-remote="false" data-toggle="modal" data-target="#myModal">Assessor FAQ</a>
-        <a href="https://tax.idaho.gov/i-1051.cfm#sub1" class="list-group-item list-link text-center" target="_blank">Homeowners & Property Tax</a>
+        <a href="assessorPlatMapsDT/" class="list-group-item list-link text-center">Assessor Plat Maps</a>        
+        <a href="https://tax.idaho.gov/i-1051.cfm#sub1" class="list-group-item list-link text-center" target="_blank">Homeowners &amp;Property Tax</a>
         <a href="http://gis.latah.id.us/ParcelViewer/ParcelViewer.html" class="list-group-item list-link text-center" target="_blank">Latah County Parcel Viewer</a>
         <a href="taxexemptproperty.html" class="list-group-item list-link text-center" data-remote="false" data-toggle="modal" data-target="#myModal">Tax Exempt Property & FAQ</a>
       </div>
@@ -214,4 +215,11 @@ news: true
   const args = ['assrNews', 'assrNotice'];
   //pass in the args array and the department
   getNewsandNotices(args, "Assr")
+</script>
+
+<script type="text/javascript">
+    function downloadFileEx(p) {
+      var url = 'https://gis.latah.id.us/api/DownloadFileEx?filename=' + p;
+      window.open(url);
+    }
 </script>
