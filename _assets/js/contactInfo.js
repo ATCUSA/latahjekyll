@@ -2,7 +2,7 @@
 function contactInfo() {
   $(document).ready(function() {
     
-    var restURL = 'https://gis.latah.id.us/api/getcontact?dept=';
+    var restURL = 'https://api.latah.id.us/web/getcontact?dept=';
     var dept = encodeURIComponent($("#deptHeader").text());
 
     $.getJSON(restURL + dept, function(data){
@@ -26,7 +26,7 @@ function contactInfo() {
 // Populates department list
 function deptList() {
   $(document).ready(function() {
-    var restURL = 'https://gis.latah.id.us/api/getcontact';
+    var restURL = 'https://api.latah.id.us/web/getcontact';
     var queryString = window.location.href.slice(window.location.href.indexOf("#")+1);
 
     $.getJSON(restURL, function(data) {
@@ -81,7 +81,7 @@ function deptList() {
 // Department Info Box on /contact page.
 function deptBox() {
   $(document).ready(function () {
-    var restURL = 'https://gis.latah.id.us/api/getcontact';
+    var restURL = 'https://api.latah.id.us/web/getcontact';
     var queryString = window.location.href.slice(window.location.href.indexOf("#") + 1);
 
     $.getJSON(restURL, function (data) {
@@ -123,7 +123,7 @@ function deptBox() {
 
 function deptMap() {
   $(document).ready(function () {
-    var restURL = 'https://gis.latah.id.us/api/getcontact';
+    var restURL = 'https://api.latah.id.us/web/getcontact';
     var queryString = window.location.href.slice(window.location.href.indexOf("#") + 1);
 
     $.getJSON(restURL, function (data) {

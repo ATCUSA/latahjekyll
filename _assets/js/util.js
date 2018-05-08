@@ -50,13 +50,13 @@ $(document).ready(function(){
 
 // Function to call the REST Service
 	function getJsonResult(path, control){
-		$.getJSON("https://latah.id.us/api/GetFilesInDirectory?path=\\\\hvh01-store\\Common\\ITS\\WebContent\\" + path, null, function (jsonResult) {
+		$.getJSON("https://api.latah.id.us/web/GetFilesInDirectory?path=\\\\hvh01-store\\Common\\ITS\\WebContent\\" + path, null, function (jsonResult) {
 
 			$(control).attr('enabled', 'true');
 
 		  $.each(jsonResult, function() {
 				$(control).append(
-				  $("<a href='https://latah.id.us" + path + "/" + this.filename + this.ext + "' target='_blank' class='list-group-item'></a>").text(this.filename).val(this.path)
+				  $("<a href='https://api.latah.id.us" + path + "/" + this.filename + this.ext + "' target='_blank' class='list-group-item'></a>").text(this.filename).val(this.path)
 				);
 		  });
 		  $(control).change(function() {
@@ -66,4 +66,4 @@ $(document).ready(function(){
 	};
 });
 // Full Endpoint
-// https://www.latah.id.us/api/GetFilesInDirectory?path=\\hvh01-store\Common\ITS\WebContent\Departments\Commissioners\Agendas\2017
+// https://www.api.latah.id.us/web/GetFilesInDirectory?path=\\hvh01-store\Common\ITS\WebContent\Departments\Commissioners\Agendas\2017
