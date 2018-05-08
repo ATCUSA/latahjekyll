@@ -31,6 +31,9 @@ permalink: /parks_rec/
         <div id="collapse1" class="panel-collapse collapse">
           <div class="panel-body">
             Downtown Harvard
+            <div class="container" id="photos">
+              <div class="col-md-6 col-md-offset-1" id="Hylton-Bateson"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -44,6 +47,8 @@ permalink: /parks_rec/
         <div id="collapse2" class="panel-collapse collapse">
           <div class="panel-body">
             Located 3 miles west of Bovill, Idaho off of Highway 3/8
+            <br />
+            <div class="col-md-6" id="MooseCreek"></div>
           </div>
         </div>
       </div>
@@ -58,6 +63,9 @@ permalink: /parks_rec/
           <div class="panel-body">
             <p>Located 5 miles north of Moscow, Idaho off of Highway 95</p>
             <a href="http://www.friendsofphillipsfarm.weebly.com/" target="_blank" rel="noopener">More Info</a>
+            <div class="container" id="photos">
+              <div class="col-md-6" id="VirgilPhillips"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -118,6 +126,9 @@ permalink: /parks_rec/
             Self Registration box<br />
             Sorry no reservations<br />
           </div>
+          <div class="container" id="photos">
+            <div class="col-md-6" id="RobinsonPark"></div>
+          </div>
         </div>
       </div>
       <div class="panel panel-default">
@@ -168,3 +179,74 @@ permalink: /parks_rec/
   </div>
   <!-- End Right Pane -->
 </div>
+
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-migrate@3.0.1/dist/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script>
+  /* use strict */
+  function getImages(dept) {
+    axios.get(`https://latah.id.us/api/GetImageList?dir=${dept}`)
+    .then((response) => {
+      
+      var imgUrl = "https://www.latah.id.us/api/GetImage?fileName="
+      
+      $.each(response.data, (i,
+       val) => {
+        var imgPath = val.path;
+        let imgCapt = val.caption;
+        let imgFolder = imgPath.split('\\')[1];
+        let imgId = imgFolder.replace(/\s/g, '');
+        var imgURIPath = encodeURIComponent(imgPath);
+
+        let img = `<img src="${imgUrl + imgURIPath}" class="img-responsive">`
+
+        if(imgPath.includes(imgFolder) && imgPath.includes('(Small)') && imgCapt != null) {
+          $(`#${imgId}`).append(`<figure>${img}<figcaption>${imgCapt}</figcaption></figure>`);
+        } else if (imgPath.includes('(Small)')) {
+          $(`#${imgId}`).append(`<figure>${img}</figure>`);
+        };
+        
+        console.log(`Image Path: ${imgUrl + imgPath}`);
+        console.log(`Image Path: ${imgURIPath}`);
+      });
+              
+      $('#SpringValley').slick({
+        // lazyLoad: 'ondemand'
+      });
+      $('#MooseCreek').slick({
+        // lazyLoad: 'ondemand'
+      });
+      $('#RobinsonPark').slick({
+        // lazyLoad: 'ondemand'
+      });
+      $('#VirgilPhillips').slick({
+        // lazyLoad: 'ondemand'
+      });
+      $('#Hylton-Bateson').slick({
+        // lazyLoad: 'ondemand'
+      });
+
+    })
+    .catch( (error) => {
+      console.log("Error loading images.");
+      // console.log(error); /* Uncomment for debug */
+    });
+  }
+  getImages('Parks');
+</script>
+
+<style>
+figure {
+  text-align: center;
+  font-style: italic;
+  font-size: smaller;
+}
+.slick-slide {
+  /* height: 50% !important; */
+}
+</style>
