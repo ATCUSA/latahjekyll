@@ -193,12 +193,12 @@ calendar: true
   deptTree("caoDir", "CourtAssistance")
 </script>
 
-  <script type="text/javascript">
+<script type="text/javascript">
   function downloadFileEx(filename){
-  				var url = 'https://gis.latah.id.us/api/DownloadFileEx?filename=' + filename;
-  				window.open(url);
-  			}
-  </script>
+    var url = 'https://api.latah.id.us/web/DownloadFileEx?filename=' + filename;
+    window.open(url);
+  }
+</script>
 <script type="text/javascript">
   calendarMonth('CAO-Hours', 30, 90);
   calendarList('CAO-Hours', 0, 5);

@@ -71,7 +71,7 @@ $( "#platSearch" ).submit(function( event ) {
     $('#platSearchModal .modal-title').html('Search Results for: ' + search);
 
     $.ajax({
-        url: "https://gis.latah.id.us/api/getPlatMaps?type=" + type + "&search=" + search,
+        url: "https://api.latah.id.us/web/getPlatMaps?type=" + type + "&search=" + search,
         type: "GET",
         async: true,
         dataType: 'json',
@@ -97,7 +97,7 @@ $( "#platSearch" ).submit(function( event ) {
                 })
 
                 function downloadPlatMap(filename) {
-                    var url = 'https://gis.latah.id.us/api/downloadPlatMap?fileName=' + filename
+                    var url = 'https://api.latah.id.us/web/downloadPlatMap?fileName=' + filename
 
                     $.ajax({
                         url: '',
