@@ -12,7 +12,8 @@ function calendarList(calName, calDaysBefore, calDaysAfter) {
 				};
 				return false;
 			},
-			events: 'https://gis.latah.id.us/api/GetCalendarEvents?calendarName=' + calName + '&daysBefore=' + calDaysBefore + '&daysAfter=' + calDaysAfter,
+			events: 'https://api.latah.id.us/web/GetCalendarEvents?calendarName=' + calName + '&daysBefore=' + calDaysBefore + '&daysAfter=' + calDaysAfter,
+			events: 'https://api.latah.id.us/web/GetCalendarEvents?calendarName=' + calName + '&daysBefore=' + calDaysBefore + '&daysAfter=' + calDaysAfter,
 			loading: function(bool) {
 				$('#loading').toggle(bool);
 				$('.fc-toolbar').remove();
@@ -44,7 +45,8 @@ function calendarMonth(calName, calDaysBefore, calDaysAfter) {
 				};
 				return false;
 			},
-			events: 'https://gis.latah.id.us/api/GetCalendarEvents?calendarName=' + calName + '&daysBefore=' + calDaysBefore + '&daysAfter=' + calDaysAfter,
+			events: 'https://api.latah.id.us/web/GetCalendarEvents?calendarName=' + calName + '&daysBefore=' + calDaysBefore + '&daysAfter=' + calDaysAfter,
+			events: 'https://api.latah.id.us/web/GetCalendarEvents?calendarName=' + calName + '&daysBefore=' + calDaysBefore + '&daysAfter=' + calDaysAfter,
 			loading: function(bool) {
 				$('#loading').toggle(bool);
 			},
@@ -75,6 +77,7 @@ function upComing() {
 				window.open(event.url, "gcalevent", "width=700,height=600");
 				return false
 			},
+			googleCalendarApiKey: "AIzaSyDyMoDpMndtgfhh62g_B9Gr5YrXhSBMhmI",
 			googleCalendarApiKey: "AIzaSyDyMoDpMndtgfhh62g_B9Gr5YrXhSBMhmI",
 			eventSources: [{
 				googleCalendarId: "pkr1feh376liutlgs84gd0bjmo@group.calendar.google.com",
@@ -130,7 +133,7 @@ function listThreeMonths() {
 	  		// 	window.open(event.url, 'gcalevent', 'width=700,height=600');
 	  		// 	return false;
 	  		},
-	      events: 'https://gis.latah.id.us/api/GetCalendarEvents?calendarName=ElectionsDemo&days=30',
+	      events: 'https://api.latah.id.us/web/GetCalendarEvents?calendarName=ElectionsDemo&days=30',
 	      loading: function(bool) {
 	  			$('#loading').toggle(bool);
 					$('.fc-toolbar').remove();

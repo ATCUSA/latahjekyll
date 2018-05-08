@@ -1,6 +1,6 @@
 function jobsList() {
   $(document).ready(function(){
-    const url = 'https://gis.latah.id.us/api/getJobs';
+    const url = 'https://api.latah.id.us/web/getJobs';
     $.getJSON(url, function (data) {
       if (data.length) {
         var groupedData = _.groupBy(data, function (d) { return d.Department });        
@@ -44,7 +44,7 @@ function jobsList() {
 }
 function downloadJobDesc(filename){
   //console.log('request to download' + filename);
-  var url = 'https://gis.latah.id.us/api/downloadJobDesc?fileName=' + filename
+  var url = 'https://api.latah.id.us/web/downloadJobDesc?fileName=' + filename
   $.ajax({
     url: '',
     success: function(){

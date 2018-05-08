@@ -1,7 +1,7 @@
 var globalpath = null;
 function downloadfile(p){
 		if(p != null){
-				var url = 'https://gis.latah.id.us/api/DownloadFile?filename=' + p;
+				var url = 'https://api.latah.id.us/web/DownloadFile?filename=' + p;
 				window.open(url);
 			}
 }
@@ -9,7 +9,7 @@ function downloadfile(p){
 function deptTree(id, dept) {
   $(document).ready(function(){
     $.ajax({
-      url: "https://gis.latah.id.us/api/getdirectorystructure?dept=" + dept,
+      url: "https://api.latah.id.us/web/getdirectorystructure?dept=" + dept,
       type: "GET",
       async: false, // set to false so order of operations is correct
       success: function(treedata){
