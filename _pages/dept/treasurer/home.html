@@ -3,6 +3,7 @@ layout: page
 title: Treasurer
 permalink: /treasurer/
 tree: true
+fileDownload: true
 ---
 <div class="row">
 	<div class="col-md-8">
@@ -103,14 +104,8 @@ tree: true
 	deptTree("treasurerDir", "Treasurer")
 </script>
 
-<script type='text/javascript'>
-//downloadFileEx - searchs for a file within a base dir
-function downloadFileEx(filename) {
-    if (filename != null) {
-        var url = 'https://api.latah.id.us/web/DownloadFileEx?filename=' + filename;
-        window.open(url);
-    }
-}
+<script type="text/javascript">
+  downloadFileEx(param1)
 </script>
 
 

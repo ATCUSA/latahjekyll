@@ -4,6 +4,7 @@ title: Sheriff Home
 permalink: /sheriff/
 tree: true
 news: true
+fileDownload: true
 ---
 
 <div class="row">
@@ -139,10 +140,6 @@ const args = ['sheriffNews', 'sheriffNotice'];
 getNewsandNotices(args, "SO")
 </script>
 
-
 <script type="text/javascript">
-function downloadFileEx(p){
-				var url = 'https://api.latah.id.us/web/DownloadFileEx?filename=' + p;
-				window.open(url);
-			}
+	downloadFileEx(param1)
 </script>

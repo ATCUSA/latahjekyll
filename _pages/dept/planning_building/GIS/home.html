@@ -3,6 +3,7 @@ layout: page
 title: Geographical Information System (GIS)
 permalink: /planning_building/gis/
 tree: true
+fileDownload: true
 ---
 
 <div class="row">
@@ -125,9 +126,6 @@ tree: true
     deptTree("gisPrintDir", "Printable Maps")
   </script>
 
-  <script type="text/javascript">
-    function downloadFileEx(p) {
-      var url = 'https://api.latah.id.us/web/DownloadFileEx?filename=' + p;
-      window.open(url);
-    }
-  </script>
+<script type="text/javascript">
+  downloadFileEx(param1)
+</script>
