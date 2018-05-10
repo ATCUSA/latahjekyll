@@ -5,6 +5,7 @@ permalink: /auditor/elections/
 calendar: true
 news: true
 tree: true
+fileDownload: true
 ---
 <!-- Info Row -->
 <div class="row">
@@ -178,11 +179,11 @@ tree: true
           </h4>
         </div>
         <div id="er4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="erHeadingFour">
-          <div class="list-group">
-            <a href="https://www.latah.id.us/elections/Voter%20Precincts%20Moscow%2011by17.pdf" target="_blank" class="list-group-item list-link">City of Moscow Precinct Map</a>
-            <a href="https://www.latah.id.us/elections/Commissioner%20Districts%20Moscow%2011by17.pdf" target="_blank" class="list-group-item list-link">City of Moscow Commissioner District Map</a>
-            <a href="https://www.latah.id.us/elections/Voter_Precincts_2014_11x17.pdf" target="_blank" class="list-group-item list-link">Latah County Precinct Map</a>
-            <a href="https://www.latah.id.us/elections/CommissionerDistricts.pdf" target="_blank" class="list-group-item list-link">Latah County Commissioner District Map</a>
+          <div class="list-group">            
+            <a href="#" class="list-group-item list-link" onclick="downloadFileEx('Voter Precincts Moscow 11by17.pdf'); return false;">City of Moscow Precinct Map</a>
+            <a href="#" class="list-group-item list-link" onclick="downloadFileEx('Commissioner Districts Moscow 11by17.pdf'); return false;">City of Moscow Commissioner District Map</a>
+            <a href="#" class="list-group-item list-link" onclick="downloadFileEx('Voter_Precincts_2014_11x17.pdf'); return false;">Latah County Precinct Map</a>
+            <a href="#" class="list-group-item list-link" onclick="downloadFileEx('CommissionerDistricts.pdf'); return false;">Latah County Commissioner District Map</a>
           </div>
         </div>
       </div>
@@ -196,10 +197,11 @@ tree: true
         </div>
         <div id="er5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="erHeadingFive">
           <div class="list-group">
-            <a href="https://www.latah.id.us/elections/2018/electionsCalendar.pdf" target="_blank" class="list-group-item list-link">2018 Election Calendar for Latah County</a> <!-- Todo - a add pdf to the site -->
+            <a href="#" class="list-group-item list-link" onclick="downloadFileEx('electionsCalendar.pdf'); return false;">2018 Election Calendar for Latah County</a>
             <a href="https://sos.idaho.gov/elect/2018Calendar.html" target="_blank" class="list-group-item list-link">2018 State Consolidation Calendar</a>
-            <a href="#" class="list-group-item list-link">City Clerks</a> <!-- Todo -add in modal -->
-            <a href="#" class="list-group-item list-link">Political Parties in Idaho</a><!-- Todo -add in modal -->
+            <!-- removed for now -->
+            <!-- <a href="#" class="list-group-item list-link">City Clerks</a> 
+            <a href="#" class="list-group-item list-link">Political Parties in Idaho</a> -->
           </div>
         </div>
       </div>
