@@ -207,7 +207,3 @@ function formSubmit() {
     event.preventDefault();
   });
 }
-
-function ieCheck() {
-  var ua = navigator.
-}
