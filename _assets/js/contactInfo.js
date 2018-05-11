@@ -45,14 +45,14 @@ function deptList() {
       });
 
       /* Removes PA Contact Form */
-      const hideForm = () => {
+      function hideForm() {
         $('#formName').addClass('hidden');
         $('#formEmail').addClass('hidden');
         $('#formPhone').addClass('hidden');
         $('#formMessage').addClass('hidden');
         $('#formSend').addClass('hidden');
       };
-      const showForm = () => {
+      function showForm() {
         $('#formName').removeClass('hidden');
         $('#formEmail').removeClass('hidden');
         $('#formPhone').removeClass('hidden');
