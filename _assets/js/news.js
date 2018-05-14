@@ -48,3 +48,4 @@ function getNewsandNotices(args, dept){
     }//success
   });//ajax
 }
+
