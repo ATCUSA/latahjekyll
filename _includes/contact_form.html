@@ -50,8 +50,17 @@
 
 {% asset contactInfo.js %}
 <script src="https://cdn.jsdelivr.net/npm/axios@0.18.0/dist/axios.min.js"></script>
+<script>
+  var ua = navigator.userAgent;
+
+  if (ua.indexOf('.NET') > 0) {
+    alert("This browser is not supported. \n Please use Chrome or Firefox for a better user experience.")
+  } else if (ua.indexOf('Edge') > 0) {
+    alert("This browser does not fully support all of the features of this site. \n Please use Chrome or Firefox for a better user experience.")
+  };
+</script>
+
 <script type="text/javascript">
-  browserCheck();
   deptList();
   formCheck();
   formSubmit();
