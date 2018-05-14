@@ -163,24 +163,31 @@ function formCheck() {
 }
 
 function formSubmit() {
-  $("#contact").submit((event) => {
-    axios({
-      method: 'POST',
-      url: 'https://api.latah.id.us/mail/contact',
-      data: $('#contact').serialize(),
-    }).then((response) => {
-      // console.log(response); // Uncomment for debug
-      $('#contact').hide();
-      $('#thanks').show();
-      setTimeout(() => {
-        $('#contact').show();
-        $('#thanks').hide()
-      }, 5000);
-      $("#contact")[0].reset();
-    }).catch((error) => {
-      console.log(error);
-    });
-    event.preventDefault();
+
+  $('#contact').submit((e) => {
+    var selID = $('#department option:selected').attr('id');
+    if (selID == 0) {
+      alert('Please select a department.');
+      e.preventDefault();
+    } else {
+      axios({
+        method: 'POST',
+        url: 'https://api.latah.id.us/mail/contact',
+        data: $('#contact').serialize(),
+      }).then((response) => {
+        // console.log(response); // Uncomment for debug
+        $('#contact').hide();
+        $('#thanks').show();
+        setTimeout(() => {
+          $('#contact').show();
+          $('#thanks').hide()
+        }, 5000);
+        $("#contact")[0].reset();
+      }).catch((error) => {
+        console.log(error);
+      });
+      event.preventDefault();
+    }
   });
 }
 
