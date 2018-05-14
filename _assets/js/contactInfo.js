@@ -187,7 +187,7 @@ function formSubmit() {
 function browserCheck() {
   var ua = navigator.userAgent;
 
-  if (ua.indexOf(.NET) > 0) {
+  if (ua.indexOf('.NET') > 0) {
     alert("This browser is not supported. \n Please use Chrome or Firefox for a better user experience.")
   } else if (ua.indexOf('Edge') > 0) {
     alert("This browser does not fully support all of the features of this site. \n Please use Chrome or Firefox for a better user experience.")
