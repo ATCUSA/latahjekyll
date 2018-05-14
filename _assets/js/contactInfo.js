@@ -162,37 +162,13 @@ function formCheck() {
   });
 }
 
-// function formSubmit() {
-//   $("#contact").submit((event) => {
-//     axios({
-//       method: 'POST',
-//       url: 'https://api.latah.id.us/mail/contact',
-//       data: $('#contact').serialize(),
-//     }).then((response) => {
-//       // console.log(response); // Uncomment for debug
-//       $('#contact').hide();
-//       $('#thanks').show();
-//       setTimeout(() => {
-//         $('#contact').show();
-//         $('#thanks').hide()
-//       }, 5000);
-//       $("#contact")[0].reset();
-//     }).catch((error) => {
-//       console.log(error);
-//     });
-//     event.preventDefault();
-//   });
-// }
-
 function formSubmit() {
   $("#contact").submit((event) => {
-    $.ajax({
-      type: 'POST',
+    axios({
+      method: 'POST',
       url: 'https://api.latah.id.us/mail/contact',
       data: $('#contact').serialize(),
-      dataType: 'json',
-      encode: true
-    }).done((response) => {
+    }).then((response) => {
       // console.log(response); // Uncomment for debug
       $('#contact').hide();
       $('#thanks').show();
@@ -201,13 +177,9 @@ function formSubmit() {
         $('#thanks').hide()
       }, 5000);
       $("#contact")[0].reset();
-    }).fail(() => {
-      console.log("error");
+    }).catch((error) => {
+      console.log(error);
     });
     event.preventDefault();
   });
-}
-
-function ieCheck() {
-  var ua = navigator.
 }
