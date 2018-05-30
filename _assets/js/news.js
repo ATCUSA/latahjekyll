@@ -42,23 +42,7 @@ function getNewsandNotices(args, dept){
                 '</a>')
               ) //append
             }            
-          }//check Article type vs ele type
-          else{            
-            
-            /* var id = $('#' + args[i]).attr('id');
-            $('list-group-item:contains("None at this time")').each(function(){
-              console.log($this);
-              if($(this).children().length == 0){
-
-              }                
-            });
-
-            
-            $('#' + args[i]).append(
-              $('<a class="list-group-item text-center"' + '>' + 'None at this time' + '</a>')
-            ) */
-            
-          }
+          }//check Article type vs ele type          
         }//for loop
       });//each
     }//success
