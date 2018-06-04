@@ -42,7 +42,16 @@ function getNewsandNotices(args, dept){
                 '</a>')
               ) //append
             }            
-          }//check Article type vs ele type          
+          }//check Article type vs ele type  
+          else{
+            //adds 'None at this time' to the list-group where there are none.
+            var n1 = $('#' + args[i] + ' .list-group-item').length;
+              if(n1 == 0){
+              $('#' + args[i]).append(
+                $('<a class="list-group-item text-center" ' + '>' + 'None at this time' + '</a>')
+              )
+            }
+          }        
         }//for loop
       });//each
     }//success

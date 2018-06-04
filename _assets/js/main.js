@@ -27,20 +27,7 @@ var eDisplayMoment = document.getElementById('currentYear');
 eDisplayMoment.innerHTML = NowMoment;
 
 
-$(function () {
-  //this code hides an empty news or notice panel and allows the 
-  //adjacent panel to take all of the remaining space
-  /* var n1 = $('#news .list-group').children().children().length;  
-  var n2 = $('#notices .list-group').children().children().length;
-    
-  if(n2 == 0) {
-      $('#notices').toggle();      
-      $('#news').removeClass().addClass('container col-md-12');      
-  }
-  if(n1 == 0){
-    $('#news').toggle();
-    $('#notices').removeClass().addClass('container col-md-12');
-  } */
+$(function () { 
 
   // Makes the panels the same height
   if ($('#newsNotices').length == 0) {
