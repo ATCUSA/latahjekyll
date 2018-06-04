@@ -11,6 +11,7 @@ function getNewsandNotices(args, dept){
         for(var i=0; i < args.length; i++){
           if(args[i].indexOf(data[index].ArticleType) !== -1){
             var link=null;
+            //is it a pdf?
             if(data[index].FileAttached != null){
                $('#' + args[i]).append(
                  $('<a class="list-group-item text-center list-link" ' + 'value=' + index +
@@ -34,6 +35,7 @@ function getNewsandNotices(args, dept){
                  });
                }
             }
+            //or url
             else if(this.Url != null){
               $('#' + args[i]).append(
                 $('<a class="list-group-item text-center list-link" ' +
@@ -42,18 +44,20 @@ function getNewsandNotices(args, dept){
                 '</a>')
               ) //append
             }            
-          }//check Article type vs ele type  
-          else{
-            //adds 'None at this time' to the list-group where there are none.
-            var n1 = $('#' + args[i] + ' .list-group-item').length;
-              if(n1 == 0){
-              $('#' + args[i]).append(
-                $('<a class="list-group-item text-center" ' + '>' + 'None at this time' + '</a>')
-              )
-            }
-          }        
+          }//check Article type vs ele type                
         }//for loop
       });//each
+
+      //this code adds "None at this time" when the list-group has no items
+      for(var i = 0; i < args.length; i++){
+        var n1 = $('#' + args[i] + ' .list-group-item').length;
+          if(n1 == 0){
+          $('#' + args[i]).append(
+            $('<a class="list-group-item text-center" ' + '>' + 'None at this time' + '</a>')
+          )
+        }
+      }          
+
     }//success
   });//ajax
 }
