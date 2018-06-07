@@ -68,7 +68,7 @@ function deptList() {
       // Hide from select
       $('#department').change(function () {
         const selID = $('#department option:selected');
-        if (selID.text() == 'Prosecutor') {
+        if (selID.text() == 'Prosecuting Attorney') {
           hideForm();
         } else{
           showForm();
