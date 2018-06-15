@@ -1,25 +1,56 @@
 ---
-layout: page
-title: Youth Advocacy
-permalink: /youth_advocacy/
+layout: page 
+title: Youth Advocacy 
+permalink: /youth_advocacy/ 
+tree: true
 ---
 
 <div class="row">
-        <div class="col-md-8">           
-            <div class="col-md-12">
-                <div class="panel panel-primary">                    
-                    <p class="panel-body">
-                    <strong>Latah County Youth Advocacy Council</strong>&nbsp;(LCYAC) is a county-wide resource that assesses, educates and provides Latah County youth with positive development opportunities.<br/><br/>
-                    <span style="text-decoration: underline;"><strong>Mission</strong></span><br />
-                    The Council is represented by a diverse board of Latah County residents, collaborating with youth, families and community organizations to reduce youth substance use in Latah County.<br/><br/>
-                    Latah County Youth Advocacy Council is funded by a Strategic Prevention Framework State Initiative Grant (SPF SIG); a federal grant program administered by The Idaho Office of Drug Policy (IODP). Previous funding for LCYAC has been through a Drug-Free Communities Support Program Grand provided by the Substance Abuse and Mental Health Services Administration (SAMHSA), which ended in October 2015. We receive additional Support from many sources including Latah County Board of County Commissioners, Elks National Foundation, Grants, fundraising efforts, and the financial support of businesses and individuals in our County.<br/><br/>
-                    In addition to our Council we assist and support three community coalitions, <strong>Let's Get It Started</strong> (LGIS) in Potlatch, <strong>Safe and Successful Youth</strong> (SASY) in Troy, and <strong>Kendrick Juliaetta 7 Ridges</strong> (KJ7R) in Kendrick-Juliaetta.<br /><br />
-                    </p>
+    <div class="col-md-8">
+        <div class="col-md-12">
+            <div class="panel panel-primary">
+                <p class="panel-body">
+                    <strong>Latah County Youth Advocacy Council</strong>&nbsp;(LCYAC) is a county-wide resource that assesses, educates
+                    and provides Latah County youth with positive development opportunities.
+                    <br/>
+                    <br/>
+                    <span style="text-decoration: underline;">
+                        <strong>Mission</strong>
+                    </span>
+                    <br /> The Council is represented by a diverse board of Latah County residents, collaborating with youth, families
+                    and community organizations to reduce youth substance use in Latah County.
+                    <br/>
+                    <br/> Latah County Youth Advocacy Council is funded by a Strategic Prevention Framework State Initiative Grant
+                    (SPF SIG); a federal grant program administered by The Idaho Office of Drug Policy (IODP). Previous funding
+                    for LCYAC has been through a Drug-Free Communities Support Program Grand provided by the Substance Abuse
+                    and Mental Health Services Administration (SAMHSA), which ended in October 2015. We receive additional
+                    Support from many sources including Latah County Board of County Commissioners, Elks National Foundation,
+                    Grants, fundraising efforts, and the financial support of businesses and individuals in our County.
+                    <br/>
+                    <br/> In addition to our Council we assist and support three community coalitions,
+                    <strong>Let's Get It Started</strong> (LGIS) in Potlatch,
+                    <strong>Safe and Successful Youth</strong> (SASY) in Troy, and
+                    <strong>Kendrick Juliaetta 7 Ridges</strong> (KJ7R) in Kendrick-Juliaetta.
+                    <br />
+                    <br />
+                </p>                
+            </div>
+            <!-- Agendas and Minutes-->        
+            <div class="panel panel-primary" id="agendas">
+                <div class="panel-heading">
+                    <h3 class="panel-title text-center"> Agendas &amp; Minutes</h4>
+                </div>
+                <div class="list-group">
+                    <div id="lcyacDir"></div>
                 </div>
             </div>
         </div>
-
+    </div>    
     <div class="col-md-4">
-          {% include contactBlock.html %}
+        {% include contactBlock.html %}
     </div>
 </div>
+
+<script type="text/javascript">
+	deptTree("lcyacDir", "Com-LCYAC")
+</script>
