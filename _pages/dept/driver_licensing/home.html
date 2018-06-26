@@ -2,6 +2,8 @@
 layout: page
 title: Driver Licensing
 permalink: /driver_licensing/
+news: true
+tree: true
 ---
 
 <div class="row">
@@ -23,22 +25,54 @@ permalink: /driver_licensing/
       <div class="panel panel-primary">
         <div class="panel-body text-center">
           <p>
-            Fingerprinting is available at the Driver's License office M-F from 8:00 am to 12:00 pm.
+            Fingerprinting is available at the Driver's License office M-F from 8:00 am to 4:00 pm.
           </p>
         </div>
       </div>
     </div>
-    <!-- End Fingerprinting -->
-    <!-- State Info -->
-    <div class="">
-      <div class="panel panel-primary">
-        <div class="panel-body text-center">
-          <a href="http://itd.idaho.gov/itddmv/?target=drivers-license-id-cards" target="_blank" rel="noopener">Idaho Transportation Department Drivers Services</a>
+    <!-- End Fingerprinting -->   
+    
+    <div class="row" id="newsNotices">
+        <div class="container col-md-6" id="notices">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title text-center">Notices</h3>
+            </div>
+            <div class="list-group">
+              <div id="dlNotice"></div>
+            </div>
+          </div>
+        </div>
+        <div class="container col-md-6" id="news">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title text-center">News</h3>
+            </div>
+            <div class="list-group">
+              <div id="dlNews"></div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- End State Info -->
-  </div>
+
+      <!-- forms -->
+      <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h4 class="panel-title text-center">Drivers License Forms</h4>
+          </div>
+          <div class="list-group">
+            <div id="dlDir" class="list-group-item"></div>
+          </div>
+          <div class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
+            <div class="list-group pre-scrollable">
+              <div id="forms"></div>
+              {% include noscript.html %}
+            </div>
+          </div>
+        </div>
+      </div>
+
+  
   <!-- End Left Pane -->
   <!-- Right Pane -->
   <div class="col-md-4">
@@ -57,6 +91,28 @@ permalink: /driver_licensing/
       </ul>
     </div>
     <!-- End Services -->
+     <!-- additional information -->
+     <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title text-center">Additional Information</h3>
+      </div>
+      <div class="list-group">
+        <a href="http://itd.idaho.gov/itddmv/?target=drivers-license-id-cards" class="list-group-item list-link text-center" data-remote="false" data-toggle="modal" data-target="#myModal">Idaho Transportation Department Drivers Services</a>        
+        <a href="https://itd.idaho.gov/starcard/" class="list-group-item list-link text-center" data-remote="false" data-toggle="modal" data-target="#myModal">Starcard Information</a>        
+      </div>
+    </div>
   </div>
   <!-- End Right Pane -->
 </div>
+</div>
+
+<script type="text/javascript">
+  deptTree("dlDir", "DriversLicense")
+</script>
+
+<script type="text/javascript">
+  //args contains the list of control elements that needs to be examined
+  const args = ['dlNews', 'dlNotice'];
+  //pass in the args array and the department
+  getNewsandNotices(args, "DL")
+</script>
