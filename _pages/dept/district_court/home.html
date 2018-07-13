@@ -2,6 +2,7 @@
 layout: page
 title: District Court
 permalink: /district_court/
+tree: true
 ---
 
 <!-- Row 1 -->
@@ -49,6 +50,23 @@ permalink: /district_court/
       </ul>
     </div>
     <!-- End Services -->
+
+    <!-- forms -->
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h4 class="panel-title text-center">Forms and Files</h4>
+      </div>
+      <div class="list-group">
+        <div id="dcDir"></div>
+      </div>
+      <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
+        <div class="list-group pre-scrollable">
+          <div id="forms" class="list-group-item"></div>
+          <noscript>To view forms please enable JavaScript or update your browser</noscript>
+        </div>
+      </div>
+    </div> <!-- end forms -->
+
   </div>
   <!-- End Right Pane -->
 </div>
@@ -111,3 +129,7 @@ permalink: /district_court/
     </div>
   </div>
 </div>
+
+<script type="text/javascript">
+  deptTree("dcDir", "DistrictCourt")
+</script>
