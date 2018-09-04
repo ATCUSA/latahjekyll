@@ -3,7 +3,7 @@
 // jQuery request
 (function() {
 	var baseUrl = "https://api.weather.gov/stations/";
-	var station = "FTHID";
+	var station = "KPUW";
 	var forcastType = "/observations/current";
 
 	$.get(baseUrl + station + forcastType).done(function(response) {
