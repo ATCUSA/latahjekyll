@@ -23,20 +23,20 @@ calendar: true
     <!-- End Description -->
     <div class="col-md-12">
       <div class="panel-group" id="accordion">
-        <div class="panel panel-primary">
+        <!-- <div class="panel panel-primary">
           <div class="panel-heading">
             <h4 class="panel-title">
               <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
                 Office Hours
               </a>
-            </h4>
+            </h4> 
           </div>
           <div id="collapseOne" class="collapse">
             <div class="panel-body">
               <div id="calendarMonth"></div>              
             </div>
           </div>
-        </div>
+        </div> -->
 
         <div class="panel panel-primary">
           <div class="panel-heading" id="caseTypes">
@@ -181,20 +181,21 @@ calendar: true
       </div>
       <div id='calendar'></div>
       <div class="panel-footer text-center">
-        <a class="btn btn-default" data-toggle="collapse" href='#collapseOne'>View Calendar</a>
-      </div>
-      {% include calendarModal.html %}
+        <a class="btn btn-default" href="GeneralHours.html" data-remote="false" data-toggle="modal" data-target="#myModal">Standard Office Hours</a>  
+      </div>      
     </div>
     <br />
   </div><!-- <div class="col-md-4"> -->
 </div><!-- row -->
 
+{% include modalPopup.html %}
+
 <script type="text/javascript">
   deptTree("caoDir", "CourtAssistance")
 </script>
 
-</script>
+
 <script type="text/javascript">
-  calendarMonth('CAO-Hours', 30, 90);
+  //calendarMonth('CAO-Hours', 30, 90);
   calendarList('CAO-Hours', 0, 5);
-</script>
+</script> 
