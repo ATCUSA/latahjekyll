@@ -128,12 +128,12 @@ treasurer:
     image: /img/officials/LoisReed.png
 
 judges:
-  - name: John Judge
-    position: Judge
-    court: Magistrate Court
-    page: /district_court/magistrate/
+  # - name: Reserved for new Judge
+  #   position: Judge
+  #   court: Magistrate Court
+  #   page: /district_court/magistrate/
 
-  - name: John Stegner
+  - name: John Judge
     position: Judge
     court: District Court
     page: /district_court/district/
