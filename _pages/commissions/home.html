@@ -299,6 +299,62 @@ fileDownload: true
           </div>
         </div>
       </div>
+      <!-- Snowmobile Advisory Board -->
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingSAB">
+          <h4 class="panel-title">
+            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSAB" aria-expanded="false" aria-controls="collapseSAB">
+              Snowmobile Advisory Board
+            </a>
+          </h4>
+        </div>
+        <div id="collapseSAB" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSAB">
+          <div class="panel-body">
+            <div class="col-md-8">
+              <p>
+                Description is pending.
+              </p>
+            </div>
+            <div class="col-md-4">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title"><strong>Contact:</strong></h3>
+                </div>
+                <div class="panel-body">
+                  Contact information Pending.
+                  <!-- <strong>Chair:</strong><br />
+                    Kathy Zenner<br />
+                  <strong>Email:</strong><br />
+                    <a href="mailto:rkzenner@gmail.com">rkzenner@gmail.com</a><br />
+                  <strong>Secretary:</strong><br />
+                    Troy Sprenke<br />
+                  <strong>Email:</strong><br />
+                    <a href="mailto:troys@turbonet.com">troys@turbonet.com</a><br />
+                  <strong>Address:</strong><br />
+                    PO Box 8068<br />                    
+                    Moscow, ID 83843<br />                    
+                  <strong>BOCC Representative:</strong><br />
+                  Tom Lamar<br /> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-primary" id="agendas">
+            <div class="panel-heading" >
+              <h4 class="panel-title text-center">Agendas, Minutes, Documents</h4>
+            </div>
+            <div class="list-group">
+              <div id="sabAgendas"></div>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;">
+              <div class="list-group pre-scrollable">
+                <div id="agendas" class="list-group-item"></div>
+                <noscript>To view agendas please enable JavaScript or update your browser</noscript>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- Zoning -->
       <div class="panel panel-default">
         <div class="panel-heading" role="tab" id="heading2">
@@ -417,6 +473,7 @@ fileDownload: true
 <script type="text/javascript">
 	deptTree("bocgAgendas", "Com-BOCG")
 	deptTree("lpcAgendas", "Com-LPC")
-  deptTree("prbAgendas", "Com-PRB")	
+  deptTree("prbAgendas", "Com-PRB")
+  deptTree("sabAgendas", "Com-SAB")	
   deptTree("artsCultureAgendas", "Com-ArtsCulture")
 </script>
