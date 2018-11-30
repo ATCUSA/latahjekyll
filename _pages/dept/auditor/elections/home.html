@@ -6,6 +6,7 @@ calendar: true
 news: true
 tree: true
 fileDownload: true
+facebook: https://www.facebook.com/LatahCountyElections/
 ---
 <!-- Info Row -->
 <div class="row">
@@ -111,6 +112,8 @@ fileDownload: true
   <div class="col-md-4">
     <!-- Contact -->
     {% include contactBlock.html %}
+    <!-- Facebook -->
+    {% include facebook.html facebook=page.facebook %}
     <!-- Upcoming Events -->
     <div class="panel panel-default">
       <div class="panel-heading">
