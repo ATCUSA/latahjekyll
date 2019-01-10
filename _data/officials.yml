@@ -128,10 +128,10 @@ treasurer:
     image: /img/officials/LoisReed.png
 
 judges:
-  # - name: Reserved for new Judge
-  #   position: Judge
-  #   court: Magistrate Court
-  #   page: /district_court/magistrate/
+  - name: Megan Marshall
+    position: Judge
+    court: Magistrate Court
+    page: /district_court/magistrate/
 
   - name: John Judge
     position: Judge
