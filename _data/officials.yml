@@ -1,19 +1,19 @@
 commissioners:
-  - name: Dick Walser
+  - name: Kathie LaFortune
     description: >
       <p>
-        Richard Walser was born in Moscow and grew up on a farm between Potlatch and Viola.  He attended grade school and high school in Potlatch and graduated from the University of Idaho with a degree in Architecture.  Rather than pursue a career in architecture however, Richard returned to the farm where he farmed and raised cattle for over 30 years.  During that time he served on the boards of several farm organizations.
+        Kathie LaFortune moved to Moscow in 1990 when her husband got a public school teaching job. The next year, they started a family and decided to stay. Kathie and Jim raised two active children who both graduated from Moscow High School and went on to college out of state. Emerald works as the CEO of a small non profit and lives in Salmon, ID. Jasper is teaching high school in Denver, CO. Kathie has two grand pups.
       </p>
       <p>
-        After retiring from farming, Richard then began working part time at Tri-State in the hardware department.  He is pleased to report that while his wealth made no dramatic change at that job, he now owns every hand tool known to man.
+        Kathie has been working in special education as a pediatric physical therapist for the last 33 years. As a contractor for the State of Idaho’s Infant Toddler Program, and through contracts with local school districts, Kathie has been in every school in Latah County and down most of its gravel roads. She has a unique perspective on the joys and challenges of Latah County families.
       </p>
       <p>
-        He and his wife, Vicki, still reside in their farm home.  However, the only livestock they still care for is their dog, "Buster".  Richard is currently serving in his 2nd term as one of the Latah County Commissioners, a job he is happy and humbled to do !
+        Kathie’s husband, Jim, died in 2010. In 2015, she remarried and moved to the northern part of Latah County. Kathie and Greg live on 78 acres with their two horses, a couple of volunteer barn cats, eight hens and a loud rooster. She is serving her first term as county commissioner, a role she is honored and humbled to perform.
       </p>
     district: District 1
     page: /commissioners/district_1/
-    bio: /commissioners/bio/dick_walser/
-    image: /img/officials/RichardWalser.png
+    bio: /commissioners/bio/kathie_lafortune/
+    image: /img/officials/KathieLaFortune.png
   - name: Tom Lamar
     district: District 2
     description: >
@@ -43,14 +43,14 @@ commissioners:
     image: /img/officials/DaveMcGraw.png
 
 assessor:
-  - name: Pat Vaughan
+  - name: Rod Wakefield
     description: >
       <p>
-        Patrick J. Vaughan was born and raised in Boise, Idaho. He graduated in 1977 from the United States Military Academy, West Point, and served over 20 years in the U.S. Army. Since returning to Idaho in 1998 he has been active in school and civic activities in the Moscow area. Pat was appointed by the Board of Commissioners as Latah County Assessor in 2005, and was elected Assessor in 2006, 2010, and in 2014. Pat has two adult children, Katie, a graduate of Willamette University, and Henry, a student at the College of Idaho.
+        Rod Wakefield was raised on a farm just outside the town of Ames, Iowa. Ames, now a city is very similar to Moscow in that it is a farming community and home of Iowa State University. After graduating from high school in 1975, Rod went to work for the United States Postal Service where he worked for almost 25 years. In 2001 he moved from Iowa to St. Maries, Idaho.  Rod started his Assessor Office career at the Benewah County Assessor's Office in 2004 and came to the Latah County Assessor's Office in 2007. Rod was elected Latah County Assessor in 2018.
       </p>
     page: /assessor/
     bio: /assessor/bio/
-    image: /img/officials/PatrickVaughan.png
+    image: /img/officials/RodWakefield.png
 
 auditor:
   - name: Henrianne Westberg
@@ -109,23 +109,14 @@ sheriff:
     image: /img/officials/RichardSkiles.png
 
 treasurer:
-  - name: Lois Reed
+  - name: BJ Swanson
     description: >
       <p>
-        Lois Reed was born and raised in Northern California, about 80 miles north of Sacramento.  She attended the University of the Pacific, San Juaquin Delta College and finishing at the University of Oregon with a degree in Business.  She spent 15 years working in the banking and Savings and Loan industry before relocating to Idaho.
-      </p>
-      <p>
-        Lois moved to Idaho in 1984 and began working in the Latah County Treasurer’s Office in 1992.  She quickly became involved in County Government and found she was truly happy to work with and serve the people of Latah County.  She often refers to herself as a civil servant, never forgetting her role to assist and educate the public.
-      </p>
-      <p>
-        Elected to office in 2010 and again in 2014 Lois feels honored to serve as the Latah County Treasurer.
-      </p>
-      <p>
-      Lois has 1 daughter, Leona, a graduate of the University of Idaho, Go Vandals!
+        BJ Swanson is a retired commercial bank vice president with over 30 years' experience in management, budgeting, financial analysis and commercial real estate. After retiring from banking, she started her own business contracting with clients for commercial loan underwriting, financial modeling, economic development and is an FAA licensed commercial drone pilot. Her public service includes vice chair of Idaho Health Facilities Authority and vice chair of Idaho Workforce Development Council. She previously served as chair of the board of Gritman Medical Center, president of the Moscow Chamber of Commerce, chair of the Idaho Economic Advisory Council, chair and executive director of Latah Economic Development Council, founding member of Latah Trail Foundation and treasurer of League of Women Voters. BJ is a live-long resident of Latah County and resides in rural Troy.
       </p>
     page: /treasurer/
     bio: /treasurer/bio/
-    image: /img/officials/LoisReed.png
+    image: /img/officials/BJSwanson.png
 
 judges:
   - name: Megan Marshall

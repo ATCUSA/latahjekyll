@@ -1,0 +1,43 @@
+---
+layout: page
+title: Kathie LaFortune
+permalink: /commissioners/bio/kathie_lafortune/
+---
+
+{% for official in site.data.officials.commissioners %}
+  {% if official.name == page.title %}
+    <div class="row">
+      <div class="col-md-4">
+        {% cloudinary officials {{ official.image }} alt="{{ page.title }} - {{ page.department }}" %}
+        <h4 class="text-center">
+          {{ page.title }}<br />
+          <small>Latah County {{ page.department }}</small><br />
+          <small>{{ official.district }}</small>
+        </h4>
+      </div>
+
+      <div class="col-md-8">
+        <div class="text-justify">
+          {{ official.description }}
+        </div><br />
+        <div id="social">
+          {% if official.website != nil %}
+          <div class="col-md-4 text-center">
+            <a href="{{ official.website }}" target="_blank" rel="noopener"><i class="fa fa-2x fa-globe"></i></a>&nbsp;
+          </div>
+          {% endif %}
+          {% if official.facebook != nil %}
+          <div class="col-md-4 text-center">
+            <a href="{{ official.facebook }}" target="_blank" rel="noopener"><i class="fab fa-2x fa-facebook text-center"></i></a>&nbsp;
+          </div>
+          {% endif %}
+          {% if official.twitter != nil %}
+          <div class="col-md-4 text-center">
+            <a href="{{ official.twitter }}" target="_blank" rel="noopener"><i class="fab fa-2x fa-twitter"></i></a>
+          </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  {% endif %}
+{% endfor %}
