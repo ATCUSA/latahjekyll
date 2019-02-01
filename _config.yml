@@ -42,7 +42,6 @@ algolia:
 # Jekyll Cloudinary settings
 cloudinary:
   cloud_name: latah-county-its
-  origin_url: https://latah.id.us
   presets:
     default:
       attributes:
