@@ -11,7 +11,7 @@ email: webmaster@latah.id.us
 description: > # this means to ignore newlines until "baseurl:"
   Latah County is located in the northern Idaho panhandle; to the immediate west lies Whitman County, Washington. These counties are referred to as The Palouse, which produces a large share of the wheat, lentils, peas, oats and barley in the United States. The Palouse is home to two major universities, University of Idaho and Washington State University. Latah County incorporated cities include Bovill, Deary, Genesee, Juliaetta, Kendrick, Moscow, Onaway, Potlatch and Troy. Our unincorporated communities are Avon, Cedar Creek, Farmington, Harvard, Helmer, Howell, Joel, Princeton and Viola.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://latah.id.us" # the base hostname & protocol for your site
+url: "https://latah-site.netlify.com" # the base hostname & protocol for your site
 
 # Where things are.
 include:
@@ -42,6 +42,7 @@ algolia:
 # Jekyll Cloudinary settings
 cloudinary:
   cloud_name: latah-county-its
+  origin_url: https://latah.id.us
   presets:
     default:
       attributes:
